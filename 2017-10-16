@@ -17,35 +17,29 @@ wmic service get displayname,pathname|findstr /IV "C:\Windows"|findstr /IV """
 #DIBUJO DE ESQUEMA EJEMPLO EN LINUX
 ######################################################################
 
-https://pbs.twimg.com/media/CdtD3yrUYAAYL2_.png:large
-http://www.brendangregg.com/linuxperf.html
-http://www.brendangregg.com/Perf/linux_perf_tools_full.png
-https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+#https://pbs.twimg.com/media/CdtD3yrUYAAYL2_.png:large
+#http://www.brendangregg.com/linuxperf.html
+#http://www.brendangregg.com/Perf/linux_perf_tools_full.png
+#https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
 
 ######################################################################
 #Morse windows y linux
 ######################################################################
 
-http://www.openrobots.org/morse/doc/1.2/user/installation.html
-https://www.jesusninoc.com/2017/01/04/detectar-un-mensaje-enviado-en-codigo-morse-mediante-sonidos-utilizando-la-tarjeta-de-sonido-y-el-programa-sdrsharp/
-http://www.blackcatsystems.com/software/morse-code-practice-software.html
-
-######################################################################
-#Apuntes ISO
-######################################################################
-
-https://juannava64.files.wordpress.com/2012/05/implantacion-sistemas-operativos-apuntes_v3-0.pdf
+#http://www.openrobots.org/morse/doc/1.2/user/installation.html
+#https://www.jesusninoc.com/2017/01/04/detectar-un-mensaje-enviado-en-codigo-morse-mediante-sonidos-utilizando-la-tarjeta-de-sonido-y-el-programa-sdrsharp/
+#http://www.blackcatsystems.com/software/morse-code-practice-software.html
 
 ######################################################################
 #Conexión con:
 ######################################################################
 
 #PARA LINUX
-https://www.jesusninoc.com/2015/02/03/mostrar-informacion-sobre-procesos-en-linux-y-windows/
+#https://www.jesusninoc.com/2015/02/03/mostrar-informacion-sobre-procesos-en-linux-y-windows/
 
 #BUCLE LINUX Y POWERSHELL
-https://www.jesusninoc.com/2017/10/08/listar-todos-los-caracteres-ascii-en-powershell/
-https://www.jesusninoc.com/2017/10/05/listar-todos-los-caracteres-ascii-en-bash/
+#https://www.jesusninoc.com/2017/10/08/listar-todos-los-caracteres-ascii-en-powershell/
+#https://www.jesusninoc.com/2017/10/05/listar-todos-los-caracteres-ascii-en-bash/
 
 #POWERSHELL + LINUX
 New-SSHSession -ComputerName 192.168.1.162 -Credential (Get-Credential)
@@ -60,6 +54,6 @@ $resultado.Output
 #USO DE ADB
 ######################################################################
 
-https://www.jesusninoc.com/2016/10/30/abrir-whatsapp-mediante-adb-a-traves-de-powershell/
+#https://www.jesusninoc.com/2016/10/30/abrir-whatsapp-mediante-adb-a-traves-de-powershell/
 
 #Realizar varias búsquedas con Google Chrome en Android leyendo de un fichero y pulsar en un enlace mediante un script en la shell de Android con ADB
