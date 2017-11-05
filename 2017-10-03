@@ -1,0 +1,26 @@
+#Para el lunes hay que instalar:
+#SSH para PowerShell porque vamos a ejecutar comandos de Linux en PowerShell.
+
+######################################################################
+#Solución examen:
+######################################################################
+
+#Alias de cmdlet y comandos de Linux
+#Cmdlets PowerShell    Linux
+#Get-Location           pwd
+#Set-Location           cd
+#Read-Host              read
+#Write-Host             echo
+#Get-Process            ps
+
+#Listar procesos y guardar en fichero
+Get-Process | Out-File procesos.txt -Append
+
+#Listar proceso que indica el usuario y guardar información en fichero
+Get-Process -Name (Read-Host) | Out-File procesos.txt -Append
+
+#ASCII
+1..127 | %{[Char]$_}
+
+#El usuario indica cuántos niveles subir
+Set-Location ("../"*(Read-Host))
