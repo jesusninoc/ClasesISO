@@ -1,0 +1,31 @@
+#Ejercicio resuelto de CREAR TABLA DE BASE64
+#https://www.jesusninoc.com/2017/02/11/tabla-de-caracteres-base64/
+
+#OS PIDO PERDÓN, HABÍA QUE EJECUTAR UN START-PROCESS (CREAR UN PROCESO)
+Start-Process -FilePath powershell.exe -ArgumentList '-encodedcommand RwBlAHQALQBQAHIAbwBjAGUAcwBzAA=='
+
+#Ejecutar un cmdlet codificado en Base64
+#https://www.jesusninoc.com/2016/09/24/ejecutar-un-cmdlet-convertido-en-base64/
+
+#Hemos explicado el segundo tema del libro, en concreto, qué es el sistemas operativo, tipos de núcleos, funciones del sistemas operativo, en concreto primera parte de la gestión, gestión de procesos.
+
+#Gestión de procesos: tabla de control de procesos con información de los mismos, creación y destrucción de procesos.
+
+#Os adjunto las tareas, tareas 1 es introducción a PowerShell.
+#Dónde encontrar ayuda:
+#https://www.jesusninoc.com/2017/07/01/1-introduccion-a-powershell/
+#https://www.jesusninoc.com/2017/07/02/2-programacion-en-powershell/
+
+#Tareas 2 es bastante avanzado y trata sobre procesos en detalle, lo veremos la semana que viene.
+
+#Tareas 3 trata sobre creación y destrucción de procesos.
+
+#Más información sobre procesos
+#https://www.jesusninoc.com/2017/07/07/7-gestion-de-procesos-en-powershell/
+
+#Otros temas comentados:
+#https://www.jesusninoc.com/2017/09/02/ejercicios-de-powershell-mostrar-y-escribir-una-letra-aleatoria-por-consola-en-el-menor-tiempo-posible-con-powershell/
+
+#Para repasar
+#https://github.com/jesnino/PowerShell
+#https://github.com/jesnino/PowerShell/tree/master/Repaso
