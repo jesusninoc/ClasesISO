@@ -1,0 +1,9 @@
+#Servicios
+Get-WmiObject -Class Win32_Service | Select-Object Name,ProcessID, (Get-Process -Id ProcessID).name
+
+Get-WmiObject -Class Win32_Service | %{
+Write-Host $_.Name,$_.ProcessID,(Get-Process -Id $_.ProcessID).name
+}
+
+#Procesos y ruta de ejecución del proceso
+Get-WmiObject -Class win32_process | select Path,ExecutablePath, CommandLine | Format-Custom
