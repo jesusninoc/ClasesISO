@@ -1,3 +1,19 @@
+#Introducción a sistema de archivos
+#https://www.jesusninoc.com/2017/07/04/4-gestion-del-sistema-de-archivos-en-powershell/
+
+#Simular un servidor web
+#https://www.jesusninoc.com/2016/04/30/simular-el-funcionamiento-de-un-servidor-web-utilizando-netcat-en-linux/
+
+#Crear servidor
+#https://www.jesusninoc.com/2016/04/30/simular-el-funcionamiento-de-un-servidor-web-utilizando-netcat-en-linux/
+
+#NC
+#http://www.binarytides.com/netcat-tutorial-for-beginners/
+
+######################################################################
+#Ejercicio
+######################################################################
+
 #Crear cinco directorios y dentro de cada directorio crear 10 ficheros
 
 foreach($directorio in 1..5)
