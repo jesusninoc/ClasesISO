@@ -1,0 +1,33 @@
+Get-Process | select Name,Threads | Out-GridView
+
+(Get-WmiObject -Class Win32_Thread  | Format-Table -Property priority, thread*, User*Time, kernel*Time ).count
+(Get-WmiObject -Class Win32_Thread).count
+
+Get-WmiObject -Class Win32_Thread | select id,priority
+Get-WmiObject -Class Win32_Process
+
+Get-WmiObject win32_process | Select-Object ParentProcessId,ProcessId
+
+#Process that created the thread
+Get-WmiObject -Class Win32_Thread | select handle,ProcessHandle
+
+(Get-WmiObject win32_process) | Select-Object Name,CommandLine | Format-Custom
+
+####################################
+Ejercicio
+####################################
+(Get-WmiObject -Class Win32_Thread  | Format-Table -Property priority, thread*, User*Time, kernel*Time ).count | Out-File q:\analisis.txt
+Get-Process | select name | Out-File q:\analisis.txt
+Start-Sleep -Seconds 5
+
+####################################
+Avanzado
+####################################
+while(1)
+{
+(Get-WmiObject -Class Win32_Thread  | Format-Table -Property priority, thread*, User*Time, kernel*Time ).count | Out-File q:\analisis.txt -Append
+Get-Process | select name | Out-File q:\analisis.txt -Append
+
+Start-Sleep -Seconds 5
+"Ejecuado"
+}
