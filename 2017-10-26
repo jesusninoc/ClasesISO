@@ -24,3 +24,31 @@ foreach($directorio in 1..5)
         New-Item -Path $directorio -Name $fichero -WhatIf -ItemType File 
     }
 }
+
+#Cmdlet disco
+Get-WmiObject Win32_DiskDrive
+
+#Información sobre los discos que hay conectados
+Get-Disk
+
+######################################################################
+#Ejercicios sobre ficheros
+######################################################################
+
+#----------------------
+ls '*.txt'
+#----------------------
+foreach($ficheros in (ls '*.txt').Name)
+{
+$ficheros.split('-')
+}
+#----------------------
+foreach($ficheros in (ls '*.txt').Name)
+{
+$ficheros.split('-')[1]
+}
+#----------------------
+foreach($ficheros in (ls '*.txt').Name)
+{
+$ficheros.split('-')[1].Replace('.txt','')
+}
