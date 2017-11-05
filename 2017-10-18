@@ -1,0 +1,17 @@
+######################################################################
+#Examen lunes
+#Estamos viendo tareas 8 memoria caché
+######################################################################
+
+#Crear servicios
+#https://www.jesusninoc.com/2017/10/17/crear-un-servicio-en-windows-con-powershell/
+
+#Hemos visto cómo matar procesos
+#Matar el proceso sacando el ID del proceso
+kill -9 `pidof apache2`
+
+#INFORMACIÓN AVANZADA DE PROCESOS
+#https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosProcesos.sh
+
+#INSTALAR OSQUERY
+#https://osquery.readthedocs.io/en/stable/installation/install-windows/#running-osquery
