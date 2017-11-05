@@ -2,7 +2,7 @@
 #Crear servicios
 ######################################################################
 
-https://www.jesusninoc.com/2017/10/17/crear-un-servicio-en-windows-con-powershell/
+#https://www.jesusninoc.com/2017/10/17/crear-un-servicio-en-windows-con-powershell/
 
 ######################################################################
 #Hemos visto cómo matar procesos
@@ -15,14 +15,14 @@ kill -9 `pidof apache2`
 #INFORMACIÓN AVANZADA DE PROCESOS
 ######################################################################
 
-https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosProcesos.sh
+#https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosProcesos.sh
 
 ######################################################################
 #INSTALAR OSQUERY
 ######################################################################
 
-https://osquery.readthedocs.io/en/stable/installation/install-windows/#running-osquery
-https://osquery.io/schema/
+#https://osquery.readthedocs.io/en/stable/installation/install-windows/#running-osquery
+#https://osquery.io/schema/
 
 #EJEMPLOS
 #información del kernell
@@ -31,26 +31,26 @@ https://osquery.io/schema/
 #process
 .\osqueryi.exe "SELECT * FROM processes;"
 
-process_memory_map
-Process memory mapped files and pseudo device/regions.
-Column	Type	Description
-pid	INTEGER	Process (or thread) ID
-start	TEXT	Virtual start address (hex)
-end	TEXT	Virtual end address (hex)
-permissions	TEXT	r=read, w=write, x=execute, p=private (cow)
-offset	BIGINT	Offset into mapped path
-device	TEXT	MA:MI Major/minor device ID
-inode	INTEGER	Mapped path inode, 0 means uninitialized (BSS)
-path	TEXT	Path to mapped file or mapped type
-pseudo	INTEGER	1 If path is a pseudo path, else 0
-select * from process_memory_map where pid = 1
+#process_memory_map
+#Process memory mapped files and pseudo device/regions.
+#Column	Type	Description
+#pid	INTEGER	Process (or thread) ID
+#start	TEXT	Virtual start address (hex)
+#end	TEXT	Virtual end address (hex)
+#permissions	TEXT	r=read, w=write, x=execute, p=private (cow)
+#offset	BIGINT	Offset into mapped path
+#device	TEXT	MA:MI Major/minor device ID
+#inode	INTEGER	Mapped path inode, 0 means uninitialized (BSS)
+#path	TEXT	Path to mapped file or mapped type
+#pseudo	INTEGER	1 If path is a pseudo path, else 0
+#select * from process_memory_map where pid = 1
 
 ######################################################################
 #REPASAR BUCLE EN POWERSHELL
 ######################################################################
 
-https://www.jesusninoc.com/2017/10/08/listar-todos-los-caracteres-ascii-en-powershell/
-https://www.jesusninoc.com/2017/10/05/listar-todos-los-caracteres-ascii-en-bash/
+#https://www.jesusninoc.com/2017/10/08/listar-todos-los-caracteres-ascii-en-powershell/
+#https://www.jesusninoc.com/2017/10/05/listar-todos-los-caracteres-ascii-en-bash/
 
 ######################################################################
 #POWERSHELL + LINUX
