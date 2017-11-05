@@ -5,7 +5,28 @@
 #PROCESADOR
 #TAREAS 7 EN POWERSHELL
 #EXPLICAR EL WHERE
+#Mañana veremos más sobre procesos, matar procesos desde PowerShell en Linux
+#Tareas 8 tema de memoria
+#LISTAR UN PROCESO EN LINUX HACIENDO UN READ-HOST EN POWERSHELL
 ######################################################################
+
+#Procesador enlaces
+#(Apartado procesador)
+#https://www.jesusninoc.com/2017/07/03/3-gestion-del-hardware-en-powershell/
+#(Apartado de procesador)
+#https://www.jesusninoc.com/2017/07/07/7-gestion-de-procesos-en-powershell/
+
+#Procesos enlace
+#https://www.jesusninoc.com/2015/02/03/mostrar-informacion-sobre-procesos-en-linux-y-windows/
+
+#Where en PowerShell
+Get-Process | Where-Object name -EQ "notepad"
+
+#Split en PowerShell
+"hola@adios" -split "@"
+("hola@adios" -split "@")[0]
+("hola@adios" -split "@")[1]
+"hola@adios#" -replace "#","@" -split "@"
 
 ######################################################################
 #Analizar servicios para detectar errores
