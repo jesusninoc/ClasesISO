@@ -24,15 +24,15 @@ echo "touch amigo" | awk '{print $1}';echo "touch amigo" | awk '{print $2}'
 #VISTO HOY
 ######################################################################
 
-https://github.com/jesnino/Bash/blob/master/Ficheros/EjemplosFicheros.sh
-https://github.com/jesnino/Bash/blob/master/Ficheros/EjemplosFicheros2.sh
+#https://github.com/jesnino/Bash/blob/master/Ficheros/EjemplosFicheros.sh
+#https://github.com/jesnino/Bash/blob/master/Ficheros/EjemplosFicheros2.sh
 
 ######################################################################
 #IMPORTANTE EL IF
 ######################################################################
 
-EJEMPLO SIMILAR AL VISTO HOY SOBRE CREAR FICHEROS
-https://github.com/jesnino/PowerShell/blob/master/Ficheros/EjemplosLeerOperacionesFichero.ps1
+#EJEMPLO SIMILAR AL VISTO HOY SOBRE CREAR FICHEROS
+#https://github.com/jesnino/PowerShell/blob/master/Ficheros/EjemplosLeerOperacionesFichero.ps1
 
 ######################################################################
 #ÚLTIMA HORA DE JUEVES, SERVIDOR LINUX
@@ -44,10 +44,10 @@ https://github.com/jesnino/PowerShell/blob/master/Ficheros/EjemplosLeerOperacion
 #http://www.thegeekstuff.com/2012/04/nc-command-examples/?utm_source=feedburner
 
 #SUBIR FICHEROS AL SERVIDOR SSH
-https://www.jesusninoc.com/2017/10/27/crear-y-ejecutar-un-script-de-powershell-en-linux-realizando-una-conexion-ssh-desde-powershell-en-windows/
+#https://www.jesusninoc.com/2017/10/27/crear-y-ejecutar-un-script-de-powershell-en-linux-realizando-una-conexion-ssh-desde-powershell-en-windows/
 
 #SUBIR UN FICHERO POR SCP
-https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
+#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
 
 #REDIRECCIÓN
-https://www.jesusninoc.com/2016/11/02/realizar-una-redireccion-con-javascript-utilizando-start-process-y-google-chrome/
+#https://www.jesusninoc.com/2016/11/02/realizar-una-redireccion-con-javascript-utilizando-start-process-y-google-chrome/
