@@ -16,7 +16,7 @@
 ################
 Memoria
 ################
-#Cmdlet
+#Cmdlets
 Get-WmiObject Win32_MemoryArray
 Get-WmiObject Win32_MemoryArrayLocation
 Get-WmiObject Win32_MemoryDevice
@@ -35,6 +35,6 @@ if((Get-WmiObject Win32_PhysicalMemory).Manufacturer -match "Elpida"){"Elpida"}e
 
 ################
 #Caché
-#Cmdlet
+#Cmdlets
 Get-WmiObject Win32_AssociatedProcessorMemory
 Get-WmiObject Win32_CacheMemory
