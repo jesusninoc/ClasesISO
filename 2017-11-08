@@ -1,0 +1,23 @@
+#Estamos viendo sistema de archivos
+#https://www.jesusninoc.com/2017/07/04/4-gestion-del-sistema-de-archivos-en-powershell/
+
+#Repasar ficheros
+#https://github.com/jesnino/PowerShell/tree/master/Ficheros
+
+#En el sistema tenemos discos
+#Cmdlets
+Get-WmiObject Win32_DiskDrive
+Get-Disk
+
+#Paso a paso  el ejercicio de sistema de archivos leyendo operaciones de fichero
+#https://github.com/jesnino/PowerShell/blob/master/Ficheros/EjemplosLeerOperacionesTareasBasicasII.ps1
+
+#Introducción a bucles en Linux
+#https://www.jesusninoc.com/2015/07/13/bucles-2/
+#https://www.jesusninoc.com/2016/01/02/for-loop-examples/
+
+#Conocer la extensión de un fichero en Linux
+file fichero
+
+#Introducción a buscar ficheros
+#https://github.com/jesnino/Bash/blob/master/Ficheros/EjerciciosFicherosBuscar.sh
