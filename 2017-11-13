@@ -1,0 +1,60 @@
+######################################################################
+#Utilizar el IF en PowerShell
+######################################################################
+
+$usuario=Read-Host "Introduzca nombre de usuario"
+$pass=Read-Host "Introduzca nombre de usuario"
+$usuario
+$pass
+
+######################################################################
+
+$usuario=Read-Host "Introduzca nombre de usuario"
+$pass=Read-Host "Introduzca nombre de usuario"
+$usuario
+$pass
+if($usuario -eq "hola")
+{
+
+}
+else
+{
+
+}
+
+######################################################################
+
+$usuario=Read-Host "Introduzca nombre de usuario"
+$pass=Read-Host "Introduzca nombre de usuario"
+$usuario
+$pass
+if($usuario -eq "hola")
+{
+"el uusario es hola"
+}
+else
+{
+"el usuario no es hola"
+}
+
+######################################################################
+
+#Introducir pass y ver si es correcto
+$user=Read-Host
+$pass=Read-Host
+if($user -eq "pepito" -and $pass -eq "secreto")
+{
+Write-Host $user
+}
+
+######################################################################
+
+#Introducir pass y ver si es correcto
+$user=Read-Host
+$pass=Read-Host
+if($user -eq "pepito" -and $pass -eq "secreto" -and (gc q:\fich.txt) -eq 1234)
+{
+Write-Host $user
+}
+
+######################################################################
