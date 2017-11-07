@@ -1,0 +1,20 @@
+#Comunicación entre cliente y servidor
+#https://www.jesusninoc.com/2015/02/25/creating-reverse-shell/
+#https://www.jesusninoc.com/2015/02/26/creating-shell/
+#https://www.jesusninoc.com/2017/10/18/crear-una-comunicacion-entre-un-cliente-en-bash-de-linux-y-un-servidor-en-powershell-de-windows-utilizando-tcpip/
+#https://www.jesusninoc.com/2017/10/26/crear-una-comunicacion-entre-un-cliente-en-powershell-de-windows-y-un-servidor-en-bash-de-linux-utilizando-tcpip/
+#https://www.jesusninoc.com/2016/04/30/simular-el-funcionamiento-de-un-servidor-web-utilizando-netcat-en-linux/
+#https://www.jesusninoc.com/2009/06/06/ejecutar-nc-exe-cmd-exe-remotamente/
+
+#Servidor desde PowerShell
+#https://www.jesusninoc.com/2017/05/06/crear-un-servidor-web-al-que-se-pueda-acceder-desde-cualquier-parte-de-la-red-privada-con-powershell/
+
+#Subir a un servidor el contenido generado en PowerShell
+#https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
+#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
+
+#Descargar ficheros de un servidor Linux desde PowerShell
+#https://www.jesusninoc.com/2017/11/04/descargar-un-fichero-por-ssh-de-un-servidor-linux-desde-powershell-en-windows/
+
+#Tcpdump desde PowerShell
+#http://www.thegeekstuff.com/2010/08/tcpdump-command-examples
