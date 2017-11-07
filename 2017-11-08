@@ -4,7 +4,7 @@
 #Repasar ficheros
 #https://github.com/jesnino/PowerShell/tree/master/Ficheros
 
-#En el sistema tenemos discos
+#Discos
 #Cmdlets
 Get-WmiObject Win32_DiskDrive
 Get-Disk
