@@ -30,5 +30,6 @@
 #Como usuario juan, crea un fichero con nombre datos.txt al que pueda acceder cualquier usuario para leer su contenido, y cualquier usuario del mismo grupo para leer o escribir.
 #Como usuario pedro, copia un programa del directorio /usr/bin al directorio de trabajo con un nombre diferente. Mira los permisos de este programa. Comprueba que se puede ejecutar.
 #Cambia los permisos de un fichero de tal forma que sólo lo pueda ejecutar el propietario del archivo.
+#Aparecen unas capturas que se han realizado con la webcam, la webcam esta en estado activo, ¿qué ha ocurrido en el sistema?
 #Un empleado sabe que va a ser despedido, empieza a eliminar archivos, realizar un script que sirva para mover archivos a una carpeta que se llama "basura" y además de moverse a la carpeta también se haga una copia de los archivos que se intentan eliminar.
 ######################################################################
