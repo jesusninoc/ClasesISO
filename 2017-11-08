@@ -12,16 +12,12 @@ Get-Disk
 #Paso a paso  el ejercicio de sistema de archivos leyendo operaciones de fichero
 #https://github.com/jesnino/PowerShell/blob/master/Ficheros/EjemplosLeerOperacionesTareasBasicasII.ps1
 
-#Subir a un servidor el contenido generado en PowerShell
-#https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
-#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
-
 #Conocer la extensión de un fichero en Linux
 file fichero
 
 #Introducción a buscar ficheros
 #https://github.com/jesnino/Bash/blob/master/Ficheros/EjerciciosFicherosBuscar.sh
 
-#Introducción a bucles en Linux
-#https://www.jesusninoc.com/2015/07/13/bucles-2/
-#https://www.jesusninoc.com/2016/01/02/for-loop-examples/
+#Subir a un servidor el contenido generado en PowerShell
+#https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
+#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
