@@ -5,7 +5,15 @@ sudo apt-get install icecast2 darkice
 #Descargar un mp4 y un mp3 en la carpeta /usr/share/icecast2/web
 wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 #Reproducir ficheros desde el móvil
-http://192.168.1.162:8000/sound.mp3
+#http://192.168.1.162:8000/sound.mp3
+
+######################################################################
+
+#Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC
+#https://www.jesusninoc.com/2017/10/07/livestreamer/
+
+#Download videos from YouTube (youtube-dl)
+#https://www.jesusninoc.com/2014/10/18/download-videos-youtube/
 
 ######################################################################
 
