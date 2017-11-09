@@ -7,6 +7,9 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 #Reproducir ficheros desde el móvil
 #http://192.168.1.162:8000/sound.mp3
 
+#Número de hilos que ejecuta Icecast
+#https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosHilos.sh
+
 ######################################################################
 
 #Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC
