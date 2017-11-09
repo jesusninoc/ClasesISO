@@ -1,0 +1,20 @@
+######################################################################
+#Analizar la informacion del servicio tal con capturas y comandos de powershell
+#Explica la relación entre servicios, procesos y algo más?
+#Qué te permite realizar la virtaulizacion en sistemas heterogéneos
+#Como harías un script para instalar un gestor virtual y una maqina virtual
+#Es lo mismo ordenar en powershell y luego seleccionar que seleccionar y ordenar
+#Qué cantidad de meomoria tienes en gb en tu equipo?
+#Analiza por qué el porceos tiene tanto concumo de CPU
+#Listar un proceso en linux desde Powershell
+#Convierte el comando systeminfo a cmdlets en PowerShell
+#Posibles preguntas examen de evaluación
+#Guarda un fichero con la siguiente información: procesos que se están ejecutando, añade una línea con tu nombre al fichero y la hora en que has comprobado los procesos (hazlo tres veces y comprueba que se añaden los datos de las tres ejecuciones)
+#Realizar un script que almacene información de cada proceso que se está ejecutando, piensa qué información puede ser interesante
+#Un equipo de la red comienza a realizar comportamientos extraños, realiza un script que pueda detectar qué ocurre y a qué hora
+#Mostrar los servicios que representan comportamientos extraños
+#¿Cómo puedes darte cuenta de que hay un proceso que consume toda la memoria RAM del equipo?
+#Realiza una función de login que almacene los intentos fallidos y correctos
+#Crea una función para hacer un login con dos factores de verificación (incluye comprobar el nombre de usuario)
+#Crea una función que intente localizar los hilos que se crean para un proceso
+######################################################################
