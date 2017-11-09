@@ -1,11 +1,14 @@
 ######################################################################
 #Posibles preguntas examen de evaluación
 ######################################################################
-#Analizar la información del servicio tal con capturas y comandos de powershell.
+#Crear carpetas con información sobre los datos obtenidos del hardware.
+#Carpeta sistemaoperativo con un fichero que tiene la partición donde se ha instalado.
+#Carpeta placa_base y dentro de la carpeta un fichero con información.
+#Analizar la información de un servicio con capturas de pantalla y comandos de PowerShell.
 #Explica la relación entre servicios, procesos y algo más?
 #Qué te permite realizar la virtualización en sistemas heterogéneos.
-#Como harías un script para instalar un gestor virtual y una máqina virtual.
-#Es lo mismo ordenar en Powershell y luego seleccionar que seleccionar y ordenar.
+#Como harías un script para instalar un gestor virtual y una máquina virtual.
+#Es lo mismo ordenar en PowerShell y luego seleccionar que seleccionar y ordenar.
 #Qué cantidad de memoria tienes en GB en tu equipo?
 #Analiza por qué un proceso tiene tanto consumo de CPU.
 #Listar un proceso en Linux desde Powershell.
@@ -18,6 +21,10 @@
 #Realiza una función de login que almacene los intentos fallidos y correctos.
 #Crea una función para hacer un login con dos factores de verificación (incluye comprobar el nombre de usuario).
 #Crea una función que intente localizar los hilos que se crean para un proceso.
+#Guardar un listado con los ficheros que tenemos en la unidad Q.
+#Crear carpetas para cada extensión.
+#Carpeta doc y dentro de la carpeta copiar ficheros con extensión doc.
+#Añadir a cada carpeta doc, txt un listado con los ficheros y además añadir un listado de permisos.
 #Como usuario pedro Crea un fichero con nombre secreto.txt al que únicamente él tenga acceso, tanto de lectura como de escritura.
 #Crea otro fichero, también como usuario juan, con nombre datos.txt al que tengan acceso, tanto para leer como para escribir todos los usuarios que pertenezcan al mismo grupo.  Comprueba como usuario pablo que puedes modificar el fichero.
 #Como usuario juan, crea un fichero con nombre datos.txt al que pueda acceder cualquier usuario para leer su contenido, y cualquier usuario del mismo grupo para leer o escribir.
