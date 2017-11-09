@@ -1,3 +1,42 @@
+######################################################################
+
+#Instalar Icecast is free server software for streaming multimedia
+sudo apt-get install icecast2 darkice
+#Descargar un mp4 y un mp3 en la carpeta /usr/share/icecast2/web
+wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+#Reproducir ficheros desde el móvil
+http://192.168.1.162:8000/sound.mp3
+
+######################################################################
+
+#Simular la transmisión de vídeo entre un cliente y un servidor (streaming)
+#https://www.jesusninoc.com/2016/03/12/simular-la-transmision-de-video-entre-un-cliente-y-un-servidor-streaming/
+
+#Convertir texto a voz en Linux
+#https://www.jesusninoc.com/2016/05/13/convertir-texto-a-voz-en-linux/
+
+#Leer palabras mediante la voz del Sistema Operativo
+#https://www.jesusninoc.com/2016/12/15/leer-palabras-mediante-la-voz-del-sistema-operativo/
+
+#Leer palabras de un fichero y almacenar cada palabra en un fichero de audio mediante la voz del Sistema Operativo
+#https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
+
+#Convertir ficheros de audio a texto
+#https://www.jesusninoc.com/2016/12/25/convertir-ficheros-de-audio-a-texto/
+
+#Convertir la entrada de micrófono a texto
+#https://www.jesusninoc.com/2016/12/26/convertir-la-entrada-de-microfono-a-texto/
+
+######################################################################
+
+#Subir a un servidor el contenido generado en PowerShell
+#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
+
+#Descargar ficheros de un servidor Linux desde PowerShell
+#https://www.jesusninoc.com/2017/11/04/descargar-un-fichero-por-ssh-de-un-servidor-linux-desde-powershell-en-windows/
+
+######################################################################
+
 #Comunicación entre cliente y servidor
 #https://www.jesusninoc.com/2015/02/25/creating-reverse-shell/
 #https://www.jesusninoc.com/2015/02/26/creating-shell/
@@ -9,12 +48,7 @@
 #Servidor desde PowerShell
 #https://www.jesusninoc.com/2017/05/06/crear-un-servidor-web-al-que-se-pueda-acceder-desde-cualquier-parte-de-la-red-privada-con-powershell/
 
-#Subir a un servidor el contenido generado en PowerShell
-#https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
-#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
-
-#Descargar ficheros de un servidor Linux desde PowerShell
-#https://www.jesusninoc.com/2017/11/04/descargar-un-fichero-por-ssh-de-un-servidor-linux-desde-powershell-en-windows/
+######################################################################
 
 #Tcpdump desde PowerShell
 #http://www.thegeekstuff.com/2010/08/tcpdump-command-examples
