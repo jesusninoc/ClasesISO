@@ -13,13 +13,17 @@
 ######################################################################
 #Cifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto
 #https://www.jesusninoc.com/2017/01/23/cifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto/
-######################################################################
-
-######################################################################
 #Cifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto (enviar la clave utilizada en el algoritmo mediante una petición web a un servidor)
 #https://www.jesusninoc.com/2017/05/16/cifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto-enviar-la-clave-utilizada-en-el-algoritmo-mediante-una-peticion-web-a-un-servidor/
 #Descifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto
 #https://www.jesusninoc.com/2017/05/18/descifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto/
+######################################################################
+
+######################################################################
+#Cifrar utilizando una clave secreta
+#https://www.jesusninoc.com/2015/08/18/cifrar-utilizando-una-clave-secreta/
+#Descifrar utilizando una clave secreta
+#https://www.jesusninoc.com/2015/08/20/descifrar-utilizando-una-clave-secreta/
 ######################################################################
 
 ######################################################################
@@ -34,5 +38,5 @@
 
 ######################################################################
 #Cifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto y subirlo por SSH a un servidor Linux
-#
+#https://www.jesusninoc.com/2017/11/13/cifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto-y-subirlo-por-ssh-a-un-servidor-linux/
 ######################################################################
