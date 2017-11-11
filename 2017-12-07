@@ -3,3 +3,12 @@ https://www.jesusninoc.com/2017/09/20/crear-un-fichero-html-con-el-contenido-de-
 
 #Enviar datos a un formulario de Google Docs desde PowerShell (deducir los parámetros que se envían por POST)
 #https://www.jesusninoc.com/2017/04/30/enviar-datos-a-un-formulario-de-google-docs-desde-powershell-deducir-los-parametros-que-se-envian-por-post/
+
+########################################################################################################
+#Descargar imágenes desde Pinterest con PowerShell y analizar con TensorFlow
+
+#Descargar imágenes desde Pinterest con PowerShell
+#https://www.jesusninoc.com/2017/02/21/descargar-imagenes-desde-pinterest-con-powershell/
+
+#Ejecutar un ejemplo de reconocimiento de imágenes con TensorFlow realizando una conexión SSH a un contenedor Docker desde PowerShell en Windows
+#https://www.jesusninoc.com/2017/10/22/ejecutar-un-ejemplo-de-reconocimiento-de-imagenes-con-tensorflow-realizando-una-conexion-ssh-a-un-contenedor-docker-desde-powershell-en-windows/
