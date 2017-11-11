@@ -1,3 +1,7 @@
+####################################
+#Ejercicios sobre hilos
+####################################
+
 Get-Process | select Name,Threads | Out-GridView
 
 (Get-WmiObject -Class Win32_Thread  | Format-Table -Property priority, thread*, User*Time, kernel*Time ).count
@@ -14,14 +18,16 @@ Get-WmiObject -Class Win32_Thread | select handle,ProcessHandle
 (Get-WmiObject win32_process) | Select-Object Name,CommandLine | Format-Custom
 
 ####################################
-Ejercicio
+#Ejercicio
+#Almacenar información sobre los hilos
 ####################################
 (Get-WmiObject -Class Win32_Thread  | Format-Table -Property priority, thread*, User*Time, kernel*Time ).count | Out-File q:\analisis.txt
 Get-Process | select name | Out-File q:\analisis.txt
 Start-Sleep -Seconds 5
 
 ####################################
-Avanzado
+#Ejercicio avanzado
+#Almacenar información sobre hilos de forma continuada
 ####################################
 while(1)
 {
@@ -29,5 +35,5 @@ while(1)
 Get-Process | select name | Out-File q:\analisis.txt -Append
 
 Start-Sleep -Seconds 5
-"Ejecuado"
+"Ejecutado"
 }
