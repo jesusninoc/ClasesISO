@@ -1,6 +1,10 @@
-########################################################################################################
+#########################################################################################################
 #Crear un fichero HTML con el contenido de la tabla posts de WordPress con PowerShell
-https://www.jesusninoc.com/2017/09/20/crear-un-fichero-html-con-el-contenido-de-la-tabla-posts-de-wordpress-con-powershell/
+#https://www.jesusninoc.com/2017/09/20/crear-un-fichero-html-con-el-contenido-de-la-tabla-posts-de-wordpress-con-powershell/
+
+########################################################################################################
+#Ejecutar código PHP desde PowerShell
+#https://www.jesusninoc.com/2017/03/01/ejecutar-codigo-php-desde-powershell/
 
 ########################################################################################################
 #Enviar datos a un formulario de Google Docs desde PowerShell (deducir los parámetros que se envían por POST)
