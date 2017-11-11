@@ -40,14 +40,23 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 
 ######################################################################
 
-#Autenticarse en un router de fibra óptica MitraStar de Movistar y ver las reglas del firewall
-#https://www.jesusninoc.com/2017/04/13/autenticarse-en-un-router-de-fibra-optica-mitrastar-de-movistar-y-ver-las-reglas-del-firewall/
-
 #Conectarse por SSH al router de fibra óptica MitraStar de Movistar desde PowerShell
 #https://www.jesusninoc.com/2017/11/16/conectarse-por-ssh-al-router-de-fibra-optica-mitrastar-de-movistar-desde-powershell/
 
 #Ver los procesos que se están ejecutando en el router de fibra óptica MitraStar de Movistar desde PowerShell
 #https://www.jesusninoc.com/2017/11/17/ver-los-procesos-que-se-estan-ejecutando-en-el-router-de-fibra-optica-mitrastar-de-movistar-desde-powershell/
+
+#Autenticarse en un router de fibra óptica MitraStar de Movistar y ver una lista de llamadas perdidas
+#https://www.jesusninoc.com/2017/04/10/autenticarse-en-un-router-de-fibra-optica-mitrastar-de-movistar-y-ver-una-lista-de-llamadas-perdidas/
+
+#Autenticarse en un router de fibra óptica MitraStar de Movistar y ver las reglas del firewall
+#https://www.jesusninoc.com/2017/04/13/autenticarse-en-un-router-de-fibra-optica-mitrastar-de-movistar-y-ver-las-reglas-del-firewall/
+
+#Autenticarse en un router de fibra óptica MitraStar de Movistar y ver las asignaciones DHCP
+#https://www.jesusninoc.com/2017/05/14/autenticarse-en-un-router-de-fibra-optica-mitrastar-de-movistar-y-ver-las-asignaciones-dhcp/
+
+#Autenticarse en un router de fibra óptica MitraStar de Movistar y ver la tabla ARP
+#https://www.jesusninoc.com/2017/05/10/autenticarse-en-un-router-de-fibra-optica-mitrastar-de-movistar-y-ver-la-tabla-arp/
 
 ######################################################################
 
