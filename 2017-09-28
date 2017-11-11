@@ -26,6 +26,10 @@ gc .\ejemplo2.txt
 #Guardar un valor aleatorio en un fichero
 (Get-Random (1..5)) | Out-File aleatorio.txt
 
+################################################################################################
+#Parte especial de la clase (conexión con Linux)
+################################################################################################
+
 #Guardar un fichero html preguntando al usuario qué título quiere
 "<html><title>"+(Read-Host "Introduzca título")+"</title></html>" | Out-File web.html
 start chrome .\web.html
