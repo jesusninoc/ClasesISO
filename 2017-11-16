@@ -40,6 +40,14 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 
 ######################################################################
 
+#Autenticarse en un router de fibra óptica MitraStar de Movistar y ver las reglas del firewall
+#https://www.jesusninoc.com/2017/04/13/autenticarse-en-un-router-de-fibra-optica-mitrastar-de-movistar-y-ver-las-reglas-del-firewall/
+
+#Conectarse por SSH al router de fibra óptica MitraStar de Movistar desde PowerShell
+#https://www.jesusninoc.com/2017/11/16/conectarse-por-ssh-al-router-de-fibra-optica-mitrastar-de-movistar-desde-powershell/
+
+######################################################################
+
 #Subir a un servidor el contenido generado en PowerShell
 #https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
 
