@@ -58,6 +58,29 @@ Write-Host "ELIMINAR"
 ######################################################################
 #https://github.com/jesnino/PowerShell/blob/master/Ficheros/EjemplosLeerOperacionesTareasBasicasII.ps1
 
+########################################################
+$a=Read-Host "Introduzca operación"
+switch($a){
+'+'{
+echo Suma
+break
+}
+}
+########################################################
+$a=Read-Host "Introduzca operación"
+switch($a){
+'+'{
+suma
+break
+}
+}
+
+function suma()
+{
+2+3
+}
+########################################################
+
 ######################################################################
 #If en Linux
 ######################################################################
