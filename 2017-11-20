@@ -1,3 +1,9 @@
 #Introducción a bucles en Linux
 #https://www.jesusninoc.com/2015/07/13/bucles-2/
 #https://www.jesusninoc.com/2016/01/02/for-loop-examples/
+
+#Fichero en PowerShell
+#Tienen atributos que se pueden listar (show hidden files)
+#https://www.jesusninoc.com/2014/11/23/show-hidden-files/
+#Limitar la recursividad en Get-ChildItem con el parámetro -Depth
+#https://www.jesusninoc.com/2017/11/11/limitar-la-recursividad-en-get-childitem-con-el-parametro-depth/
