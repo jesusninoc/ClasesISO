@@ -23,6 +23,13 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 #Simular la transmisión de vídeo entre un cliente y un servidor (streaming)
 #https://www.jesusninoc.com/2016/03/12/simular-la-transmision-de-video-entre-un-cliente-y-un-servidor-streaming/
 
+######################################################################
+
+#Enviar un vídeo MP4 entre dos Linux mediante Netcat
+#https://www.jesusninoc.com/2017/11/12/enviar-un-video-mp4-entre-dos-linux-mediante-netcat/
+
+######################################################################
+
 #Convertir texto a voz en Linux
 #https://www.jesusninoc.com/2016/05/13/convertir-texto-a-voz-en-linux/
 
@@ -31,6 +38,8 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 
 #Leer palabras de un fichero y almacenar cada palabra en un fichero de audio mediante la voz del Sistema Operativo
 #https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
+
+######################################################################
 
 #Convertir ficheros de audio a texto
 #https://www.jesusninoc.com/2016/12/25/convertir-ficheros-de-audio-a-texto/
