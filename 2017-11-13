@@ -48,3 +48,21 @@ Write-Host $user
 }
 
 ######################################################################
+
+######################################################################
+#Preparar clase para el jueves que viene
+######################################################################
+
+######################################################################
+
+#Instalar Icecast is free server software for streaming multimedia
+sudo apt-get install icecast2 darkice
+#Descargar un mp4 y un mp3 en la carpeta /usr/share/icecast2/web
+wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+#Reproducir ficheros desde el móvil
+#http://192.168.1.162:8000/sound.mp3
+
+#Número de hilos que ejecuta Icecast
+#https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosHilos.sh
+
+######################################################################
