@@ -12,14 +12,6 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 
 ######################################################################
 
-#Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC
-#https://www.jesusninoc.com/2017/10/07/livestreamer/
-
-#Download videos from YouTube (youtube-dl)
-#https://www.jesusninoc.com/2014/10/18/download-videos-youtube/
-
-######################################################################
-
 #Simular la transmisión de vídeo entre un cliente y un servidor (streaming)
 #https://www.jesusninoc.com/2016/03/12/simular-la-transmision-de-video-entre-un-cliente-y-un-servidor-streaming/
 
@@ -27,6 +19,14 @@ wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
 
 #Enviar un vídeo MP4 entre dos Linux mediante Netcat
 #https://www.jesusninoc.com/2017/11/12/enviar-un-video-mp4-entre-dos-linux-mediante-netcat/
+
+######################################################################
+
+#Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC
+#https://www.jesusninoc.com/2017/10/07/livestreamer/
+
+#Download videos from YouTube (youtube-dl)
+#https://www.jesusninoc.com/2014/10/18/download-videos-youtube/
 
 ######################################################################
 
