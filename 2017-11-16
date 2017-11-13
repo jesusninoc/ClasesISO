@@ -1,5 +1,18 @@
 ######################################################################
 
+#Permissions
+
+chmod #- modify file access rights
+su #- temporarily become the superuser
+sudo #- temporarily become the superuser
+chown #- change file ownership
+chgrp #- change a file's group ownership
+umask #- mask
+
+######################################################################
+#Clase jueves especial
+######################################################################
+
 #Instalar Icecast is free server software for streaming multimedia
 sudo apt-get install icecast2 darkice
 #Descargar un mp4 y un mp3 en la carpeta /usr/share/icecast2/web
