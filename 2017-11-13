@@ -49,7 +49,7 @@ Write-Host $user
 
 ######################################################################
 
-#Permisos
+#Permisos en Linux
 #- - -	= 0	no se tiene ningún permiso
 #- - x	= 1	solo permiso de ejecución
 #- w -	= 2	solo permiso de escritura
@@ -58,6 +58,16 @@ Write-Host $user
 #r - x	= 5	permisos de lectura y ejecución
 #r w -	= 6	permisos de lectura y escritura
 #r w x	= 7	todos los permisos establecidos, lectura, escritura y ejecución
+
+#Permisos especiales en Linux
+#- - - - - - - - -	= 0	Predeterminado, sin permisos especiales. No se requiere indicar.
+#- - - - - - - - t	= 1	Bit de persistencia, sticky bit
+#- - - - - s - - -	= 2	Bit sgid de grupo
+#- - - - - s - - t	= 3	Bit sgid y sticky
+#- - s - - - - - -	= 4	Bit suid
+#- - s - - - - - t	= 5	Bit suid y sticky
+#- - s - - s - - -	= 6	Bit suid y sgid
+#- - s - - s - - t	= 7	Bit suid, sgid y sticky
 
 ######################################################################
 
