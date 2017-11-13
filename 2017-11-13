@@ -49,6 +49,18 @@ Write-Host $user
 
 ######################################################################
 
+#Permisos
+#- - -	= 0	no se tiene ningún permiso
+#- - x	= 1	solo permiso de ejecución
+#- w -	= 2	solo permiso de escritura
+#- w x	= 3	permisos de escritura y ejecución
+#r - -	= 4	solo permiso de lectura
+#r - x	= 5	permisos de lectura y ejecución
+#r w -	= 6	permisos de lectura y escritura
+#r w x	= 7	todos los permisos establecidos, lectura, escritura y ejecución
+
+######################################################################
+
 ######################################################################
 #Preparar clase para el jueves que viene
 ######################################################################
