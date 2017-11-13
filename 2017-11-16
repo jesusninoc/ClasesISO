@@ -1,7 +1,6 @@
 ######################################################################
 
 #Permissions
-
 chmod #- modify file access rights
 su #- temporarily become the superuser
 sudo #- temporarily become the superuser
