@@ -1,42 +1,36 @@
 ######################################################################
-#Grabar audio desde la línea de comandos con Sound eXchange (SoX)
-#https://www.jesusninoc.com/2017/02/05/grabar-audio-desde-la-linea-de-comandos-con-sound-exchange-sox/
-######################################################################
+
+#Convertir texto a voz en Linux
+#https://www.jesusninoc.com/2016/05/13/convertir-texto-a-voz-en-linux/
+
+#Leer palabras mediante la voz del Sistema Operativo
+#https://www.jesusninoc.com/2016/12/15/leer-palabras-mediante-la-voz-del-sistema-operativo/
+
+#Leer palabras de un fichero y almacenar cada palabra en un fichero de audio mediante la voz del Sistema Operativo
+#https://www.jesusninoc.com/2016/12/24/leer-palabras-de-un-fichero-y-almacenar-cada-palabra-en-un-fichero-de-audio-mediante-la-voz-del-sistema-operativo/
 
 ######################################################################
-#Algoritmo de cifrado sencillo
-#https://www.jesusninoc.com/2016/03/06/algoritmo-de-cifrado-sencillo-2/
-#Algoritmo de descifrado sencillo
-#https://www.jesusninoc.com/2016/03/07/algoritmo-de-descifrado-sencillo-2/
-######################################################################
+
+#Convertir ficheros de audio a texto
+#https://www.jesusninoc.com/2016/12/25/convertir-ficheros-de-audio-a-texto/
+
+#Convertir la entrada de micrófono a texto
+#https://www.jesusninoc.com/2016/12/26/convertir-la-entrada-de-microfono-a-texto/
 
 ######################################################################
-#Cifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto
-#https://www.jesusninoc.com/2017/01/23/cifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto/
-#Cifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto (enviar la clave utilizada en el algoritmo mediante una petición web a un servidor)
-#https://www.jesusninoc.com/2017/05/16/cifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto-enviar-la-clave-utilizada-en-el-algoritmo-mediante-una-peticion-web-a-un-servidor/
-#Descifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto
-#https://www.jesusninoc.com/2017/05/18/descifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto/
-######################################################################
+
+#Comunicación entre cliente y servidor
+#https://www.jesusninoc.com/2015/02/25/creating-reverse-shell/
+#https://www.jesusninoc.com/2015/02/26/creating-shell/
+#https://www.jesusninoc.com/2017/10/18/crear-una-comunicacion-entre-un-cliente-en-bash-de-linux-y-un-servidor-en-powershell-de-windows-utilizando-tcpip/
+#https://www.jesusninoc.com/2017/10/26/crear-una-comunicacion-entre-un-cliente-en-powershell-de-windows-y-un-servidor-en-bash-de-linux-utilizando-tcpip/
+#https://www.jesusninoc.com/2016/04/30/simular-el-funcionamiento-de-un-servidor-web-utilizando-netcat-en-linux/
+#https://www.jesusninoc.com/2009/06/06/ejecutar-nc-exe-cmd-exe-remotamente/
+
+#Servidor desde PowerShell
+#https://www.jesusninoc.com/2017/05/06/crear-un-servidor-web-al-que-se-pueda-acceder-desde-cualquier-parte-de-la-red-privada-con-powershell/
 
 ######################################################################
-#Cifrar utilizando una clave secreta
-#https://www.jesusninoc.com/2015/08/18/cifrar-utilizando-una-clave-secreta/
-#Descifrar utilizando una clave secreta
-#https://www.jesusninoc.com/2015/08/20/descifrar-utilizando-una-clave-secreta/
-######################################################################
 
-######################################################################
-#Aproximación al cifrado y descifrado en PowerShell
-#https://www.jesusninoc.com/2017/02/23/aproximacion-al-cifrado-y-descifrado-en-powershell/
-######################################################################
-
-######################################################################
-#Subir un fichero por SSH a un servidor Linux desde PowerShell en Windows
-#https://www.jesusninoc.com/2017/11/02/subir-un-fichero-por-ssh-a-un-servidor-linux-desde-powershell-en-windows/
-######################################################################
-
-######################################################################
-#Cifrar con un algoritmo sencillo el nombre y el contenido de un fichero de texto y subirlo por SSH a un servidor Linux
-#https://www.jesusninoc.com/2017/11/13/cifrar-con-un-algoritmo-sencillo-el-nombre-y-el-contenido-de-un-fichero-de-texto-y-subirlo-por-ssh-a-un-servidor-linux/
-######################################################################
+#Tcpdump desde PowerShell
+#http://www.thegeekstuff.com/2010/08/tcpdump-command-examples
