@@ -1,0 +1,34 @@
+#####################################################################################
+#Introducción a las funciones
+#####################################################################################
+
+#Introducir pass y ver si es correcto
+function validacion(){
+$user=Read-Host
+$pass=Read-Host
+if($user -eq "pepito" -and $pass -eq "secreto" -and (gc q:\fich.txt) -eq 1234)
+{
+Write-Host $user
+}
+}
+
+validacion
+
+#####################################################################################
+#Función con parámetros
+#####################################################################################
+
+function sumarp($parametro1, $parametro2)
+{
+return $parametro1+$parametro2
+}
+#Ejecutar la función:
+sumarp 5 4
+
+#Función sin parámetros
+function sumar
+{
+$args[0]+$args[1]
+}
+#Ejecutar la función:
+sumar 5 4
