@@ -2,7 +2,9 @@
 #https://www.jesusninoc.com/2015/07/13/bucles-2/
 #https://www.jesusninoc.com/2016/01/02/for-loop-examples/
 
-#Fichero en PowerShell
+#Ficheros en PowerShell
+#Crear varios directorios de golpe
+#https://github.com/jesnino/PowerShell/blob/master/Ficheros/SolucionEjerciosFicherosProcesos.ps1
 #Tienen atributos que se pueden listar (show hidden files)
 #https://www.jesusninoc.com/2014/11/23/show-hidden-files/
 #Limitar la recursividad en Get-ChildItem con el parámetro -Depth
