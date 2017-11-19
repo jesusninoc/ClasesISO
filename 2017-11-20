@@ -9,3 +9,6 @@
 #https://www.jesusninoc.com/2014/11/23/show-hidden-files/
 #Limitar la recursividad en Get-ChildItem con el parámetro -Depth
 #https://www.jesusninoc.com/2017/11/11/limitar-la-recursividad-en-get-childitem-con-el-parametro-depth/
+
+#Permisos en PowerShell
+#https://www.jesusninoc.com/2016/09/10/obtener-los-descriptores-de-seguridad-de-todos-los-ficheros-de-una-unidad/
