@@ -13,5 +13,19 @@
 #Limitar la recursividad en Get-ChildItem con el parámetro -Depth
 #https://www.jesusninoc.com/2017/11/11/limitar-la-recursividad-en-get-childitem-con-el-parametro-depth/
 
+#Repaso de ficheros
+#TAREAS BÁSICAS II (SISTEMA DE ARCHIVOS)
+#Crear o modificar un archivo..................New-item
+#Crear un directorio...........................New-item
+#Ver el contenido de un archivo................Get-Content
+#Acceder al contenido de un directorio.........Set-Location
+#Listar el contenido de un directorio..........Get-Childitem
+#Eliminar un archivo...........................Remove-Item
+#Eliminar un directorio........................Remove-Item
+#Copiar un archivo o un directorio.............Copy-Item
+#Mover un archivo o un directorio..............Move-Item
+#Renombrar un archivo o un directorio..........Rename-Item
+#Imprimir un archivo...........................Out-Printer
+
 #Permisos en PowerShell
 #https://www.jesusninoc.com/2016/09/10/obtener-los-descriptores-de-seguridad-de-todos-los-ficheros-de-una-unidad/
