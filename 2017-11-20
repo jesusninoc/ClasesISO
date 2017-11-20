@@ -4,14 +4,19 @@
 
 #Permisos en Linux
 #Ver umask
+#https://github.com/jesnino/Bash/blob/master/Permisos/EjercicioPermisos.sh
 
+#######################
 #Ficheros en PowerShell
 #Crear varios directorios de golpe
 #https://github.com/jesnino/PowerShell/blob/master/Ficheros/SolucionEjerciosFicherosProcesos.ps1
+#Ejercicio de PowerShell | Crear directorios con información de procesos
+https://www.youtube.com/watch?v=CibNbK9sp8A&feature=youtu.be
 #Tienen atributos que se pueden listar (show hidden files)
 #https://www.jesusninoc.com/2014/11/23/show-hidden-files/
 #Limitar la recursividad en Get-ChildItem con el parámetro -Depth
 #https://www.jesusninoc.com/2017/11/11/limitar-la-recursividad-en-get-childitem-con-el-parametro-depth/
+#######################################################################################################
 
 #Repaso de ficheros
 #TAREAS BÁSICAS II (SISTEMA DE ARCHIVOS)
