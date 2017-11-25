@@ -8,6 +8,11 @@ https://www.jesusninoc.com/2008/10/01/ejemplos-de-ejecucion-de-comandos-en-bash-
 
 #####################################################################################
 #Introducción a las funciones
+#https://github.com/jesnino/PowerShell/tree/master/Funciones
+#https://github.com/jesnino/PowerShell/blob/master/Funciones/EjemplosFuncionesAvanzadasLogin.ps1
+#https://github.com/jesnino/PowerShell/blob/master/Funciones/EjerciciosFuncionesAvanzadasLogin.ps1
+#https://github.com/jesnino/PowerShell/blob/master/Funciones/EjerciciosFuncionesAvanzadasLoginHash.ps1
+#https://github.com/jesnino/PowerShell/blob/master/Funciones/EjerciciosFuncionesLogin.ps1
 #####################################################################################
 
 #Introducir pass y ver si es correcto
