@@ -40,3 +40,15 @@ $args[0]+$args[1]
 }
 #Ejecutar la función:
 sumar 5 4
+
+#Introducir pass y ver si es correcto
+function validacion($parametro1, $parametro2){
+$user=$parametro1
+$pass=$parametro2
+if($user -eq "pepito" -and $pass -eq "secreto")
+{
+Write-Host $user "validado correctamente"
+}
+}
+validacion pepito sec
+validacion pepito secreto
