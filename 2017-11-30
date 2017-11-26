@@ -36,7 +36,7 @@ Set-SCPFile -LocalFile .\saludo.wav -ComputerName 192.168.1.161 -RemotePath ./f
 
 #########################################################################################################
 
-#Enviar mediante señaes de radio el fichero que hemos subido
+#Enviar mediante señales de radio el fichero que hemos subido
 #Ejecutar fm_transmitter (use Raspberry Pi as FM transmitter)
 
 #Iniciar una sesión SSH
