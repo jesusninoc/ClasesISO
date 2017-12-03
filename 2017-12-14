@@ -1,0 +1,54 @@
+####################################################################################################
+#ENVIAR PREGUNTAS
+####################################################################################################
+#Leer el texto contenido dentro de un fichero mediante la voz del Sistema Operativo
+Add-Type -AssemblyName System.Speech
+
+#Añadir textos para que se lean
+"¿Qué tal?" | Out-File conversacion.txt
+"¿Cuántos años tienes?" | Out-File conversacion.txt -Append
+"¿Tienes novia?" | Out-File conversacion.txt -Append
+
+#Leer los textos mediante la voz del Sistema Operativo
+gc conversacion.txt | %{
+$_
+(New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer).Speak($_)
+Start-Sleep -Seconds 3
+}
+
+####################################################################################################
+#RECONOCIMIENTO Y RESPUESTA
+####################################################################################################
+#Crear objeto para reconocimiento
+Add-Type -AssemblyName System.Speech
+$rec = New-Object 'System.Speech.Recognition.SpeechRecognitionEngine'
+$rec.LoadGrammar((New-Object 'System.Speech.Recognition.DictationGrammar'))
+$rec.SetInputToDefaultAudioDevice()
+
+#Añadir posibles respuestas
+"tal|Bien y tú?" | Out-File frases.txt
+"años|40" | Out-File frases.txt -Append
+"novia|Sí" | Out-File frases.txt -Append
+"novio|Sí" | Out-File frases.txt -Append
+
+#Crear un ArrayList con las respuestas
+[System.Collections.ArrayList]$arraylist = New-Object System.Collections.ArrayList
+ForEach ($elemento in (gc .\frases.txt).split("|")){[void]$arraylist.Add($elemento)}
+
+#Comenzar a reconocer los audios que vayan llegando y comprobar qué mensajes llegan
+do{
+comprobar $rec.Recognize().Text
+}while(1)
+
+#Función para comprobar si el mensaje que llega está entre las posibles respuestas
+#La función responde mediante la voz del Sistema Operativo
+function comprobar($frase){
+    [System.Collections.ArrayList]$arraylist2 = New-Object System.Collections.ArrayList
+    ForEach ($elemento in $frase.split(" ")){[void]$arraylist2.Add($elemento)}
+
+    $arraylist2 | %{
+        if($arraylist.IndexOf($_) -ne -1){
+            (New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer).Speak($arraylist[($arraylist.IndexOf($_))+1])
+        }
+    }
+}
