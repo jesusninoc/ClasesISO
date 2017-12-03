@@ -52,3 +52,15 @@ function comprobar($frase){
         }
     }
 }
+
+####################################################################################################
+#SOX
+####################################################################################################
+#Partir un fichero WAV dividiendo por segundos
+#https://www.jesusninoc.com/2016/03/28/partir-un-fichero-wav-dividiendo-por-segundos/
+
+#Partir un fichero WAV dividiendo por silencios
+#https://www.jesusninoc.com/2015/07/25/partir-un-fichero-wav-dividiendo-por-silencios/
+
+#Grabar audio desde la línea de comandos con Sound eXchange (SoX)
+#https://www.jesusninoc.com/2017/02/05/grabar-audio-desde-la-linea-de-comandos-con-sound-exchange-sox/
