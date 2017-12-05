@@ -1,9 +1,57 @@
+#############################################################
 #IoT
+#############################################################
 #https://upload.wikimedia.org/wikipedia/commons/f/f2/Internet_de_las_Cosas.jpg
 
+#############################################################
 #Raspberry Pi
+#############################################################
 #https://www.raspberrypi.org/downloads/
 #https://developer.microsoft.com/en-us/windows/iot/getstarted
 
+#############################################################
 #Instalar PowerShell en Ubuntu modo texto
+#############################################################
 #https://www.jesusninoc.com/2017/09/18/instalar-powershell-en-ubuntu-modo-texto/
+
+#############################################################
+#Ejercicio PowerShell
+#############################################################
+
+#Generar un número aleatorio entre 1 y 100
+Get-Random (1..100)
+
+#Pedir al usuario un número una vez e intentar adivinar el número aleatorio que se ha generado
+$numeroadivinar=Get-Random (1..100)
+$a=Read-Host "Intentar adivinar un número, introduzca número"
+if($numeroadivinar -eq $a)
+{
+"Número adivinado"
+}
+
+#Pedir al usuario números para intentar adivinar un número aleatorio entre 1 y 100
+$numeroadivinar=Get-Random (1..100)
+while($true)
+{
+$a=Read-Host "Intentar adivinar un número, introduzca número"
+if($numeroadivinar -eq $a)
+{
+"Número adivinado"
+#Si se adivina el número salir del bucle while con break
+break
+}
+}
+
+#Pedir al usuario números para intentar adivinar un número aleatorio entre 1 y 100, ofrecer ayuda al usuario para adivinar el número
+$numeroadivinar=Get-Random (1..100)
+do
+{
+$a=Read-Host "Intentar adivinar un número, introduzca número"
+switch($numeroadivinar)
+{
+{$_ -le $a -and $_ -ge 1}{Write-Host "No adivinado, el número es menor que $a" -ForegroundColor red}
+{$_ -eq $a}{Write-Host "Número adivinado" -BackgroundColor Blue;break}
+{$_ -ge $a -and $_ -le 100}{Write-Host "No adivinado, el número es mayor que $a" -ForegroundColor red}
+}
+#Si el número está adivinado acabar de preguntar al usuario
+}while(!($numeroadivinar -eq $a))
