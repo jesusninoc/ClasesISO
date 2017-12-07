@@ -1,12 +1,12 @@
 #######################################################################################################
-#Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
-#Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
-#Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
-#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
-#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+#1. Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+#2. Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+#3. Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+#4. Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+#5. Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
 #######################################################################################################
 
-#Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+#1. Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
 
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
@@ -25,7 +25,7 @@ $speechRecogEng.Recognize()
 
 #######################################################################################################
 
-#Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+#2. Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
 
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
@@ -44,7 +44,7 @@ $speechRecogEng.Recognize()
 
 #######################################################################################################
 
-#Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+#3. Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
 
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
@@ -67,7 +67,7 @@ $speechRecogEng.Recognize()
 
 #######################################################################################################
 
-#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+#4. Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
 
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
@@ -89,7 +89,7 @@ $speechRecogEng.Recognize()
 
 #######################################################################################################
 
-#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+#5. Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
 
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
