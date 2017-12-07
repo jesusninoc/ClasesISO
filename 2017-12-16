@@ -111,6 +111,3 @@ $speechRecogEng.Recognize()
 Start-Sleep -Seconds 2
 #Mientras que haya audio
 }while($speechRecogEng.AudioFormat)
-
-
-
