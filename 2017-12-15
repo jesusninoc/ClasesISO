@@ -1,0 +1,56 @@
+#######################################################################################################
+#Pronunciar un texto mediante el motor de síntesis de voz en PowerShell
+#Pronunciar un texto cambiando la voz del motor de síntesis de voz en PowerShell
+#Guardar en un fichero de audio un texto pronunciado mediante el motor de síntesis de voz en PowerShell
+#######################################################################################################
+
+#Pronunciar un texto mediante el motor de síntesis de voz en PowerShell
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz
+$speaker = [System.Speech.Synthesis.SpeechSynthesizer]::new()
+
+#Obtener información sobre la voz actual del motor de síntesis de voz
+$speaker.Voice
+
+#Pronunciar el texto
+$speaker.Speak("Hola, hola. ¿Qué tal estás?. ¿Qué edad tienes?.")
+
+#######################################################################################################
+
+#Pronunciar un texto cambiando la voz del motor de síntesis de voz en PowerShell
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz
+$speaker = [System.Speech.Synthesis.SpeechSynthesizer]::new()
+
+#Cambiar la voz actual del motor de síntesis de voz
+$speaker.SelectVoice("Microsoft Helena Desktop")
+
+#Pronunciar el texto
+$speaker.Speak("Hola, hola. ¿Qué tal estás?. ¿Qué edad tienes?.")
+
+#######################################################################################################
+
+#Guardar en un fichero de audio un texto pronunciado mediante el motor de síntesis de voz en PowerShell
+
+#Cargar el espacio de nombres System.Speech que contiene los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz
+$speaker = [System.Speech.Synthesis.SpeechSynthesizer]::new()
+
+#Configurar el motor de síntesis de voz para guardar en un fichero de audio
+$speaker.SetOutputToWaveFile("saludos.wav")
+
+#Pronunciar el texto
+$speaker.Speak("Hola, hola. ¿Qué tal estás?. ¿Qué edad tienes?.")
+
+#Configurar el motor de síntesis de voz para enviar el resultado en el dispositivo de audio predeterminado
+$speaker.SetOutputToDefaultAudioDevice()
+
+.\saludos.wav
