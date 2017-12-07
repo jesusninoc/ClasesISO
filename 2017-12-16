@@ -3,7 +3,7 @@
 #Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
 #Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
 #Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
-#Reconocer una palabra con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
 #######################################################################################################
 
 #Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
@@ -89,7 +89,28 @@ $speechRecogEng.Recognize()
 
 #######################################################################################################
 
-#Reconocer una palabra con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz que permite a PowerShell escuchar voz
+$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
+
+#Crear las restricciones para una gramática de reconocimiento de voz
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.GrammarBuilder]::new("Hola"))
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.GrammarBuilder]::new("Tal"))
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.GrammarBuilder]::new("Edad"))
+
+#Configurar el motor de síntesis de voz para recibir la entrada desde un archivo de formato de sonido (.wav)
+$speechRecogEng.SetInputToWaveFile(".\holas2.wav")
+
+do{
+#Inicia una operación de reconocimiento de voz sincrónico
+$speechRecogEng.Recognize()
+Start-Sleep -Seconds 2
+#Mientras que haya audio
+}while($speechRecogEng.AudioFormat)
 
 
 
