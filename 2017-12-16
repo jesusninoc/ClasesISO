@@ -1,0 +1,95 @@
+#######################################################################################################
+#Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+#Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+#Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+#Reconocer una palabra con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+#######################################################################################################
+
+#Reconocer una palabra con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz que permite a PowerShell escuchar voz
+$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
+
+#Representa una gramática de reconocimiento de voz utilizada para el dictado de texto sin formato
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.DictationGrammar]::new())
+
+#Configurar el motor de síntesis de voz para recibir la entrada desde el dispositivo de audio predeterminado
+$speechRecogEng.SetInputToDefaultAudioDevice()
+
+#Inicia una operación de reconocimiento de voz sincrónico
+$speechRecogEng.Recognize()
+
+#######################################################################################################
+
+#Reconocer una palabra contenida en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz que permite a PowerShell escuchar voz
+$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
+
+#Representa una gramática de reconocimiento de voz utilizada para el dictado de texto sin formato
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.DictationGrammar]::new())
+
+#Configurar el motor de síntesis de voz para recibir la entrada desde un archivo de formato de sonido (.wav)
+$speechRecogEng.SetInputToWaveFile(".\holas.wav")
+
+#Inicia una operación de reconocimiento de voz sincrónico
+$speechRecogEng.Recognize()
+
+#######################################################################################################
+
+#Reconocer varias palabras con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para el dictado de texto sin formato
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz que permite a PowerShell escuchar voz
+$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
+
+#Representa una gramática de reconocimiento de voz utilizada para el dictado de texto sin formato
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.DictationGrammar]::new())
+
+#Configurar el motor de sínteris de voz para recibir la entrada desde el dispositivo de audio predeterminado
+$speechRecogEng.SetInputToDefaultAudioDevice()
+
+do
+{
+#Inicia una operación de reconocimiento de voz sincrónico
+$speechRecogEng.Recognize()
+#Mientras que haya audio
+}while($speechRecogEng.AudioFormat)
+
+#######################################################################################################
+
+#Reconocer varias palabras contenidas en un fichero de audio con el motor de síntesis de voz en PowerShell utilizando una gramática de reconocimiento de voz para texto sin formato
+
+#Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
+[void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
+
+#Crear un objeto de tipo motor de síntesis de voz que permite a PowerShell escuchar voz
+$speechRecogEng = [System.Speech.Recognition.SpeechRecognitionEngine]::new()
+
+#Representa una gramática de reconocimiento de voz utilizada para el dictado de texto sin formato
+$speechRecogEng.LoadGrammar([System.Speech.Recognition.DictationGrammar]::new())
+
+#Configurar el motor de síntesis de voz para recibir la entrada desde un archivo de formato de sonido (.wav)
+$speechRecogEng.SetInputToWaveFile(".\holas2.wav")
+
+do{
+#Inicia una operación de reconocimiento de voz sincrónico
+$speechRecogEng.Recognize()
+#Mientras que haya audio
+}while($speechRecogEng.AudioFormat)
+
+#######################################################################################################
+
+#Reconocer una palabra con el motor de síntesis de voz en PowerShell creando las restricciones de una gramática de reconocimiento de voz
+
+
+
