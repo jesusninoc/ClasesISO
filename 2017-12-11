@@ -39,3 +39,27 @@ switch($numeroadivinar)
 }
 #Si el número está adivinado acabar de preguntar al usuario
 }while(!($numeroadivinar -eq $a))
+
+#########################################################################
+#Otras opciones
+#########################################################################
+#Generar letras aleatorias
+#https://www.jesusninoc.com/2017/10/11/generar-letras-aleatorias/
+
+#Ejercicios de PowerShell: mostrar y escribir una letra aleatoria por consola en el menor tiempo posible con PowerShell
+#https://www.jesusninoc.com/2017/09/02/ejercicios-de-powershell-mostrar-y-escribir-una-letra-aleatoria-por-consola-en-el-menor-tiempo-posible-con-powershell/
+
+#Generar palabras aleatorias con letras aleatorias
+#https://www.jesusninoc.com/2017/01/07/generar-palabras-aleatorias-con-letras-aleatorias/
+
+#Ejercicios de PowerShell: mostrar y escribir una palabra aleatoria por consola en el menor tiempo posible con PowerShell
+#https://www.jesusninoc.com/2017/09/05/ejercicios-de-powershell-mostrar-y-escribir-una-palabra-aleatoria-por-consola-en-el-menor-tiempo-posible-con-powershell/
+
+#Ejercicios de PowerShell: crear el juego de piedra, papel o tijera
+#https://www.jesusninoc.com/2017/03/01/ejercicios-de-powershell-crear-el-juego-de-piedra-papel-o-tijera/
+
+#Ejercicios de PowerShell: crear el juego de piedra, papel o tijera (script en una línea)
+#https://www.jesusninoc.com/2017/03/02/ejercicios-de-powershell-crear-el-juego-de-piedra-papel-o-tijera-script-en-una-linea/
+
+#Tres en raya
+private int[][] lineaGanadora = new int[][] { { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 }, { 0, 3, 6 }, { 1, 4, 7 }, { 2, 5, 8 }, { 0, 4, 8 }, { 2, 4, 6 } };
