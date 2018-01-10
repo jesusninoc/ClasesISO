@@ -3,8 +3,7 @@
 ###############################################################################################################
 
 #Linux
-#Instalación con dpkg
-#https://github.com/jesusninoc/Bash/blob/master/Programas/EjerciciosProgramas.sh
+#Instalación con dpkg y apt-get
 
 #Windows
 #Instalar en PowerShell 5
