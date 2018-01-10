@@ -1,11 +1,4 @@
 #Instalar con aptitude
 aptitude update && aptitude install -y a b c d e
 
-#Aplicaciones instaladas
-apt list --installed
-
-#Más sobre instalación con dpkg
-#https://github.com/jesusninoc/Bash/blob/master/Programas/EjerciciosProgramas.sh
-
-#Instalar en PowerShell 5
-https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
+#Script para instalar leyendo de fichero (Debian y Fedora)
