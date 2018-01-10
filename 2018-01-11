@@ -3,10 +3,7 @@
 ###############################################################################################################
 
 #Linux
-#Aplicaciones instaladas
-apt list --installed
-
-#Más sobre instalación con dpkg
+#Instalación con dpkg
 #https://github.com/jesusninoc/Bash/blob/master/Programas/EjerciciosProgramas.sh
 
 #Windows
