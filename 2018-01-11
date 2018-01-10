@@ -1,3 +1,22 @@
+###############################################################################################################
+#Instación del software
+###############################################################################################################
+
+#Linux
+#Aplicaciones instaladas
+apt list --installed
+
+#Más sobre instalación con dpkg
+#https://github.com/jesusninoc/Bash/blob/master/Programas/EjerciciosProgramas.sh
+
+#Windows
+#Instalar en PowerShell 5
+https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
+
+###############################################################################################################
+#Jueves última hora
+###############################################################################################################
+
 #Listar el contenido de un directorio remotamente desde PowerShell teniendo habilitado “Device Portal”
 #https://www.jesusninoc.com/2017/10/01/listar-el-contenido-de-un-directorio-remotamente-desde-powershell-teniendo-habilitado-device-portal/
 
