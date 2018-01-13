@@ -27,6 +27,7 @@ gc ./lista.txt | % {
                 $pass = $_.split(' ')[2] | ConvertTo-SecureString
                 $credentials = new-object -typename System.Management.Automation.PSCredential -argumentlist $user,$pass
 
+                #New-SSHSession -ComputerName $hostp -Credential (Get-Credential)
                 New-SSHSession -ComputerName $hostp -Credential $credentials
                 if($action -eq 'install'){
                     (Invoke-SSHCommand -Index 0 -Command 'apt-get install '+$package+' -y').Output
