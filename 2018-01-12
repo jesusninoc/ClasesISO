@@ -1,0 +1,42 @@
+#Instalar software en cualquier equipo de la red desde PowerShell leyendo desde un archivo la información para instalar utilizando credenciales almacenados (solución de Diego A.)
+
+# Estructura para lista.txt:
+#  - [NOMBRE-PAQUETE] [IP-HOST / THISPC] [ACTION (INSTALL / UNINSTALL)]
+# skype 192.168.1.161 install
+
+# Para crear credenciales: read-host -AsSecureString | ConvertFrom-SecureString
+# El resultado meterlo en archivo cred:
+#  - [IP] [USUARIO] [CREDENCIAL]
+
+gc ./lista.txt | % {
+    $package = $_.split(' ')[0]
+    $hostp = $_.split(' ')[1]
+    $action = $_.split(' ')[2]
+    
+    if($hostp -eq 'thispc'){
+        if($action -eq 'install'){
+            Install-Package -name $package
+        }elseif($action -eq 'uninstall'){
+            Uninstall-Package -name $package
+        }
+    }else{
+        gc .\cred | % {
+            if($_.split(' ')[0] -eq $hostp){
+                $user = $_.split(' ')[1]
+                echo $_.split(' ')[2]
+                $pass = $_.split(' ')[2] | ConvertTo-SecureString
+                $credentials = new-object -typename System.Management.Automation.PSCredential -argumentlist $user,$pass
+
+                New-SSHSession -ComputerName $hostp -Credential $credentials
+                if($action -eq 'install'){
+                    (Invoke-SSHCommand -Index 0 -Command 'apt-get install '+$package+' -y').Output
+                }elseif($action -eq 'uninstall'){
+                    (Invoke-SSHCommand -Index 0 -Command 'apt-get remove '+$package+' -y').Output
+                }
+                
+                Remove-SSHSession -SessionId 0
+            }
+        }
+    }
+    
+}
