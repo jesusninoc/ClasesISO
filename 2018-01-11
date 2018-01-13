@@ -10,6 +10,18 @@
 https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
 
 ###############################################################################################################
+#Listado de software (ejercicios con sobre el software instalado)
+###############################################################################################################
+
+#Linux
+#Aplicaciones instaladas
+apt list --installed
+#https://github.com/jesusninoc/Bash/blob/master/Programas/EjerciciosProgramas.sh
+
+#Windows
+#https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
+
+###############################################################################################################
 #Jueves última hora
 ###############################################################################################################
 
