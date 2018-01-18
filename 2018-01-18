@@ -11,6 +11,7 @@
 #https://docs.microsoft.com/en-us/sysinternals/downloads/psexec
 #Ejemplo psexec
 psexec -u jesusninoc\administrador \\2017lti1-19 -i -d cmd /c notepad
+psexec -u jesusninoc\administrador \\192.168.104.122 -i -d cmd /c powershell -encodedcommand RwBlAHQALQBEAGEAdABlAA=="
 
 #Starts an interactive session with a remote computer (PowerShell)
 Enter-PSSession -ComputerName 2017lti1-19
