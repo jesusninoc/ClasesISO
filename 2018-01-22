@@ -20,3 +20,6 @@ echo "1 nivel1 100" > valor.txt
 echo "2 nivel2 300" >> valor.txt
 echo "3 nivel1 300" >> valor.txt
 cat valor.txt  | awk ' $2 == "nivel1" { sum += $3 } END { print sum }'
+
+#Ejemplos y trucos para el lenguaje de programación AWK
+#http://wiki.woop.es/AWK
