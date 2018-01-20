@@ -1,0 +1,10 @@
+#UAC
+#Deshabilitar UAC desde PowerShell
+#https://www.jesusninoc.com/2018/01/15/deshabilitar-uac-desde-powershell/
+
+#Ejecutar PowerShell como administrador en Base64
+#https://www.jesusninoc.com/2016/11/23/ejecutar-powershell-como-administrador-en-base64/
+
+#Introducción usuarios
+#https://github.com/jesusninoc/PowerShell/tree/master/Usuarios
+#https://www.jesusninoc.com/2017/07/08/8-gestion-de-usuarios-en-powershell/
