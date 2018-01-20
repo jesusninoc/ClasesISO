@@ -1,0 +1,14 @@
+#Obtener los descriptores de seguridad de todos los ficheros de una unidad
+#https://www.jesusninoc.com/2016/09/10/obtener-los-descriptores-de-seguridad-de-todos-los-ficheros-de-una-unidad/
+
+#Eliminar permisos explícitos
+#https://www.jesusninoc.com/2016/03/30/eliminar-permisos-explicitos/
+
+#Añadir permiso NTFS a una carpeta
+#https://www.jesusninoc.com/2015/08/19/anadir-permiso-ntfs-a-una-carpeta/
+
+#Crear un recurso compartido y asignar permisos al recurso
+#https://www.jesusninoc.com/2015/06/09/crear-un-recurso-compartido-y-asignar-permisos-al-recurso/
+
+#Clonar permisos NTFS
+#https://www.jesusninoc.com/2015/01/23/clonar-permisos-ntfs/
