@@ -1,0 +1,38 @@
+###############################################################
+#Proceso de arranque en Linux
+###############################################################
+#Tareas de inicio en BIOS.
+#Si reconoce el hardware correctamente, carga y ejecuta el código de la partición de arranque del dispositivo de arranque designado, que contiene la fase 1 de un gestor de arranque Linux. La fase 1 carga la fase 2 (la mayor parte del código del gestor de arranque).
+#Cargar gestor de arranque, a continuación, carga el sistema operativo, que descomprime en la memoria, y establece las funciones del sistema como del hardware esencial y la paginación de memoria.
+#Llamar a la función start_kernel() que realiza la mayor parte de la configuración del sistema (interrupciones, el resto de la gestión de memoria, la inicialización del dispositivo, controladores, etc), antes de continuar por separado el proceso inactivo y planificador, y el proceso de Init (que se ejecuta en el espacio de usuario).
+#El planificador toma control efectivo de la gestión del sistema, y el núcleo queda dormido (inactivo).
+#El proceso Init (Init se ejecuta con un parámetro conocido como nivel de ejecución) ejecuta secuencias de comandos necesarios para configurar todos los servicios y estructuras que no sean del sistema operativo, a fin de permitir que el entorno de usuario sea creado y pueda presentarse al usuario con una pantalla de inicio de sesión.
+
+###############################################################
+#Niveles de ejecución en Linux
+###############################################################
+#0	Alto.	Alto o cierre del sistema (Apagado).
+#1	Modo de usuario único (Monousuario).	No configura la interfaz de red o los demonios de inicio, ni permite que ingresen otros usuarios que no sean el usuario root, sin contraseña. Este nivel de ejecución permite reparar problemas, o hacer pruebas en el sistema.
+#2	Multiusuario.	Multiusuario sin soporte de red.
+#3	Multiusuario con soporte de red.	Inicia el sistema normalmente.
+#4	Multiusuario con soporte de red.	Igual que el 3.
+#5	Multiusuario gráfico (X11).	Similar al nivel de ejecución 3 + display manager.
+#6	Reinicio. Se reinicia el sistema.
+
+###############################################################
+#Arranque y parada de servicios en Linux
+###############################################################
+#Comando para actualizar el arranque y parada de servicios:
+update-rc.d
+
+#Iniciar nuevos servicios en el proceso de arranque:
+# update-rc.d nombre_proceso defaults
+# update-rc.d ssh defaults
+
+#Eliminar servicios del proceso de arranque:
+# update-rc.d -f nombre_proceso remove
+update-rc.d -f squid remove
+
+#Arrancar SSH Server
+sudo /etc/init.d/ssh start
+sudo update-rc.d ssh defaults
