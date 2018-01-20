@@ -1,0 +1,13 @@
+################################################
+#Monitorización
+################################################
+
+#Hash
+#Comprobar si ha cambiado algún fichero utilizando la función hash SHA1
+#https://www.jesusninoc.com/2016/01/27/comprobar-si-ha-cambiado-algun-fichero-utilizando-la-funcion-hash-sha1/
+
+#Process Monitor
+#https://docs.microsoft.com/en-us/sysinternals/downloads/procmon
+
+#Analizar servicios con PowerShel
+#https://www.jesusninoc.com/2016/11/10/analizar-servicios-con-powershell/
