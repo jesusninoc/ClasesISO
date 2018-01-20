@@ -8,3 +8,6 @@
 #Introducción usuarios
 #https://github.com/jesusninoc/PowerShell/tree/master/Usuarios
 #https://www.jesusninoc.com/2017/07/08/8-gestion-de-usuarios-en-powershell/
+
+#Sample shell script to add a user
+#https://www.cyberciti.biz/tips/howto-write-shell-script-to-add-user.html
