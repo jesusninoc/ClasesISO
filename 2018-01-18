@@ -30,6 +30,21 @@ Enter-PSSession -ComputerName 2017lti1-19
 #Mover el ratón a varias posiciones
 #https://www.jesusninoc.com/2015/01/18/mover-el-raton-a-varias-posiciones/
 
+#Mover Notepad de una posición de la pantalla a otra y escribir un texto dentro del proceso
+#https://www.jesusninoc.com/2016/03/23/mover-notepad-de-una-posicion-de-la-pantalla-a-otra-y-escribir-un-texto-dentro-del-proceso/
+
+#Mover un proceso en diagonal de una posición de la pantalla a otra y que siempre permanezca en primer plano
+#https://www.jesusninoc.com/2016/04/11/mover-un-proceso-en-diagonal-de-una-posicion-de-la-pantalla-a-otra-y-que-siempre-permanezca-en-primer-plano/
+
+#Mover un proceso en horizontal de una posición de la pantalla a otra y que siempre permanezca en primer plano
+#https://www.jesusninoc.com/2016/02/28/mover-un-proceso-en-horizontal-de-una-posicion-de-la-pantalla-a-otra-y-que-siempre-permanezca-en-primer-plano/
+
+#Activar y mover un proceso de una posición de la pantalla a otra
+#https://www.jesusninoc.com/2016/02/20/activar-y-mover-un-proceso-de-una-posicion-de-la-pantalla-a-otra/
+
+#Mover un proceso de una posición de la pantalla a otra
+#https://www.jesusninoc.com/2016/02/03/mover-un-proceso-de-una-posicion-de-la-pantalla-a-otra/
+
 ###############################################################################################################
 #Servidor de correo
 ###############################################################################################################
