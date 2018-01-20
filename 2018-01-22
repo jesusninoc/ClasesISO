@@ -3,4 +3,14 @@
   #-Actualización
   #-Gestión de procesos
   #-Programación de tareas
-  
+
+#######################################
+#Repaso
+#######################################
+
+#Sumar los valores de las columnas de un fichero
+
+echo "1 100" > valor.txt
+echo "2 300" >> valor.txt
+
+cat valor.txt  | awk '{ sum += $2 } END { print sum }'
