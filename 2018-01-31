@@ -2,6 +2,9 @@
 #Deshabilitar UAC desde PowerShell
 #https://www.jesusninoc.com/2018/01/15/deshabilitar-uac-desde-powershell/
 
+#Windows 10: (Otro) Bypass (más) de UAC usando AppPaths y sdctl.exe #Windows10 #Hacking #pentesting
+#http://www.elladodelmal.com/2017/03/windows-10-otro-bypass-mas-de-uac.html
+
 #Ejecutar PowerShell como administrador en Base64
 #https://www.jesusninoc.com/2016/11/23/ejecutar-powershell-como-administrador-en-base64/
 
