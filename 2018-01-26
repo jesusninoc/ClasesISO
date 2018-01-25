@@ -15,5 +15,4 @@ echo "antes" | xargs -i echo {} "después"
 cat fichero.txt | xargs -l bash -c 'echo this is first:$0 second:$1'
 
 #Asignar permisos leyendo desde un fichero el nombre y el permiso en octal
-cat fichero.txt | xargs -l bash -c 'chmod $0 $1'
-
+cat fichero.txt | xargs bash -c 'chmod $0 $1'
