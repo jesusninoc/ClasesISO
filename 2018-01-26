@@ -1,7 +1,19 @@
 #Realizar conexión con WinSCP utilizando un túnel SSH
 #https://www.jesusninoc.com/2016/02/12/realizar-conexion-con-winscp-utilizando-un-tunel-ssh/
 
+##################################
 #Utilizar xargs
+##################################
+#Definir donde se van a definir los parámetros
+ls | xargs -I ARG echo fichero ARG fichero
+
+#Definir donde se van a definir los parámetros
+echo "después" | xargs echo "antes"
+echo "antes" | xargs -i echo {} "después"
+
+#Mostrar los parámetros 1 y 2
+cat fichero.txt | xargs -l bash -c 'echo this is first:$0 second:$1'
+
 #Asignar permisos leyendo desde un fichero el nombre y el permiso en octal
-echo "777 fichero1" > permisos
-cat permisos | xargs chmod
+cat fichero.txt | xargs -l bash -c 'chmod $0 $1'
+
