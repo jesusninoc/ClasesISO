@@ -1,5 +1,5 @@
-#Realizar conexión con WinSCP utilizando un túnel SSH
-#https://www.jesusninoc.com/2016/02/12/realizar-conexion-con-winscp-utilizando-un-tunel-ssh/
+#Configurar un túnel utilizando un servidor SSH
+#https://www.jesusninoc.com/2016/02/08/configurar-un-tunel-utilizando-un-servidor-ssh/
 
 ##################################
 #Utilizar xargs
