@@ -4,6 +4,9 @@
 #Semana pasada
 #https://github.com/jesusninoc/ClasesISO/blob/master/2018-01-26
 
+#Log del cron
+cat CRON /var/log/syslog
+
 #Utilizar cadenas
 #https://github.com/jesusninoc/Bash/blob/master/Repaso/UtilizarCadenas.sh
 
