@@ -1,2 +1,1 @@
-# ClasesISO
-Clases de Implantación de Sistemas Operativos
+# Clases de Implantación de Sistemas Operativos
