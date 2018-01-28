@@ -40,6 +40,11 @@
 Invoke-Command -Credential administrador -ComputerName 192.168.1.56 -ScriptBlock{hostname} 
 
 ##################################
+#Netcat Cheat Sheet
+##################################
+#https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf
+
+##################################
 #SSH
 ##################################
 #Configurar un túnel utilizando un servidor SSH
