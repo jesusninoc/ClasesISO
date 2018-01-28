@@ -7,6 +7,9 @@
 #Log del cron
 cat CRON /var/log/syslog
 
+#Buscar en Bash
+#https://github.com/jesusninoc/Bash/blob/master/Ficheros/EjerciciosFicherosBuscar.sh
+
 #Utilizar cadenas
 #https://github.com/jesusninoc/Bash/blob/master/Repaso/UtilizarCadenas.sh
 
