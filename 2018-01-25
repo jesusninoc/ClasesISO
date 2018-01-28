@@ -35,6 +35,11 @@
 #http://bertdotself.com/powershell-psexec/
 
 ##################################
+#Acceso remoto desde Powershell
+##################################
+Invoke-Command -Credential administrador -ComputerName 192.168.1.56 -ScriptBlock{hostname} 
+
+##################################
 #SSH
 ##################################
 #Configurar un túnel utilizando un servidor SSH
