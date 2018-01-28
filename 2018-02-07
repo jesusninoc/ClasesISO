@@ -1,3 +1,7 @@
+############################################################
+#Permisos
+############################################################
+
 #Obtener los descriptores de seguridad de todos los ficheros de una unidad
 #https://www.jesusninoc.com/2016/09/10/obtener-los-descriptores-de-seguridad-de-todos-los-ficheros-de-una-unidad/
 
@@ -12,3 +16,10 @@
 
 #Clonar permisos NTFS
 #https://www.jesusninoc.com/2015/01/23/clonar-permisos-ntfs/
+
+############################################################
+#Passwords
+############################################################
+
+#Contraseñas seguras con PowerShell
+#https://www.jesusninoc.com/contrasenas-seguras-con-powershell/
