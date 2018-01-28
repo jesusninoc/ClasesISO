@@ -20,3 +20,6 @@ cat CRON /var/log/syslog
 #https://www.jesusninoc.com/2008/09/29/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-1/
 #https://www.jesusninoc.com/2008/09/30/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-2/
 #https://www.jesusninoc.com/2008/10/01/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-3/
+
+#Analizar la cabecera de un fichero para conocer la extensión real del fichero con PowerShell
+#https://www.jesusninoc.com/2018/01/28/analizar-la-cabecera-de-un-fichero-para-conocer-la-extension-real-del-fichero-con-powershell/
