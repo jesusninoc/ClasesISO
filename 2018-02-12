@@ -1,0 +1,15 @@
+#Ejercicios usuarios y grupos
+
+#Contar el número de letras de cada usuario
+#Contar el número de usuarios
+#Numerar las líneas del fichero de usuarios
+#Numerar las líneas del fichero shadow
+#Numerar las líneas del fichero group
+#Quedarse con la primera línea del fichero: usuarios, shadow, group
+#Mostrar todos los usuarios seguidos (xargs)
+#Ordenar el listado de usuarios
+#Detectar si hay un usuario creado
+#Detectar si hay un usuario creando una función
+#Sacar la primera línea
+#Quitar la primera línea
+#Reemplazar nombres de usuarios
