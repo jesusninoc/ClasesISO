@@ -4,6 +4,9 @@
 #Semana pasada
 #https://github.com/jesusninoc/ClasesISO/blob/master/2018-01-26
 
+#Jerarquía de directorios y archivos
+#http://www.dmdcosillas.org/jerarquia-de-directorios-y-archivos/
+
 #Log del cron
 cat CRON /var/log/syslog
 
