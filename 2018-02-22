@@ -2,12 +2,12 @@
 #Análisis forense
 ########################################################
 
-#-Realizar dump cada cierto tiempo para ver en qué trabaja el usuario
-#-Analizar dump
-#-Qué hace del usuario?
-#-Más evidencias de dónde accede
-#-Realizar dump de Notepad y otros programas
-#-Extraer images de dmp
-  #-http://ins3cure.blogspot.com.es/2012/08/extract-images-from-process-memory-dumps.html
-  #-http://www.dfrws.org/2006/challenge/submission.shtml
-  #-http://www.techipick.com/forensics-memdump-extractor
+#Realizar dump cada cierto tiempo para ver en qué trabaja el usuario
+#Analizar dump
+#Qué hace el usuario?
+#Más evidencias de dónde accede
+#Realizar dump de Notepad y otros programas
+#Extraer images de dmp
+  #http://ins3cure.blogspot.com.es/2012/08/extract-images-from-process-memory-dumps.html
+  #http://www.dfrws.org/2006/challenge/submission.shtml
+  #http://www.techipick.com/forensics-memdump-extractor
