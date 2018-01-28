@@ -14,3 +14,6 @@
 
 #Sample shell script to add a user
 #https://www.cyberciti.biz/tips/howto-write-shell-script-to-add-user.html
+
+#Dumping Windows Password Hashes Using Metasploit
+#https://www.utc.edu/center-information-security-assurance/pdfs/4660-lab6.pdf
