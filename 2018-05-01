@@ -1,0 +1,16 @@
+##################################################################
+#Preguntas posibles tercera evaluación
+##################################################################
+#Explica cómo puedes saber quién accede a una carpeta compartida en Windows
+#Explica un procedimiento de copias de seguridad que te parezca lo más óptimo posible, ten en cuenta:
+#-Windows o Linux
+#-Dejar programada la acción
+#-Cifrar el contenido, método sencillo o complicado
+#-También puedes añadir otros elementos relacionados con la copia de seguridad como la reparación
+#Se ha producido una infección en un sistema operativo Windows, ¿qué elementos comprobarías para detectar dicha infección?, ¿cómo impides que se produzcan infecciones el sistema operativo?, ¿Windows dispone de herramientas centralizadas para evitarlo?
+#Explica todo el proceso para realizar una clonación
+#Explica todo lo que sepas sobre permisos en Windows
+#¿Cómo puedes hacer una sincronización en Linux?, ¿puedes hacerla entre equipos?, ¿cómo?
+#¿Un driver falla, qué haces para arrancar el sistema?
+#Se puede logar utilizar carpetas compartidas de Windows en Linux y que se queden arrancadas desde que se carga Linux
+#Prepara un script para guardar los logs que sean problemáticos todos los días de la semana, se tienen que enviar a una carpeta compartida o utilizando un protocolo seguro (entorno lo más seguro que puedas), hay que colocarlos de forma ordenada
