@@ -1,5 +1,14 @@
-#Instalar software en cualquier equipo de la red desde PowerShell leyendo desde un archivo la información para instalar utilizando credenciales almacenados (solución de Diego A.)
+###############################################################################################
+#Instalas software en Linux leyendo desde un fichero
+###############################################################################################
+while read linea
+do
+   apt-get install linea
+done < archivo
 
+###############################################################################################
+#Instalar software en cualquier equipo de la red desde PowerShell leyendo desde un archivo la información para instalar utilizando credenciales almacenados (solución de Diego A.)
+###############################################################################################
 # Estructura para lista.txt:
 #  - [NOMBRE-PAQUETE] [IP-HOST / THISPC] [ACTION (INSTALL / UNINSTALL)]
 # skype 192.168.1.161 install
