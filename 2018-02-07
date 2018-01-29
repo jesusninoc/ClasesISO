@@ -1,4 +1,25 @@
 ############################################################
+#Gestión de usuarios en Linux
+############################################################
+#Por pasos dentro de un script
+nano  
+#Ver si esta creado un usuario
+grep usuario1 /etc/paswd | wc -l
+#Crear una carpeta en /home 
+sudo mkdir nombreusuario
+#Dar permisos a la carpeta del usuario 
+sudo chmod 764
+#Crear el usuario y se le asigna el directorio donde va a trabajar y la shell 
+useradd -d /home/usuarionuevo -s /bin/bash Usuario
+#Crear la contraseña a el usuario
+sudo paswd 1234 usuario]
+#Cambiar a la carpeta del nuevo usuario de propietario de usuario y grupo
+chgrp Usuario /home/usuarionuevo
+chown Usuario /home/usuarionuevo
+#Asignar los permisos heredados a la carpeta de el usuario para que tenga los permisos necesarios para trabajar 
+cd nombreusuario, umask 0011
+
+############################################################
 #Permisos
 ############################################################
 
