@@ -16,6 +16,10 @@ cat CRON /var/log/syslog
 #Utilizar cadenas
 #https://github.com/jesusninoc/Bash/blob/master/Repaso/UtilizarCadenas.sh
 
+#Ejercicios avanzados sobre cadenas en Linux
+paste
+join
+
 #Ejemplos de ejecución de comandos en Bash y PowerShell
 #https://www.jesusninoc.com/2008/09/29/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-1/
 #https://www.jesusninoc.com/2008/09/30/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-2/
