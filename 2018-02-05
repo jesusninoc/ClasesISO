@@ -26,7 +26,7 @@
   "alumnos": {
     "alumno": [
       {
-        "-id": "1",
+        "id": "1",
         "usuario": "juanito",
         "grupo": "ventas",
         "programa": "notepad",
@@ -34,7 +34,7 @@
         "permisos": "leer"
       },
       {
-        "-id": "2",
+        "id": "2",
         "usuario": "juanito",
         "grupo": "ventas",
         "programa": "p7zip",
