@@ -2,3 +2,93 @@
 #Fichero XML de monitorización
 ##########################################################################################
 <?xml version="1.0"?>
+<monitorizar>
+	<tarea id="1">
+		<nombretarea>Si se ha actualizado</nombretarea>
+		<tarea>wusa</tarea>
+	</tarea>
+	<tarea id="2">
+		<nombretarea>Si programa instalado</nombretarea>
+		<tarea>msiexec</tarea>
+		<programa>notepad</programa>
+	</tarea>
+	<tarea id="3">
+		<nombretarea>Si fichero permisos</nombretarea>
+		<tarea>icacls</tarea>
+		<fichero>directorio</fichero>
+	</tarea>
+	<tarea id="4">
+		<nombretarea>Si usuario ejecuta proceso</nombretarea>
+		<tarea>Get-WmiObject win32_process |% {Write-Host $_.processname $_.getowner().user}</tarea>
+		<proceso>notepad</proceso>
+		<usuario>javier</usuario>
+	</tarea>
+	<tarea id="5">
+		<nombretarea>Crear usuario</nombretarea>
+		<tarea>New-LocalUser</tarea>
+		<usuario>javier</usuario>
+	</tarea>
+	<tarea id="6">
+		<nombretarea>Realizar una función de hash sobre varios ficheros</nombretarea>
+		<tarea>Get-FileHash ficheromaestro.txt</tarea>
+		<usuario>javier</usuario>
+	</tarea>
+</monitorizar>
+
+##########################################################################################
+#Fichero JSON de usuarios
+##########################################################################################
+{
+  "monitorizar": {
+    "tarea": [
+      {
+        "id": "1",
+        "nombretarea": "Si se ha actualizado",
+        "tarea": "wusa"
+      },
+      {
+        "id": "2",
+        "nombretarea": "Si programa instalado",
+        "tarea": "msiexec",
+        "programa": "notepad"
+      },
+      {
+        "id": "3",
+        "nombretarea": "Si fichero permisos",
+        "tarea": "icacls",
+        "fichero": "directorio"
+      },
+      {
+        "id": "4",
+        "nombretarea": "Si usuario ejecuta proceso",
+        "tarea": "Get-WmiObject win32_process |% {Write-Host $_.processname $_.getowner().user}",
+        "proceso": "notepad",
+        "usuario": "javier"
+      },
+      {
+        "id": "5",
+        "nombretarea": "Crear usuario",
+        "tarea": "New-LocalUser",
+        "usuario": "javier"
+      },
+      {
+        "id": "6",
+        "nombretarea": "Realizar una función de hash sobre varios ficheros",
+        "tarea": "Get-FileHash ficheromaestro.txt",
+        "usuario": "javier"
+      }
+    ]
+  }
+}
+
+##########################################################################################
+#Tareas para monitorizar
+##########################################################################################
+#Realizar una función de hash sobre varios ficheros
+#https://www.jesusninoc.com/2018/02/04/realizar-una-funcion-de-hash-sobre-varios-ficheros/
+#Si se ha actualizado
+#Si programa instalado
+#Si fichero permisos
+#Si usuario ejecuta proceso
+#Crear usuario
+#Crear grupo
