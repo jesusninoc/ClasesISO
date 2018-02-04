@@ -3,6 +3,7 @@
 
 #Ayuda para generar XML o JSON
 "This is a test" | Export-Clixml sample.xml
+Get-ChildItem $_ | Select-Object -Property Name | ConvertTo-Json | Out-File fichero.json
 
 #Si un fichero contiene una cadena, crear un XML y un JSON con los datos del fichero
 Get-ChildItem | %{
