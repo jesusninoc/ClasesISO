@@ -1,0 +1,15 @@
+#Buscar el contenido de un fichero de una lista de ficheros
+#Si se encuentra el contenido enviar los ficheros junto con un fichero XML o JSON
+
+#Ayuda para generar XML o JSON
+"This is a test" | Export-Clixml sample.xml
+
+#Si un fichero contiene una cadena, crear un XML y un JSON con los datos del fichero
+Get-ChildItem | %{
+    if(Get-Content $_ | Select-String 'password')
+    {
+        "Existe"
+        Get-ChildItem $_ | Select-Object -Property Name | Export-Clixml (((Get-Date).Ticks).ToString()+"fichero.xml")
+        Get-ChildItem $_ | Select-Object -Property Name | ConvertTo-Json | Out-File fichero.json
+    }
+}
