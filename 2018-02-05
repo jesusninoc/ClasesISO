@@ -1,3 +1,10 @@
+#Importar JSON
+#https://www.jesusninoc.com/2018/02/04/utilizar-json-con-nombres-y-apellidos-aleatorios/
+#Convertir a JSON el listado de usuarios que hay en el sistema ejecutando un cmdlet con PowerShell
+#https://www.jesusninoc.com/2018/02/05/convertir-a-json-el-listado-de-usuarios-que-hay-en-el-sistema-ejecutando-un-cmdlet-con-powershell/
+#https://github.com/defrag/NMatcher
+#https://github.com/dfinke/PSMatcher
+
 #Ejercicios sobre usuarios
 #https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjerciciosUsuarios.ps1
 #https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjerciciosUsuariosFicheros.ps1
