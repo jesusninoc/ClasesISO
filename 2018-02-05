@@ -1,52 +1,42 @@
+##########################################################################################
+#Fichero XML de usuarios
+##########################################################################################
+<?xml version="1.0"?>
+<alumnos>
+	<alumno id="1">
+		<usuario>juanito</usuario>
+		<grupo>ventas</grupo>
+		<programa>notepad</programa>
+		<directorio>carpetatrabajo</directorio>
+		<permisos>leer</permisos>
+	</alumno>
+	<alumno id="2">
+		<usuario>juanito</usuario>
+		<grupo>ventas</grupo>
+		<programa>p7zip</programa>
+		<directorio>carpetatrabajo</directorio>
+		<permisos>444</permisos>
+	</alumno>
+</alumnos>
+
+##########################################################################################
 #Importar JSON
+##########################################################################################
 #https://www.jesusninoc.com/2018/02/04/utilizar-json-con-nombres-y-apellidos-aleatorios/
 #Convertir a JSON el listado de usuarios que hay en el sistema ejecutando un cmdlet con PowerShell
 #https://www.jesusninoc.com/2018/02/05/convertir-a-json-el-listado-de-usuarios-que-hay-en-el-sistema-ejecutando-un-cmdlet-con-powershell/
 #https://github.com/defrag/NMatcher
 #https://github.com/dfinke/PSMatcher
 
-#Ejercicios sobre usuarios
-#https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjerciciosUsuarios.ps1
-#https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjerciciosUsuariosFicheros.ps1
-#https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjemplosCrearUsuariosGruposCarpetaCompartida.ps1
-#https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjemplosCrearUsuariosGruposCarpetaCompartida2.ps1
-#https://www.jesusninoc.com/2012/12/30/add-users-xml/
+##########################################################################################
+#Programar tareas
+##########################################################################################
+#Windows
+#https://github.com/jesusninoc/Bash/blob/master/Examenes/Examen-2016-02-11-Solucion.sh
+#Linux
+#https://github.com/jesusninoc/PowerShell/blob/master/TareasProgramadas/EjemploTareaProgramada.ps1
 
-#Más ejercicios
-#https://www.jesusninoc.com/users/
-#Ver el SID (Security Identifier) de un usuario en Windows con PowerShell
-#Verificar si existe un usuario en Windows 10 con PowerShell
-#Obtener los SID de las cuentas de usuario en Windows 10
-#Cmdlets relacionados con la gestión de cuentas locales en Windows 10
-#Creates a local user account
-#Creates a local security group
-#Gets local user accounts
-#Gets members from a local group
-#Gets the local security groups
-#Añadir usuarios a un grupo local en Windows 10 con PowerShell 5.1
-#Listar miembros de un grupo local en Windows 10 con PowerShell 5.1
-#Cambiar la contraseña a un usuario local en Windows 10 con PowerShell 5.1
-#Listar grupos locales en Windows 10 con PowerShell 5.1
-#Listar usuarios locales en Windows 10 con PowerShell 5.1
-#Eliminar un grupo local en Windows 10 con PowerShell 5.1
-#Crear un grupo local en Windows 10 con PowerShell 5.1
-#Crear un usuario local con contraseña en Windows 10 con PowerShell 5.1
-#Eliminar un usuario local en Windows 10 con PowerShell 5.1
-#Crear un usuario local en Windows 10 con PowerShell 5.1
-#Crear un usuario con contraseña leyendo los datos de un fichero
-#Cambiar contraseña a un usuario
-#Contar el número de grupos que hay en el sistema
-#Contar el número de usuarios que hay en el sistema
-#List local groups
-#List local users
-#Añadir un usuario a un grupo
-#Crear un grupo
-#Crear un usuario con contraseña
-#Usuario actual
-#Information about group accounts
-#Information about user accounts
-#Cmdlets relacionados con tareas básicas y de administración en el sistema operativo Windows
-#Reading username and password from file and do a login
-#Create users and groups, add a user to a group and share directory
-#Create users with passwords
-#Information about remote user
+##########################################################################################
+#LOAD XML Syntax (MySQL)
+##########################################################################################
+#https://www.jesusninoc.com/2014/11/17/load-xml-syntax-mysql/
