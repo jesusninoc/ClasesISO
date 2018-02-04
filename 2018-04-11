@@ -1,48 +1,54 @@
-------------------------------------------------------------------------------------------
-Capa 1
--------------------------------------------------------------------------------------------
-Conocer los interfaces físicos
---------------Get-Command -Module Net* | Group Module
---------------Get-NetNeighbor | Select-Object IPAddress | Select-String "192.168"
---------------Get-NetAdapter -Physical | Select-Object 
---------------Get-NetIPAddress | Select-Object InterfaceAlias,IPAddress
-Bytes recibidos y transmitos
+#Cmdlets for TCP/IP Model Layers
+#https://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
+#Realizar conexiones TCP/UDP con Powershell
+#https://www.jesusninoc.com/2015/11/10/realizar-conexiones-tcp-udp-con-powershell/
+
+#------------------------------------------------------------------------------------------
+#Capa 1
+#-------------------------------------------------------------------------------------------
+
+#Conocer los interfaces físicos
+Get-Command -Module Net* | Group Module
+Get-NetNeighbor | Select-Object IPAddress | Select-String "192.168"
+Get-NetAdapter -Physical | Select-Object 
+Get-NetIPAddress | Select-Object InterfaceAlias,IPAddress
+#Bytes recibidos y transmitos
 Get-NetAdapterStatistics
 
--------------------------------------------------------------------------------------------
-Capa 2
--------------------------------------------------------------------------------------------
-Arp
--------------------------------------------------------------------------------------------
-MacAddress
-Conocer la MAC
-Entradas ARP
-Todas las formas de ver la MAC, por comandos
---------------arp -a | Select-String "((?:(\d{1,2}|[a-fA-F]{1,2}){2})(?::|-*)){6}" | Select-String "192.168"
---------------Get-NetNeighbor
--------------------------------------------------------------------------------------------
-Switch
--------------------------------------------------------------------------------------------
-¿Estoy cerca de un switch?
-Visitar página con relación de MAC y fabricantes
-OUI: https://www.wireshark.org/tools/oui-lookup.html
-Identificar MAC con fabricante
-Intentar localizar el mayor número de nodos de red y dispositivos de acceso, tener en cuenta subred
-Tabla de direccionamiento switch?????
-Ver las direcciones MAC de difusión FFFFF y otros tipos quiénes son los vecinos
-https://en.wikipedia.org/wiki/Multicast_address
-macs broadcast y demás
+#-------------------------------------------------------------------------------------------
+#Capa 2
+#-------------------------------------------------------------------------------------------
 
-Saltos switches, cuántos hay? utilizar tracert
+#-------------------------------------------------------------------------------------------
+#Arp
+#-------------------------------------------------------------------------------------------
+#MacAddress
+#Conocer la MAC
+#Entradas ARP
+#Todas las formas de ver la MAC, por comandos
+arp -a | Select-String "((?:(\d{1,2}|[a-fA-F]{1,2}){2})(?::|-*)){6}" | Select-String "192.168"
+Get-NetNeighbor
 
-mac broadcast qué hace y donde va
+#-------------------------------------------------------------------------------------------
+#Switch
+#-------------------------------------------------------------------------------------------
+#¿Estoy cerca de un switch?
+#Visitar página con relación de MAC y fabricantes
+#OUI: https://www.wireshark.org/tools/oui-lookup.html
+#Identificar MAC con fabricante
+#Intentar localizar el mayor número de nodos de red y dispositivos de acceso, tener en cuenta subred
+#Tabla de direccionamiento switch?????
+#Ver las direcciones MAC de difusión FFFFF y otros tipos quiénes son los vecinos
+#https://en.wikipedia.org/wiki/Multicast_address
+#macs broadcast y demás
+#Saltos switches, cuántos hay? utilizar tracert
+#mac broadcast qué hace y donde va
+#MITM
 
-MITM
-
--------------------------------------------------------------------------------------------
-Capa 3
--------------------------------------------------------------------------------------------
-PING A SUB
+#-------------------------------------------------------------------------------------------
+#Capa 3
+#-------------------------------------------------------------------------------------------
+#PING A SUB
 foreach($tercero in 1..254)
 {
     foreach($cuarto in 1..254)
@@ -51,91 +57,85 @@ foreach($tercero in 1..254)
     }
 }
 
-Conocer IP virtual y física
-¿Ves alguna relación?
-
-Tipo red colegio privada y publica
-
-red apipa
-
-Relación entre rutas y los indices de tarjetas
+#Conocer IP virtual y física
+#¿Ves alguna relación?
+#Tipo red colegio privada y publica
+#red apipa
+#Relación entre rutas y los indices de tarjetas
 Get-NetRoute
+#rangos de ips y analisis de whois y demas
+#Analizar las IP de la red
+#Relación con ARP
+#mac relación netstat y arp -a
+#Buscar IP en el registro
 
-rangos de ips y analisis de whois y demas
-Analizar las IP de la red
-
-Relación con ARP
-mac relación netstat y arp -a
-
-Buscar IP en el registro
-
--------------------------------------------------------------------------------------------
-ICMP
--------------------------------------------------------------------------------------------
-Qué es el ping (Internet)
-Hacer ping a direcciones de red
-Comprobar funcionamiento de comando: ping y tracert
+#-------------------------------------------------------------------------------------------
+#ICMP
+#-------------------------------------------------------------------------------------------
+#Qué es el ping (Internet)
+#Hacer ping a direcciones de red
+#Comprobar funcionamiento de comando: ping y tracert
 Test-NetConnection
+#ip de google ping -a
+#ip detectar servicio como drpotox
 
-ip de google ping -a
+#-------------------------------------------------------------------------------------------
+#NAT
+#-------------------------------------------------------------------------------------------
+#explicar nat y pat todos los años igual
 
-ip detectar servicio como drpotox
--------------------------------------------------------------------------------------------
-NAT
--------------------------------------------------------------------------------------------
-explicar nat y pat todos los años igual
+#-------------------------------------------------------------------------------------------
+#Firewall
+#-------------------------------------------------------------------------------------------
+#bloquear ip firewall windows
+#http://www.itechlounge.net/2014/11/windows-blocking-ip-from-command-line/
+#log del firewall
 
--------------------------------------------------------------------------------------------
-Firewall
--------------------------------------------------------------------------------------------
-bloquear ip firewall windows
-http://www.itechlounge.net/2014/11/windows-blocking-ip-from-command-line/
-log del firewall
+#-------------------------------------------------------------------------------------------
+#Capa 4
+#-------------------------------------------------------------------------------------------
+#IANA Y UDP http://www.jesusninoc.com/2016/03/02/relacion-entre-puertos-abiertos-udp-y-lista-de-puertos-de-la-iana/
+#COMUNICACIÓN TCP UDP
+#SOCKET, BIND, LISENT, ACCEPT, CONNECT, SEND, RECEIVE, CLOSE
 
--------------------------------------------------------------------------------------------
-Capa 4
--------------------------------------------------------------------------------------------
-IANA Y UDP http://www.jesusninoc.com/2016/03/02/relacion-entre-puertos-abiertos-udp-y-lista-de-puertos-de-la-iana/
-
-COMUNICACIÓN TCP UDP
-SOCKET, BIND, LISENT, ACCEPT, CONNECT, SEND, RECEIVE, CLOSE
-
-
-TCP (Transmission Control Protocol)
-Settings
+#-------------------------------------------------------------------------------------------
+#TCP (Transmission Control Protocol)
+#-------------------------------------------------------------------------------------------
+#Settings
 Get-NetTCPSetting
 Gets information about current connection statistics
 Get-NetTCPConnection
-Ports
+#Ports
 Get-NetTCPConnection | Select-Object LocalPort,Remoteport
-UDP (User Datagram Protocol)
-Settings
+
+#-------------------------------------------------------------------------------------------
+#UDP (User Datagram Protocol)
+#-------------------------------------------------------------------------------------------
+#Settings
 Get-NetUDPSetting
 Gets information about current connection statistics
 Get-NetUDPEndpoint
-Ports
+#Ports
 (Get-NetUDPEndpoint).LocalPort
 
-ABRIR UN PUERTO?
+#ABRIR UN PUERTO?
 netsh advfirewall firewall add rule name="Programa TCP 87" dir=in action=allow protocol=TCP localport=87
 
-http://www.jesusninoc.com/2016/02/29/relacion-entre-puertos-abiertos-tcp-y-lista-de-puertos-de-la-iana/
+#http://www.jesusninoc.com/2016/02/29/relacion-entre-puertos-abiertos-tcp-y-lista-de-puertos-de-la-iana/
 
-YA EN CAPA 4, DETECTAR PUERTOS Y DEMÁS....... TENGO MIS SCRIPTS LEYENDO DE RFC PUERTOS
+#YA EN CAPA 4, DETECTAR PUERTOS Y DEMÁS....... TENGO MIS SCRIPTS LEYENDO DE RFC PUERTOS
+#¿CUÁL ES MI IP PÚBLICA?
+#http://www.jesusninoc.com/2015/02/28/cual-es-mi-ip-publica/
+#reserva v4
+#https://isc.sans.edu/forums/diary/Reserved+IP+Address+Space+Reminder/13228
 
-¿CUÁL ES MI IP PÚBLICA?
-http://www.jesusninoc.com/2015/02/28/cual-es-mi-ip-publica/
+#-------------------------------------------------------------------------------------------
+#Capa 5,6,7
+#-------------------------------------------------------------------------------------------
+#https://en.wikipedia.org/wiki/Category:Application_layer_protocols
 
-reserva v4
-https://isc.sans.edu/forums/diary/Reserved+IP+Address+Space+Reminder/13228
-
--------------------------------------------------------------------------------------------
-Capa 5,6,7
--------------------------------------------------------------------------------------------
-https://en.wikipedia.org/wiki/Category:Application_layer_protocols
-
-Aplicación	DNS, DHCP, RIPp, ...
-Transporte	TCP, UDP, ...
-Red	IP, ...
-Enlace	Ethernet, Token Ring,
-FDDI, ...
+#Aplicación	DNS, DHCP, RIPp, ...
+#Transporte	TCP, UDP, ...
+#Red	IP, ...
+#Enlace	Ethernet, Token Ring,
+#FDDI, ...
