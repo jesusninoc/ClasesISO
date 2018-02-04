@@ -20,6 +20,32 @@
 </alumnos>
 
 ##########################################################################################
+#Fichero JSON de usuarios
+##########################################################################################
+{
+  "alumnos": {
+    "alumno": [
+      {
+        "-id": "1",
+        "usuario": "juanito",
+        "grupo": "ventas",
+        "programa": "notepad",
+        "directorio": "carpetatrabajo",
+        "permisos": "leer"
+      },
+      {
+        "-id": "2",
+        "usuario": "juanito",
+        "grupo": "ventas",
+        "programa": "p7zip",
+        "directorio": "carpetatrabajo",
+        "permisos": "444"
+      }
+    ]
+  }
+}
+
+##########################################################################################
 #Importar JSON
 ##########################################################################################
 #https://www.jesusninoc.com/2018/02/04/utilizar-json-con-nombres-y-apellidos-aleatorios/
