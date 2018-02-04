@@ -1,4 +1,13 @@
 ######################################################################
+#mimikatz
+#mimikatz is a tool I've made to learn C and make somes experiments with Windows security.
+#It's now well known to extract plaintexts passwords, hash, PIN code and kerberos tickets from memory. mimikatz can also perform pass-the-hash, pass-the-ticket or build Golden tickets.
+#https://github.com/gentilkiwi/mimikatz
+
+#https://astr0baby.wordpress.com/2018/01/30/running-latest-x64-mimikatz-on-windows-10/
+######################################################################
+
+######################################################################
 #Algoritmo de cifrado sencillo
 #https://www.jesusninoc.com/2016/03/06/algoritmo-de-cifrado-sencillo-2/
 #Algoritmo de descifrado sencillo
