@@ -13,6 +13,15 @@
   #http://www.techipick.com/forensics-memdump-extractor
 
 ######################################################################
+#Ver volcado de memoria de procesos
+######################################################################
+
+#Crear un fichero de volcado de memoria de un proceso
+#https://www.jesusninoc.com/2016/03/04/crear-un-fichero-de-volcado-de-memoria-de-un-proceso/
+#Crear un fichero de volcado de memoria de un proceso y detectar DLL
+#https://www.jesusninoc.com/2017/10/22/crear-un-fichero-de-volcado-de-memoria-de-un-proceso-y-detectar-dll/
+
+######################################################################
 #mimikatz
 #mimikatz is a tool I've made to learn C and make somes experiments with Windows security.
 #It's now well known to extract plaintexts passwords, hash, PIN code and kerberos tickets from memory. mimikatz can also perform pass-the-hash, pass-the-ticket or build Golden tickets.
