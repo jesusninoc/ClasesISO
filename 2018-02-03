@@ -1,4 +1,7 @@
-#Buscar el contenido de un fichero de una lista de ficheros
+#Buscar el contenido de un fichero de una lista de ficheros:
+    #-Buscar la palabra "password"
+    #-Buscar un enlace a un fichero mp3
+    #-Buscar todas los enlaces que haya a imágenes jpg
 #Si se encuentra el contenido enviar los ficheros junto con un fichero XML o JSON
 
 #Ayuda para generar XML o JSON
