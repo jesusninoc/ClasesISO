@@ -5,7 +5,7 @@
 <monitorizar>
 	<tarea id="1">
 		<nombretarea>Si se ha actualizado</nombretarea>
-		<tarea>wusa</tarea>
+		<tarea>Get-Hotfix | Where-Object HotfixID -eq "KB3186568"</tarea>
 	</tarea>
 	<tarea id="2">
 		<nombretarea>Si programa instalado</nombretarea>
@@ -44,7 +44,7 @@
       {
         "id": "1",
         "nombretarea": "Si se ha actualizado",
-        "tarea": "wusa"
+        "tarea": "Get-Hotfix"
       },
       {
         "id": "2",
@@ -87,6 +87,8 @@
 #Realizar una función de hash sobre varios ficheros
 #https://www.jesusninoc.com/2018/02/04/realizar-una-funcion-de-hash-sobre-varios-ficheros/
 #Si se ha actualizado
+	#Finding Computers that haven’t installed a special Hotfix
+	#https://sid-500.com/2018/02/04/powershell-gathering-information-of-all-installed-updates-hotfixes-on-all-domain-computers/
 #Si programa instalado
 #Si fichero permisos
 #Si usuario ejecuta proceso
