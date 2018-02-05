@@ -46,6 +46,14 @@
 }
 
 ##########################################################################################
+#Ayuda para generar XML o JSON
+##########################################################################################
+"This is a test" | Export-Clixml sample.xml
+Get-ChildItem $_ | Select-Object -Property Name | ConvertTo-Json | Out-File fichero.json
+#Converting Hash Tables to JSON
+#https://www.jesusninoc.com/2017/11/18/converting-hash-tables-to-json/
+
+##########################################################################################
 #Importar JSON
 ##########################################################################################
 #https://www.jesusninoc.com/2018/02/04/utilizar-json-con-nombres-y-apellidos-aleatorios/
