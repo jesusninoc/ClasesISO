@@ -81,3 +81,9 @@ Get-ChildItem $_ | Select-Object -Property Name | ConvertTo-Json | Out-File fich
 #LOAD XML Syntax (MySQL)
 ##########################################################################################
 #https://www.jesusninoc.com/2014/11/17/load-xml-syntax-mysql/
+
+##########################################################################################
+#HTML Reports
+##########################################################################################
+#Creating HTML Reports
+#https://www.jesusninoc.com/2017/10/16/creating-html-reports/
