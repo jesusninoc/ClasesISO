@@ -23,3 +23,6 @@ Get-ChildItem | %{
         Get-ChildItem $_ | Select-Object -Property Name | ConvertTo-Json | Out-File fichero.json
     }
 }
+
+#Tareas programadas en PowerShell
+#https://www.jesusninoc.com/2017/03/01/tareas-programadas-en-powershell/
