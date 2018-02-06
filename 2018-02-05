@@ -67,6 +67,9 @@ Get-ChildItem $_ | Select-Object -Property Name | ConvertTo-Json | Out-File fich
 ##########################################################################################
 #Windows
 #https://github.com/jesusninoc/Bash/blob/master/Examenes/Examen-2016-02-11-Solucion.sh
+#Tareas programadas en PowerShell
+#https://www.jesusninoc.com/2017/03/01/tareas-programadas-en-powershell/
+
 #Linux
 #https://github.com/jesusninoc/PowerShell/blob/master/TareasProgramadas/EjemploTareaProgramada.ps1
 
