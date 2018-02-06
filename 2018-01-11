@@ -8,6 +8,8 @@
 #Windows
 #Instalar en PowerShell 5
 https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
+#Instalar remotamente un paquete MSI
+#https://www.jesusninoc.com/2017/05/27/instalar-remotamente-un-paquete-msi/
 
 ###############################################################################################################
 #Listado de software (ejercicios con sobre el software instalado)
