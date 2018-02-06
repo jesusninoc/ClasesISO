@@ -85,7 +85,7 @@
 #Tareas para monitorizar
 ##########################################################################################
 #Realizar una función de hash sobre varios ficheros
-#https://www.jesusninoc.com/2018/02/04/realizar-una-funcion-de-hash-sobre-varios-ficheros/
+	#https://www.jesusninoc.com/2018/02/04/realizar-una-funcion-de-hash-sobre-varios-ficheros/
 #Si se ha actualizado
 	#Finding Computers that haven’t installed a special Hotfix
 	#https://sid-500.com/2018/02/04/powershell-gathering-information-of-all-installed-updates-hotfixes-on-all-domain-computers/
@@ -94,6 +94,9 @@
 #Si usuario ejecuta proceso
 #Crear usuario
 #Crear grupo
+#Obtener información sobre el hardware
+	#Obtener información sobre el hardware creando un objeto con todos los datos
+	#https://www.jesusninoc.com/2017/09/07/obtener-informacion-sobre-el-hardware-creando-un-objeto-con-todos-los-datos/
 #...
 
 ##########################################################################################
