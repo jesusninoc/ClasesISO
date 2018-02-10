@@ -29,7 +29,7 @@
 		<usuario>javier</usuario>
 	</tarea>
 	<tarea id="6">
-		<nombretarea>Realizar una función de hash sobre varios ficheros</nombretarea>
+		<nombretarea>Realizar una funcion de hash sobre varios ficheros</nombretarea>
 		<tarea>Get-FileHash ficheromaestro.txt</tarea>
 		<usuario>javier</usuario>
 	</tarea>
@@ -73,7 +73,7 @@
       },
       {
         "id": "6",
-        "nombretarea": "Realizar una función de hash sobre varios ficheros",
+        "nombretarea": "Realizar una funcion de hash sobre varios ficheros",
         "tarea": "Get-FileHash ficheromaestro.txt",
         "usuario": "javier"
       }
