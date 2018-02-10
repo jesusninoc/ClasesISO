@@ -19,6 +19,33 @@ Get-ChildItem | %{
 }
 
 ##########################################################################################
+#Solución en PowerShell
+
+$hash = @{}
+$img = 0
+
+Get-Content .\correo.html | %{
+    if($_ | Select-String "jpg")
+    {
+        $img += 1
+        $hash.Add("JPG "+$img,$_)
+    }
+    elseif($_ | Select-String "mp3")
+    {
+        $hash.Add("MP3",$_)
+    }
+    elseif($_ | Select-String "textarea")
+    {
+        $hash.Add("Text",$_ -replace "<.*?>")
+    }
+}
+
+$object = [PSCustomObject]$hash
+$json = $object | Sort-Object Name | ConvertTo-Json
+$json
+##########################################################################################
+
+##########################################################################################
 #Ayuda para generar XML o JSON
 ##########################################################################################
 "This is a test" | Export-Clixml sample.xml
