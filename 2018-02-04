@@ -82,6 +82,44 @@
 }
 
 ##########################################################################################
+#Solución en PowerShell
+
+$monitorizar = '{
+  "monitorizar": {
+    "tarea": [
+      {
+        "id": "1",
+        "nombretarea": "Si se ha actualizado",
+        "tarea": "Get-Hotfix"
+      },
+      {
+        "id": "2",
+        "nombretarea": "Si programa instalado",
+        "tarea": "msiexec",
+        "programa": "notepad"
+      },
+      {
+        "id": "3",
+        "nombretarea": "Si fichero permisos",
+        "tarea": "icacls",
+        "fichero": "directorio"
+      },
+      {
+        "id": "4",
+        "nombretarea": "Si usuario ejecuta proceso",
+        "tarea": "Get-WmiObject win32_process |% {Write-Host $_.processname}",
+      }
+    ]
+  }
+}' | ConvertFrom-Json
+
+$monitorizar.monitorizar.tarea | %{
+    $_.nombretarea
+    $_.tarea | iex
+}
+##########################################################################################
+
+##########################################################################################
 #Tareas para monitorizar
 ##########################################################################################
 #Realizar una función de hash sobre varios ficheros
