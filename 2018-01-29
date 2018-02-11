@@ -1,29 +1,31 @@
-##############################################################################################
-#Repaso
-##############################################################################################
-#Semana pasada
-#https://github.com/jesusninoc/ClasesISO/blob/master/2018-01-26
+# Repaso
+## Semana pasada
+https://github.com/jesusninoc/ClasesISO/blob/master/2018-01-26
 
-#Jerarquía de directorios y archivos
-#http://www.dmdcosillas.org/jerarquia-de-directorios-y-archivos/
+## Jerarquía de directorios y archivos
+http://www.dmdcosillas.org/jerarquia-de-directorios-y-archivos/
 
-#Log del cron
+## Log del cron
+```bash
 cat CRON /var/log/syslog
+```
 
-#Buscar en Bash
-#https://github.com/jesusninoc/Bash/blob/master/Ficheros/EjerciciosFicherosBuscar.sh
+## Buscar en Bash
+https://github.com/jesusninoc/Bash/blob/master/Ficheros/EjerciciosFicherosBuscar.sh
 
-#Utilizar cadenas
-#https://github.com/jesusninoc/Bash/blob/master/Repaso/UtilizarCadenas.sh
+## Utilizar cadenas
+https://github.com/jesusninoc/Bash/blob/master/Repaso/UtilizarCadenas.sh
 
-#Ejercicios avanzados sobre cadenas en Linux
+## Ejercicios avanzados sobre cadenas en Linux
+```bash
 paste
 join
+```
 
-#Ejemplos de ejecución de comandos en Bash y PowerShell
-#https://www.jesusninoc.com/2008/09/29/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-1/
-#https://www.jesusninoc.com/2008/09/30/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-2/
-#https://www.jesusninoc.com/2008/10/01/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-3/
+## Ejemplos de ejecución de comandos en Bash y PowerShell
+https://www.jesusninoc.com/2008/09/29/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-1/
+https://www.jesusninoc.com/2008/09/30/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-2/
+https://www.jesusninoc.com/2008/10/01/ejemplos-de-ejecucion-de-comandos-en-bash-y-powershell-parte-3/
 
-#Analizar la cabecera de un fichero para conocer la extensión real del fichero con PowerShell
-#https://www.jesusninoc.com/2018/01/28/analizar-la-cabecera-de-un-fichero-para-conocer-la-extension-real-del-fichero-con-powershell/
+## Analizar la cabecera de un fichero para conocer la extensión real del fichero con PowerShell
+https://www.jesusninoc.com/2018/01/28/analizar-la-cabecera-de-un-fichero-para-conocer-la-extension-real-del-fichero-con-powershell/
