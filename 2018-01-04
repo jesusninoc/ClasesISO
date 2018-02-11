@@ -1,28 +1,22 @@
-#############################################################################################################################
+# Ofuscación
+https://www.jesusninoc.com/2017/12/01/ofuscacion-en-powershell/
 
-#Ofuscación
-#https://www.jesusninoc.com/2017/12/01/ofuscacion-en-powershell/
+# Magia
+https://www.jesusninoc.com/2017/02/08/magia-con-powershell/
 
-#Magia
-#https://www.jesusninoc.com/2017/02/08/magia-con-powershell/
+# Reconocimiento
 
-#############################################################################################################################
+## Utilizar el motor de síntesis de voz en Powershell para analizar audios con voz comparando los resultados entre gramáticas
+https://www.jesusninoc.com/2017/12/27/utilizar-el-motor-de-sintesis-de-voz-en-powershell-para-analizar-audios-con-voz-comparando-los-resultados-entre-gramaticas/
 
-#Utilizar el motor de síntesis de voz en Powershell para analizar audios con voz comparando los resultados entre gramáticas
-#https://www.jesusninoc.com/2017/12/27/utilizar-el-motor-de-sintesis-de-voz-en-powershell-para-analizar-audios-con-voz-comparando-los-resultados-entre-gramaticas/
+## Analizar frecuencias de audio con SDRSharp
+https://www.jesusninoc.com/2016/04/29/analizar-frecuencias-de-audio-con-sdrsharp/
 
-#############################################################################################################################
+## Reproducir notas musicales con PowerShell
+https://www.jesusninoc.com/2017/09/23/reproducir-notas-musicales-con-powershell/
 
-#Analizar frecuencias de audio con SDRSharp
-#https://www.jesusninoc.com/2016/04/29/analizar-frecuencias-de-audio-con-sdrsharp/
+## Detectar una frecuencia de sonido emitida desde un dispositivo utilizando la tarjeta de sonido y el programa SDRSharp
+https://www.jesusninoc.com/2017/01/01/detectar-una-frecuencia-de-sonido-emitida-desde-un-dispositivo-utilizando-la-tarjeta-de-sonido-y-el-programa-sdrsharp/
 
-#Reproducir notas musicales con PowerShell
-#https://www.jesusninoc.com/2017/09/23/reproducir-notas-musicales-con-powershell/
-
-#Detectar una frecuencia de sonido emitida desde un dispositivo utilizando la tarjeta de sonido y el programa SDRSharp
-#https://www.jesusninoc.com/2017/01/01/detectar-una-frecuencia-de-sonido-emitida-desde-un-dispositivo-utilizando-la-tarjeta-de-sonido-y-el-programa-sdrsharp/
-
-#Analizar frecuencias de audio con SDRSharp (reconocer la palabra hola)
-#https://www.jesusninoc.com/2017/01/31/analizar-frecuencias-de-audio-con-sdrsharp-reconocer-la-palabra-hola/
-
-#############################################################################################################################
+## Analizar frecuencias de audio con SDRSharp (reconocer la palabra hola)
+https://www.jesusninoc.com/2017/01/31/analizar-frecuencias-de-audio-con-sdrsharp-reconocer-la-palabra-hola/
