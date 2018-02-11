@@ -1,7 +1,0 @@
-######################################################################
-#Saber traducir lo básico entre Linux y PowerShell
-######################################################################
-
-#He visto el tema de read y es así
-echo -n "How old are you? "
-read age
