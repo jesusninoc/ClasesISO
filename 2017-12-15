@@ -1,11 +1,9 @@
-#######################################################################################################
-#Pronunciar un texto mediante el motor de síntesis de voz en PowerShell
-#Pronunciar un texto cambiando la voz del motor de síntesis de voz en PowerShell
-#Guardar en un fichero de audio un texto pronunciado mediante el motor de síntesis de voz en PowerShell
-#######################################################################################################
+# - Pronunciar un texto mediante el motor de síntesis de voz en PowerShell
+# - Pronunciar un texto cambiando la voz del motor de síntesis de voz en PowerShell
+# - Guardar en un fichero de audio un texto pronunciado mediante el motor de síntesis de voz en PowerShell
 
-#Pronunciar un texto mediante el motor de síntesis de voz en PowerShell
-
+# Pronunciar un texto mediante el motor de síntesis de voz en PowerShell
+```PowerShell
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
 
@@ -17,11 +15,10 @@ $speaker.Voice
 
 #Pronunciar el texto
 $speaker.Speak("Hola, hola. ¿Qué tal estás?. ¿Qué edad tienes?.")
+```
 
-#######################################################################################################
-
-#Pronunciar un texto cambiando la voz del motor de síntesis de voz en PowerShell
-
+# Pronunciar un texto cambiando la voz del motor de síntesis de voz en PowerShell
+```PowerShell
 #Cargar los espacios de nombres System.Speech que contienen los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
 
@@ -33,11 +30,10 @@ $speaker.SelectVoice("Microsoft Helena Desktop")
 
 #Pronunciar el texto
 $speaker.Speak("Hola, hola. ¿Qué tal estás?. ¿Qué edad tienes?.")
+```
 
-#######################################################################################################
-
-#Guardar en un fichero de audio un texto pronunciado mediante el motor de síntesis de voz en PowerShell
-
+# Guardar en un fichero de audio un texto pronunciado mediante el motor de síntesis de voz en PowerShell
+```PowerShell
 #Cargar el espacio de nombres System.Speech que contiene los tipos que admiten el reconocimiento de voz
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Speech")
 
@@ -54,3 +50,4 @@ $speaker.Speak("Hola, hola. ¿Qué tal estás?. ¿Qué edad tienes?.")
 $speaker.SetOutputToDefaultAudioDevice()
 
 .\saludos.wav
+```
