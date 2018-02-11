@@ -1,53 +1,42 @@
-#########################################################################################################
-#Clases primeras horas
-#########################################################################################################
+# Clases primeras horas
 
-#########################################################################################################
-#Analizar información sobre usuarios con PowerShell
-#https://www.youtube.com/watch?v=bZWs08BBjDc
-#https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjerciciosUsuarios.ps1
+## Analizar información sobre usuarios con PowerShell
+https://www.youtube.com/watch?v=bZWs08BBjDc
+https://github.com/jesusninoc/PowerShell/blob/master/Usuarios/EjerciciosUsuarios.ps1
 
-#########################################################################################################
-#Clase última hora jueves
-#########################################################################################################
+# Clase última hora jueves
 
-#########################################################################################################
-#Acceso por FTP con PowerShell
-#http://www.powershellmagazine.com/2014/07/03/posh-ssh-open-source-ssh-powershell-module
+## Acceso por FTP con PowerShell
+http://www.powershellmagazine.com/2014/07/03/posh-ssh-open-source-ssh-powershell-module
 
-#########################################################################################################
-#Crear un fichero HTML con el contenido de la tabla posts de WordPress con PowerShell
-#https://www.jesusninoc.com/2017/09/20/crear-un-fichero-html-con-el-contenido-de-la-tabla-posts-de-wordpress-con-powershell/
+## Crear un fichero HTML con el contenido de la tabla posts de WordPress con PowerShell
+https://www.jesusninoc.com/2017/09/20/crear-un-fichero-html-con-el-contenido-de-la-tabla-posts-de-wordpress-con-powershell/
 
-#########################################################################################################
-#Ejercicios curso MySQL con PowerShell
-#https://www.jesusninoc.com/2017/02/20/ejercicios-curso-mysql-con-powershell/
+## Ejercicios curso MySQL con PowerShell
+https://www.jesusninoc.com/2017/02/20/ejercicios-curso-mysql-con-powershell/
 
-#########################################################################################################
-#Keylogger sencillo con PowerShell
-#https://www.jesusninoc.com/2017/03/11/keylogger-sencillo-con-powershell/
+## Keylogger sencillo con PowerShell
+https://www.jesusninoc.com/2017/03/11/keylogger-sencillo-con-powershell/
 
-#########################################################################################################
-#Listar acontecimientos históricos utilizando PowerShell
-#https://www.jesusninoc.com/2017/10/27/listar-acontecimientos-historicos-utilizando-powershell/
-#Ejercicios de PowerShell: crear un diccionario
-#https://www.jesusninoc.com/2016/06/07/ejercicios-de-powershell-crear-un-diccionario/
-#Ejercicios de PowerShell: dividir el contenido de una frase en palabras y guardar cada palabra en un fichero
-#https://www.jesusninoc.com/2016/12/07/ejercicios-de-powershell-dividir-el-contenido-de-una-frase-en-palabras-y-guardar-cada-palabra-en-un-fichero/
+## Listar acontecimientos históricos utilizando PowerShell
+https://www.jesusninoc.com/2017/10/27/listar-acontecimientos-historicos-utilizando-powershell/
 
-########################################################################################################
-#Ejecutar código PHP desde PowerShell
-#https://www.jesusninoc.com/2017/03/01/ejecutar-codigo-php-desde-powershell/
+## Ejercicios de PowerShell: crear un diccionario
+https://www.jesusninoc.com/2016/06/07/ejercicios-de-powershell-crear-un-diccionario/
 
-########################################################################################################
-#Enviar datos a un formulario de Google Docs desde PowerShell (deducir los parámetros que se envían por POST)
-#https://www.jesusninoc.com/2017/04/30/enviar-datos-a-un-formulario-de-google-docs-desde-powershell-deducir-los-parametros-que-se-envian-por-post/
+## Ejercicios de PowerShell: dividir el contenido de una frase en palabras y guardar cada palabra en un fichero
+https://www.jesusninoc.com/2016/12/07/ejercicios-de-powershell-dividir-el-contenido-de-una-frase-en-palabras-y-guardar-cada-palabra-en-un-fichero/
 
-########################################################################################################
-#Descargar imágenes desde Pinterest con PowerShell y analizar con TensorFlow
+## Ejecutar código PHP desde PowerShell
+https://www.jesusninoc.com/2017/03/01/ejecutar-codigo-php-desde-powershell/
 
-#Descargar imágenes desde Pinterest con PowerShell
-#https://www.jesusninoc.com/2017/02/21/descargar-imagenes-desde-pinterest-con-powershell/
+## Enviar datos a un formulario de Google Docs desde PowerShell (deducir los parámetros que se envían por POST)
+https://www.jesusninoc.com/2017/04/30/enviar-datos-a-un-formulario-de-google-docs-desde-powershell-deducir-los-parametros-que-se-envian-por-post/
 
-#Ejecutar un ejemplo de reconocimiento de imágenes con TensorFlow realizando una conexión SSH a un contenedor Docker desde PowerShell en Windows
-#https://www.jesusninoc.com/2017/10/22/ejecutar-un-ejemplo-de-reconocimiento-de-imagenes-con-tensorflow-realizando-una-conexion-ssh-a-un-contenedor-docker-desde-powershell-en-windows/
+## Descargar imágenes desde Pinterest con PowerShell y analizar con TensorFlow
+
+### Descargar imágenes desde Pinterest con PowerShell
+https://www.jesusninoc.com/2017/02/21/descargar-imagenes-desde-pinterest-con-powershell/
+
+### Ejecutar un ejemplo de reconocimiento de imágenes con TensorFlow realizando una conexión SSH a un contenedor Docker desde PowerShell en Windows
+https://www.jesusninoc.com/2017/10/22/ejecutar-un-ejemplo-de-reconocimiento-de-imagenes-con-tensorflow-realizando-una-conexion-ssh-a-un-contenedor-docker-desde-powershell-en-windows/
