@@ -1,57 +1,39 @@
-##################################
-#Grabar audio
-##################################
-#http://www.jesusninoc.com/2015/06/27/grabar-audio-desde-la-linea-de-comandos/
+# Grabar audio
+http://www.jesusninoc.com/2015/06/27/grabar-audio-desde-la-linea-de-comandos/
 
-##################################
-#Activar cámara
-##################################
-#https://www.google.es/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=webcam%20send%20desktop
+# Activar cámara
+https://www.google.es/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=webcam%20send%20desktop
 
-##################################
-#Keylogger
-##################################
-#http://powershell.com/cs/blogs/tips/archive/2015/12/09/creating-simple-keylogger.aspx
-#https://github.com/vacmf/powershell-scripts/blob/master/powershell-keylogger.ps1
+# Keylogger
+http://powershell.com/cs/blogs/tips/archive/2015/12/09/creating-simple-keylogger.aspx
+https://github.com/vacmf/powershell-scripts/blob/master/powershell-keylogger.ps1
 
-##################################
-#MobaXterm
-##################################
-#https://www.jesusninoc.com/2016/01/19/mobaxterm/
+# MobaXterm
+https://www.jesusninoc.com/2016/01/19/mobaxterm/
 
-##################################
-#Utilizar tail -f en Windows Server 2003 con Copssh
-##################################
-#https://www.jesusninoc.com/2009/05/21/utilizar-tail-f-en-windows-server-2003-con-copssh/
+# Utilizar tail -f en Windows Server 2003 con Copssh
+https://www.jesusninoc.com/2009/05/21/utilizar-tail-f-en-windows-server-2003-con-copssh/
 
-##################################
-#THC-Hydra
-##################################
-#https://www.jesusninoc.com/2015/03/11/thc-hydra/
+# THC-Hydra
+https://www.jesusninoc.com/2015/03/11/thc-hydra/
 
-##################################
-#Powershell + psExec
-##################################
-#http://bertdotself.com/powershell-psexec/
+# Powershell + psExec
+http://bertdotself.com/powershell-psexec/
 
-##################################
-#Acceso remoto desde Powershell
-##################################
+# Acceso remoto desde Powershell
+```PowerShell
 Invoke-Command -Credential administrador -ComputerName 192.168.1.56 -ScriptBlock{hostname} 
+```
 
-##################################
-#Netcat Cheat Sheet
-##################################
-#https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf
+# Netcat Cheat Sheet
+https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf
 
-##################################
-#SSH
-##################################
-#Configurar un túnel utilizando un servidor SSH
-#https://www.jesusninoc.com/2016/02/08/configurar-un-tunel-utilizando-un-servidor-ssh/
-#Configurar Firefox para utilizar un túnel SSH como un proxy SOCKS
-#https://www.jesusninoc.com/2016/02/09/configurar-firefox-para-utilizar-un-tunel-ssh-como-un-proxy-socks/
-#Realizar conexión con WinSCP utilizando un túnel SSH
-#https://www.jesusninoc.com/2016/02/12/realizar-conexion-con-winscp-utilizando-un-tunel-ssh/
-#Conexión entre Bash Bunny y el equipo con PuTTY a través de la conexión de red IBM USB Remote NDIS Network Device
-#https://www.jesusninoc.com/2017/04/14/conexion-entre-bash-bunny-y-el-equipo-con-putty-a-traves-de-la-conexion-de-red-ibm-usb-remote-ndis-network-device/
+# SSH
+## Configurar un túnel utilizando un servidor SSH
+https://www.jesusninoc.com/2016/02/08/configurar-un-tunel-utilizando-un-servidor-ssh/
+## Configurar Firefox para utilizar un túnel SSH como un proxy SOCKS
+https://www.jesusninoc.com/2016/02/09/configurar-firefox-para-utilizar-un-tunel-ssh-como-un-proxy-socks/
+## Realizar conexión con WinSCP utilizando un túnel SSH
+https://www.jesusninoc.com/2016/02/12/realizar-conexion-con-winscp-utilizando-un-tunel-ssh/
+## Conexión entre Bash Bunny y el equipo con PuTTY a través de la conexión de red IBM USB Remote NDIS Network Device
+https://www.jesusninoc.com/2017/04/14/conexion-entre-bash-bunny-y-el-equipo-con-putty-a-traves-de-la-conexion-de-red-ibm-usb-remote-ndis-network-device/
