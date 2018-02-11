@@ -1,18 +1,21 @@
-#Configurar un túnel utilizando un servidor SSH
-#https://www.jesusninoc.com/2016/02/08/configurar-un-tunel-utilizando-un-servidor-ssh/
+# Configurar un túnel utilizando un servidor SSH
+https://www.jesusninoc.com/2016/02/08/configurar-un-tunel-utilizando-un-servidor-ssh/
 
-##################################
-#Utilizar xargs
-##################################
-#Definir donde se van a definir los parámetros
+# Utilizar xargs
+Definir donde se van a definir los parámetros
+```bash
 ls | xargs -I ARG echo fichero ARG fichero
-
-#Definir donde se van a definir los parámetros
+```
+Definir donde se van a definir los parámetros
+```bash
 echo "después" | xargs echo "antes"
 echo "antes" | xargs -i echo {} "después"
-
-#Mostrar los parámetros 1 y 2
+```
+Mostrar los parámetros 1 y 2
+```bash
 cat fichero.txt | xargs -l bash -c 'echo this is first:$0 second:$1'
-
-#Asignar permisos leyendo desde un fichero el nombre y el permiso en octal
+```
+Asignar permisos leyendo desde un fichero el nombre y el permiso en octal
+```bash
 cat fichero.txt | xargs bash -c 'chmod $0 $1'
+```
