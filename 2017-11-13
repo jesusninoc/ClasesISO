@@ -1,14 +1,11 @@
-######################################################################
-#Utilizar el IF en PowerShell
-######################################################################
-
+# Utilizar el IF en PowerShell
+```PowerShell
 $usuario=Read-Host "Introduzca nombre de usuario"
 $pass=Read-Host "Introduzca nombre de usuario"
 $usuario
 $pass
-
-######################################################################
-
+```
+```PowerShell
 $usuario=Read-Host "Introduzca nombre de usuario"
 $pass=Read-Host "Introduzca nombre de usuario"
 $usuario
@@ -21,9 +18,8 @@ else
 {
 
 }
-
-######################################################################
-
+```
+```PowerShell
 $usuario=Read-Host "Introduzca nombre de usuario"
 $pass=Read-Host "Introduzca nombre de usuario"
 $usuario
@@ -36,55 +32,52 @@ else
 {
 "el usuario no es hola"
 }
+```
 
-######################################################################
-
-#Introducir pass y ver si es correcto
+## Introducir pass y ver si es correcto
+```PowerShell
 $user=Read-Host
 $pass=Read-Host
 if($user -eq "pepito" -and $pass -eq "secreto")
 {
 Write-Host $user
 }
+```
 
-######################################################################
+# Permisos en Linux
+|Permiso|Explicación
+|---|---
+|- - -	= 0|no se tiene ningún permiso
+|- - x	= 1|solo permiso de ejecución
+|- w -	= 2|solo permiso de escritura
+|- w x	= 3|permisos de escritura y ejecución
+|r - -	= 4|solo permiso de lectura
+|r - x	= 5|permisos de lectura y ejecución
+|r w -	= 6|permisos de lectura y escritura
+|r w x	= 7|todos los permisos establecidos, lectura, escritura y ejecución
 
-#Permisos en Linux
-#- - -	= 0	no se tiene ningún permiso
-#- - x	= 1	solo permiso de ejecución
-#- w -	= 2	solo permiso de escritura
-#- w x	= 3	permisos de escritura y ejecución
-#r - -	= 4	solo permiso de lectura
-#r - x	= 5	permisos de lectura y ejecución
-#r w -	= 6	permisos de lectura y escritura
-#r w x	= 7	todos los permisos establecidos, lectura, escritura y ejecución
+# Permisos especiales en Linux
+|Permiso|Explicación
+|---|---
+|- - - - - - - - -	= 0|Predeterminado, sin permisos especiales. No se requiere indicar.
+|- - - - - - - - t	= 1|Bit de persistencia, sticky bit
+|- - - - - s - - -	= 2|Bit sgid de grupo
+|- - - - - s - - t	= 3|Bit sgid y sticky
+|- - s - - - - - -	= 4|Bit suid
+|- - s - - - - - t	= 5|Bit suid y sticky
+|- - s - - s - - -	= 6|Bit suid y sgid
+|- - s - - s - - t	= 7|Bit suid, sgid y sticky
 
-#Permisos especiales en Linux
-#- - - - - - - - -	= 0	Predeterminado, sin permisos especiales. No se requiere indicar.
-#- - - - - - - - t	= 1	Bit de persistencia, sticky bit
-#- - - - - s - - -	= 2	Bit sgid de grupo
-#- - - - - s - - t	= 3	Bit sgid y sticky
-#- - s - - - - - -	= 4	Bit suid
-#- - s - - - - - t	= 5	Bit suid y sticky
-#- - s - - s - - -	= 6	Bit suid y sgid
-#- - s - - s - - t	= 7	Bit suid, sgid y sticky
-
-######################################################################
-
-######################################################################
-#Preparar clase para el jueves que viene
-######################################################################
-
-######################################################################
-
-#Instalar Icecast is free server software for streaming multimedia
+# Preparar clase para el jueves que viene
+## Instalar Icecast is free server software for streaming multimedia
+```Bash
 sudo apt-get install icecast2 darkice
-#Descargar un mp4 y un mp3 en la carpeta /usr/share/icecast2/web
+```
+## Descargar un mp4 y un mp3 en la carpeta /usr/share/icecast2/web
+```Bash
 wget https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
-#Reproducir ficheros desde el móvil
-#http://192.168.1.162:8000/sound.mp3
-
-#Número de hilos que ejecuta Icecast
-#https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosHilos.sh
-
-######################################################################
+```
+## Reproducir ficheros desde el móvil
+http://192.168.1.162:8000/sound.mp3
+## Número de hilos que ejecuta Icecast
+https://github.com/jesnino/Bash/blob/master/Procesos/EjerciciosHilos.sh
