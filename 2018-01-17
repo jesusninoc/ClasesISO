@@ -1,46 +1,42 @@
-###############################################################################################################
-#Antivirus
-###############################################################################################################
-#https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
-#https://www.jesusninoc.com/antivirus/
+# Antivirus
+https://www.jesusninoc.com/2017/07/05/5-gestion-del-software-en-powershell/
+https://www.jesusninoc.com/antivirus/
 
-#Vulnerability
-#https://www.jesusninoc.com/vulnerability/
+## Vulnerability
+https://www.jesusninoc.com/vulnerability/
 
-#Virus
-#https://github.com/jesusninoc/Seguridad/blob/master/Una%20aproximaci%C3%B3n%20a%20los%20virus%20en%20PowerShell.md
+## Virus
+https://github.com/jesusninoc/Seguridad/blob/master/Una%20aproximaci%C3%B3n%20a%20los%20virus%20en%20PowerShell.md
 
-#Virus examples
-#https://www.symantec.com/security_response/landing/threats.jsp
-#https://www.symantec.com/security_response/writeup.jsp?docid=2002-012722-4614-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2001-031313-1110-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2001-112410-5327-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2016-051114-5305-99&tabid=2
-#https://www.symantec.com/security_response/writeup.jsp?docid=2016-052722-4205-99&tabid=2
-#https://www.symantec.com/security_response/writeup.jsp?docid=2016-051817-0655-99&tabid=2
-#https://www.symantec.com/security_response/writeup.jsp?docid=2016-052017-5535-99&tabid=2
-#https://www.symantec.com/security_response/writeup.jsp?docid=2016-051210-1139-99&tabid=2
-#https://www.symantec.com/security_response/writeup.jsp?docid=2016-052615-4530-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2002-012722-4614-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2002-111216-5350-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2009-061215-3706-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2009-063005-3448-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2010-100614-5201-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2001-031313-1110-99
-#https://www.symantec.com/security_response/writeup.jsp?docid=2001-112410-5327-99
+## Virus examples
+https://www.symantec.com/security_response/landing/threats.jsp
+https://www.symantec.com/security_response/writeup.jsp?docid=2002-012722-4614-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2001-031313-1110-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2001-112410-5327-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2016-051114-5305-99&tabid=2
+https://www.symantec.com/security_response/writeup.jsp?docid=2016-052722-4205-99&tabid=2
+https://www.symantec.com/security_response/writeup.jsp?docid=2016-051817-0655-99&tabid=2
+https://www.symantec.com/security_response/writeup.jsp?docid=2016-052017-5535-99&tabid=2
+https://www.symantec.com/security_response/writeup.jsp?docid=2016-051210-1139-99&tabid=2
+https://www.symantec.com/security_response/writeup.jsp?docid=2016-052615-4530-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2002-012722-4614-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2002-111216-5350-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2009-061215-3706-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2009-063005-3448-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2010-100614-5201-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2001-031313-1110-99
+https://www.symantec.com/security_response/writeup.jsp?docid=2001-112410-5327-99
 
-#VirusTotal
-#https://www.virustotal.com/#/home/upload
+## VirusTotal
+https://www.virustotal.com/#/home/upload
 
-#Upload a suspected infected file (Retail)
-#https://submit.symantec.com/websubmit/retail.cgi
+## Upload a suspected infected file (Retail)
+https://submit.symantec.com/websubmit/retail.cgi
 
-###############################################################################################################
-#Tareas programadas
-###############################################################################################################
+# Tareas programadas
 
-#Tareas programadas en Windows
-#https://github.com/jesusninoc/PowerShell/blob/master/TareasProgramadas/EjemploTareaProgramada.ps1
+## Tareas programadas en Windows
+https://github.com/jesusninoc/PowerShell/blob/master/TareasProgramadas/EjemploTareaProgramada.ps1
 
-#Tareas programadas en Linux
-#https://github.com/jesusninoc/Bash/blob/master/Examenes/Examen-2016-02-11-Solucion.sh
+## Tareas programadas en Linux
+https://github.com/jesusninoc/Bash/blob/master/Examenes/Examen-2016-02-11-Solucion.sh
