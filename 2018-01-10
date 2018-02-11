@@ -1,4 +1,0 @@
-#Instalar con aptitude
-aptitude update && aptitude install -y a b c d e
-
-#Script para instalar leyendo de fichero (Debian y Fedora)
