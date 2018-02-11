@@ -1,9 +1,0 @@
-#####################################
-#EJERCICOS AVANZADOS SOBRE PERMISOS
-#####################################
-
-#Permisos en Linux avanzados
-#https://github.com/jesnino/Bash/blob/master/Permisos/EjercicioPermisos.sh
-
-#Asignar permisos mediante llamada a sistema chmod en C
-#https://www.jesusninoc.com/2014/12/01/chmod-system-call-example/
