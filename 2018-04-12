@@ -1,0 +1,5 @@
+# Realizar un programa que compruebe dlls e intente ejecutar calc.exe
+```MS-DOS
+rundll32 zipfldr.dll, RouteTheCall calc.exe
+rundll32 advpack.dll, RegisterOCX calc.exe
+```
