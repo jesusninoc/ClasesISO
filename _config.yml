@@ -1,5 +1,12 @@
 theme: jekyll-theme-architect
 
-{% for page in site.pages %}
-[{{ page.title }}]({{ page.url }})
+{% for post in site.posts %}
+  <dt><time>{{ post.date | date: "%d %b %y" }}</time></dt>
+  {% if post.external_url %}
+  <dd class="{{ post.external_site }}">
+    [{{ post.title }}]({{ post.external_url }})
+  </dd>
+  {% else %}
+  <dd>[{{ post.title }}]({{ post.url }})</dd>
+  {% endif %}
 {% endfor %}
