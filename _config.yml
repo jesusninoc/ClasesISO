@@ -1,12 +1,10 @@
 theme: jekyll-theme-architect
 
-title: "-Clases de Implantación de Sistemas Operativos"
-
 # Front Matter Defaults
 defaults:
   # Post defaults
   - scope:
-      path: "."
+      path: "/"
       type: posts
     values:
       layout: post
