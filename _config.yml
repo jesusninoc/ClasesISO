@@ -1,1 +1,12 @@
 theme: jekyll-theme-architect
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "."
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
