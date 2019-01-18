@@ -1,4 +1,7 @@
 theme: jekyll-theme-architect
 
-kramdown:
-  parse_block_html: true
+{% for page in site.pages %}
+  {% if page.url == '/path/to/page.html' %}
+[{{ page.title }}]({{ page.url }})
+  {% endif %}
+{% endfor %}
