@@ -4,7 +4,7 @@ theme: jekyll-theme-architect
 defaults:
   # Post defaults
   - scope:
-      path: "/"
+      path: ""
       type: posts
     values:
       layout: post
