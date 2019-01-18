@@ -1,7 +1,5 @@
 theme: jekyll-theme-architect
 
 {% for page in site.pages %}
-  {% if page.url == '/path/to/page.html' %}
 [{{ page.title }}]({{ page.url }})
-  {% endif %}
 {% endfor %}
