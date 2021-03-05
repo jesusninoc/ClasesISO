@@ -1,13 +1,27 @@
-Linux Essentials  
-https://www.lpi.org/study-resources/linux-essentials-exam-objectives/  
-  
+```PowerShell
+Linux Essentials
+```
+```PowerShell
+https://www.lpi.org/study-resources/linux-essentials-exam-objectives/
+```
+```PowerShell
+
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-Introduction  
+```PowerShell
+Introduction
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-Windows PowerShell uses a "verb-noun" naming system  
-  
+```PowerShell
+Windows PowerShell uses a "verb-noun" naming system
+```
+```PowerShell
+
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-The Linux Community and a Career in Open Source  
+```PowerShell
+The Linux Community and a Career in Open Source
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
 -Linux Evolution and Popular Operating Systems  
   - Key Knowledge Areas:  
@@ -39,144 +53,282 @@ The Linux Community and a Career in Open Source
     - Password issues  
     - Privacy issues and tools  
     - Use of common open source applications in presentations and projects  
-  
+```PowerShell
+
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-Finding Your Way on a Linux System  
+```PowerShell
+Finding Your Way on a Linux System
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
 -Command Line Basics  
   - Key Knowledge Areas:  
     - Basic shell  
     - Command line syntax  
-Get-Verb  
-Get-Command -Noun  
+```PowerShell
+Get-Verb
+```
+```PowerShell
+Get-Command -Noun
+```
     - Variables  
-http://www.jesusninoc.com/2014/12/31/curso-de-powershell/  
+```PowerShell
+http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
+```
     - Globbing  
-*  
-?  
+```PowerShell
+*
+```
+```PowerShell
+?
+```
     - Quoting  
-"  
-'  
+```PowerShell
+"
+```
+```PowerShell
+'
+```
   - Terms and Utilities:  
     - Bash  
     - echo  
-Write-Host  
+```PowerShell
+Write-Host
+```
     - history  
-Get-History  
+```PowerShell
+Get-History
+```
     - PATH env variable  
-$Env:Path  
-[Environment]::GetEnvironmentVariable("Path")  
+```PowerShell
+$Env:Path
+```
+```PowerShell
+[Environment]::GetEnvironmentVariable("Path")
+```
     - export  
     - type  
-Get-Content  
+```PowerShell
+Get-Content
+```
 -Using the Command Line to Get Help  
   - Key Knowledge Areas:  
     - Man  
-Get-Help  
+```PowerShell
+Get-Help
+```
     - Info  
   - Terms and Utilities:  
     - man  
-Get-Help  
+```PowerShell
+Get-Help
+```
     - info  
-Get-Help  
+```PowerShell
+Get-Help
+```
     - Man pages  
-Get-Help  
+```PowerShell
+Get-Help
+```
     - /usr/share/doc/  
-Get-Help  
+```PowerShell
+Get-Help
+```
     - locate  
-  
+```PowerShell
+
+```
 -Using Directories and Listing Files  
   - Key Knowledge Areas:  
     - Files, directories  
-Get-ChildItem -File  
-Get-ChildItem -Directory  
+```PowerShell
+Get-ChildItem -File
+```
+```PowerShell
+Get-ChildItem -Directory
+```
     - Hidden files and directories  
-Get-ChildItem -Hidden  
+```PowerShell
+Get-ChildItem -Hidden
+```
     - Home  
-$home  
+```PowerShell
+$home
+```
     - Absolute and relative paths  
-c:\  
-..\  
+```PowerShell
+c:\
+```
+```PowerShell
+..\
+```
   - Terms and Utilities:  
     - Common options for ls  
-Get-ChildItem  
+```PowerShell
+Get-ChildItem
+```
     - Recursive listings  
-Get-ChildItem -Recurse  
+```PowerShell
+Get-ChildItem -Recurse
+```
     - cd  
-Set-Location  
+```PowerShell
+Set-Location
+```
     - . and ..  
-.  
-..  
+```PowerShell
+.
+```
+```PowerShell
+..
+```
     - home and ~  
-Set-Location ~  
-  
+```PowerShell
+Set-Location ~
+```
+```PowerShell
+
+```
 -Creating, Moving and Deleting Files  
   - Key Knowledge Areas:  
     - Files and directories  
-Get-ChildItem -File  
-Get-ChildItem -Directory  
+```PowerShell
+Get-ChildItem -File
+```
+```PowerShell
+Get-ChildItem -Directory
+```
     - Case sensitivity  
     - Simple globbing and quoting  
-"  
-'  
+```PowerShell
+"
+```
+```PowerShell
+'
+```
   - Terms and Utilities:  
     - mv, cp, rm, touch  
-Move-Item  
-Copy-Item  
-Remove-Item  
-New-Item  
+```PowerShell
+Move-Item
+```
+```PowerShell
+Copy-Item
+```
+```PowerShell
+Remove-Item
+```
+```PowerShell
+New-Item
+```
     - mkdir, rmdir  
-New-Item  
-Remove-Item  
-  
+```PowerShell
+New-Item
+```
+```PowerShell
+Remove-Item
+```
+```PowerShell
+
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-The Power of the Command Line  
+```PowerShell
+The Power of the Command Line
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
 -Archiving Files on the Command Line  
   - Key Knowledge Areas:  
     - Files, directories  
-Get-ChildItem -File  
-Get-ChildItem -Directory  
+```PowerShell
+Get-ChildItem -File
+```
+```PowerShell
+Get-ChildItem -Directory
+```
     - Archives, compression  
-Get-ChildItem -File  
+```PowerShell
+Get-ChildItem -File
+```
   - Terms and Utilities:  
     - tar  
-Compress-Archive  
-Expand-Archive  
+```PowerShell
+Compress-Archive
+```
+```PowerShell
+Expand-Archive
+```
     - Common tar options  
     - gzip, bzip2  
-Compress-Archive  
-Expand-Archive  
+```PowerShell
+Compress-Archive
+```
+```PowerShell
+Expand-Archive
+```
     - zip, unzip  
-Compress-Archive  
-Expand-Archive  
-  
+```PowerShell
+Compress-Archive
+```
+```PowerShell
+Expand-Archive
+```
+```PowerShell
+
+```
 -Searching and Extracting Data from Files  
   - Key Knowledge Areas:  
     - Command line pipes  
-Get-Command | Select-Object CommandType, name  
+```PowerShell
+Get-Command | Select-Object CommandType, name
+```
     - I/O re-direction  
-Get-Command > fichero.txt  
+```PowerShell
+Get-Command > fichero.txt
+```
     - Basic Regular Expressions ., [  ], *, ?  
-Get-ChildItem .  
-Get-ChildItem | Where-Object {$_.Name -match "\d\.[^\d]"}  
-Get-ChildItem *.iso  
-Get-ChildItem *.is?  
+```PowerShell
+Get-ChildItem .
+```
+```PowerShell
+Get-ChildItem | Where-Object {$_.Name -match "\d\.[^\d]"}
+```
+```PowerShell
+Get-ChildItem *.iso
+```
+```PowerShell
+Get-ChildItem *.is?
+```
   - Terms and Utilities:  
     - grep  
-Get-ChildItem | select-object name | Select-String 2015  
+```PowerShell
+Get-ChildItem | select-object name | Select-String 2015
+```
     - less  
-more  
+```PowerShell
+more
+```
     - cat, head, tail  
-Get-Content  
-Get-Content -ReadCount  
+```PowerShell
+Get-Content
+```
+```PowerShell
+Get-Content -ReadCount
+```
     - sort  
-Get-ChildItem | Sort-Object  
+```PowerShell
+Get-ChildItem | Sort-Object
+```
     - cut  
-Get-ChildItem | Select-Object Name  
+```PowerShell
+Get-ChildItem | Select-Object Name
+```
     - wc  
-(Get-ChildItem | Select-Object Name).count  
-  
+```PowerShell
+(Get-ChildItem | Select-Object Name).count
+```
+```PowerShell
+
+```
 -Turning Commands into a Script  
   - Key Knowledge Areas:  
     - Basic shell scripting  
@@ -185,17 +337,29 @@ Get-ChildItem | Select-Object Name
     - #! (shebang)  
     - /bin/bash  
     - Variables  
-http://www.jesusninoc.com/2014/12/31/curso-de-powershell/  
+```PowerShell
+http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
+```
     - Arguments  
     - for loops  
-https://github.com/jesusninoc/PowerShell/tree/master/Bucles  
+```PowerShell
+https://github.com/jesusninoc/PowerShell/tree/master/Bucles
+```
     - echo  
-Write-Host "Hi"  
+```PowerShell
+Write-Host "Hi"
+```
     - Exit status  
-exit  
-  
+```PowerShell
+exit
+```
+```PowerShell
+
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-The Linux Operating System  
+```PowerShell
+The Linux Operating System
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
 -Choosing an Operating System  
   - Key Knowledge Areas:  
@@ -204,79 +368,191 @@ The Linux Operating System
   - Terms and Utilities:  
     - GUI versus command line, desktop configuration  
     - Maintenance cycles, Beta and Stable  
-  
+```PowerShell
+
+```
 -Understanding Computer Hardware  
   - Key Knowledge Areas:  
     - Hardware  
-#Serial Number, Vendor, information  
-Get-WmiObject -Class Win32_ComputerSystem  
-#Bios Information , including Version Number of BIOS  
-Get-WmiObject -Class win32_bios  
-#Battery Information  
-Get-WmiObject -Class win32_battery  
-#Serial Number, Capacity, Part Number of Installed Memory Stick  
-Get-WmiObject -Class win32_Physicalmemory  
-#Capacity, Serial Number of Drive and other info of the Hard-disk  
-Get-WmiObject -Class win32_DiskDrive  
-#Monitor Information including Resolutions  
-Get-WmiObject -Class win32_DesktopMonitor  
-#Information Related Cd Drive  
-Get-WmiObject -Class win32_cdromdrive  
-#Network Adaptor information contains, manufacturer, MAC ID etc  
-Get-WmiObject -Class win32_networkadapter  
-#Mouse related information  
-Get-WmiObject -Class win32_pointingdevice  
-#OS Name, OSArchitecture, Version Info  
-Get-WmiObject -Class win32_operatingsystem  
-#DeviceID, Free Space, Size of Partition  
-Get-WmiObject -Class win32_logicalDisk  
-#Mapped Network Drives  
-Get-WmiObject -Class Win32_NetworkConnection  
-#List of Installed Printers  
-Get-WmiObject -Class win32_printer  
-#List of Printer Drivers  
-Get-WmiObject -Class win32_PrinterDriver  
-#IP Adress, DHCP , DNS and other information of Network Drivers  
-Get-WmiObject -Class Win32_NetworkAdapterConfiguration  
-#Command that runs automatically when a user logs onto the computer system  
-Get-WmiObject -Class win32_startupCommand  
-#All Running Processes  
-Get-WmiObject -Class win32_process  
-#List of All Services  
-Get-WmiObject -Class win32_Service  
-#List of Installed Software  
-Get-WmiObject -Class win32_Product  
+```PowerShell
+#Serial Number, Vendor, information
+```
+```PowerShell
+Get-WmiObject -Class Win32_ComputerSystem
+```
+```PowerShell
+#Bios Information , including Version Number of BIOS
+```
+```PowerShell
+Get-WmiObject -Class win32_bios
+```
+```PowerShell
+#Battery Information
+```
+```PowerShell
+Get-WmiObject -Class win32_battery
+```
+```PowerShell
+#Serial Number, Capacity, Part Number of Installed Memory Stick
+```
+```PowerShell
+Get-WmiObject -Class win32_Physicalmemory
+```
+```PowerShell
+#Capacity, Serial Number of Drive and other info of the Hard-disk
+```
+```PowerShell
+Get-WmiObject -Class win32_DiskDrive
+```
+```PowerShell
+#Monitor Information including Resolutions
+```
+```PowerShell
+Get-WmiObject -Class win32_DesktopMonitor
+```
+```PowerShell
+#Information Related Cd Drive
+```
+```PowerShell
+Get-WmiObject -Class win32_cdromdrive
+```
+```PowerShell
+#Network Adaptor information contains, manufacturer, MAC ID etc
+```
+```PowerShell
+Get-WmiObject -Class win32_networkadapter
+```
+```PowerShell
+#Mouse related information
+```
+```PowerShell
+Get-WmiObject -Class win32_pointingdevice
+```
+```PowerShell
+#OS Name, OSArchitecture, Version Info
+```
+```PowerShell
+Get-WmiObject -Class win32_operatingsystem
+```
+```PowerShell
+#DeviceID, Free Space, Size of Partition
+```
+```PowerShell
+Get-WmiObject -Class win32_logicalDisk
+```
+```PowerShell
+#Mapped Network Drives
+```
+```PowerShell
+Get-WmiObject -Class Win32_NetworkConnection
+```
+```PowerShell
+#List of Installed Printers
+```
+```PowerShell
+Get-WmiObject -Class win32_printer
+```
+```PowerShell
+#List of Printer Drivers
+```
+```PowerShell
+Get-WmiObject -Class win32_PrinterDriver
+```
+```PowerShell
+#IP Adress, DHCP , DNS and other information of Network Drivers
+```
+```PowerShell
+Get-WmiObject -Class Win32_NetworkAdapterConfiguration
+```
+```PowerShell
+#Command that runs automatically when a user logs onto the computer system
+```
+```PowerShell
+Get-WmiObject -Class win32_startupCommand
+```
+```PowerShell
+#All Running Processes
+```
+```PowerShell
+Get-WmiObject -Class win32_process
+```
+```PowerShell
+#List of All Services
+```
+```PowerShell
+Get-WmiObject -Class win32_Service
+```
+```PowerShell
+#List of Installed Software
+```
+```PowerShell
+Get-WmiObject -Class win32_Product
+```
   - Terms and Utilities:  
     - Motherboards, processors, power supplies, optical drives, peripherals  
-Get-WmiObject -Class Win32_Processor | Select -Property Name, Number*  
-Get-WmiObject Win32_BIOS –computername $computer  
-Get-WmiObject -query “select Name,Status from Win32_PnPEntity”  
+```PowerShell
+Get-WmiObject -Class Win32_Processor | Select -Property Name, Number*
+```
+```PowerShell
+Get-WmiObject Win32_BIOS –computername $computer
+```
+```PowerShell
+Get-WmiObject -query “select Name,Status from Win32_PnPEntity”
+```
     - Hard drives and partitions, /dev/sd*  
-Get-WmiObject -Class win32_DiskDrive  
+```PowerShell
+Get-WmiObject -Class win32_DiskDrive
+```
     - Drivers  
-Get-Process -Module  
-  
+```PowerShell
+Get-Process -Module
+```
+```PowerShell
+
+```
 -Where Data is Stored  
   - Key Knowledge Areas:  
     - Programs and configuration, packages and package databases  
-Get-WmiObject -Class Win32_Product  
-Get-Package  
-Install-Package filezilla  
+```PowerShell
+Get-WmiObject -Class Win32_Product
+```
+```PowerShell
+Get-Package
+```
+```PowerShell
+Install-Package filezilla
+```
     - Processes, memory addresses, system messaging and logging  
-Get-Process  
-@(Get-Process).where{$_.WorkingSet -gt 100MB}  
-@(Get-Process).where{$_.WS -gt 100MB}  
+```PowerShell
+Get-Process
+```
+```PowerShell
+@(Get-Process).where{$_.WorkingSet -gt 100MB}
+```
+```PowerShell
+@(Get-Process).where{$_.WS -gt 100MB}
+```
   - Terms and Utilities:  
     - ps, top, free  
-Get-Process  
+```PowerShell
+Get-Process
+```
     - syslog, dmesg  
-Get-EventLog -LogName System  
+```PowerShell
+Get-EventLog -LogName System
+```
     - /etc/, /var/log/  
-Get-EventLog -LogName System  
+```PowerShell
+Get-EventLog -LogName System
+```
     - /boot/, /proc/, /dev/, /sys/  
-  
+```PowerShell
+
+```
 -Your Computer on the Network  
-http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/  
+```PowerShell
+http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
+```
   - Key Knowledge Areas:  
     - Internet, network, routers  
     - Querying DNS client configuration  
@@ -289,67 +565,14 @@ http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
     - IPv4, IPv6  
     - ping  
     - host  
-  
+```PowerShell
+
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
-Security and File Permissions  
+```PowerShell
+Security and File Permissions
+```
     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -     -   
 -Basic Security and Identifying User Types  
   - Key Knowledge Areas:  
     - Root and Standard Users  
-Get-WmiObject -Class Win32_Account  
-net user  
-    - System users  
-Get-WmiObject -Class Win32_Account  
-net user  
-  - Terms and Utilities:  
-    - /etc/passwd, /etc/group  
-Get-WmiObject -Class Win32_Account  
-net user  
-    - id, who, w  
-net user  
-    - sudo, su  
-Get-WmiObject -Class Win32_Account  
-net user  
-  
--Creating Users and Groups  
-  - Key Knowledge Areas:  
-    - User and group commands  
-Get-WmiObject -Class Win32_Account  
-net user  
-net localgroup  
-    - User IDs  
-Get-WmiObject -Class Win32_Account  
-net user  
-net localgroup  
-  - Terms and Utilities:  
-    - /etc/passwd, /etc/shadow, /etc/group, /etc/skel/  
-Get-WmiObject -Class Win32_Account  
-net user  
-net localgroup  
-    - id, last  
-    - useradd, groupadd  
-Get-WmiObject -Class Win32_Account  
-net user  
-net localgroup  
-    - passwd  
-net user  
-  
--Managing File Permissions and Ownership  
-  - Key Knowledge Areas:  
-    - File/directory permissions and owners  
-Get-Acl  
-  - Terms and Utilities:  
-    - ls -l, ls -a  
-Get-Acl  
-    - chmod, chown  
-Set-Acl  
-http://www.jesusninoc.com/2015/08/19/anadir-permiso-ntfs-a-una-carpeta/  
-  
--Special Directories and Files  
-  - Key Knowledge Areas:  
-    - Using temporary files and directories  
-    - Symbolic links  
-  - Terms and Utilities:  
-    - /tmp/, /var/tmp/ and Sticky Bit  
-    - ls -d  
-    - ln -s  
