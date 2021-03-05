@@ -1,14 +1,5 @@
-```PowerShell  
-LPIC-1 101
-```  
-```PowerShell  
-https://www.lpi.org/study-resources/lpic-1-101-exam-objectives/
-```  
-  
 ---------------------------------------------------  
-```PowerShell  
-System Architecture
-```  
+# System Architecture
 ---------------------------------------------------  
 ->Determine and configure hardware settings  
 ->->Key Knowledge Areas:  
@@ -246,9 +237,7 @@ Get-Service
 ->->->wall  
   
 ---------------------------------------------------  
-```PowerShell  
-Linux Installation and Package Management
-```  
+# Linux Installation and Package Management
 ---------------------------------------------------  
 ->Design hard disk layout  
 ->->Key Knowledge Areas:  
@@ -357,9 +346,7 @@ Install-Package
 ->->->yumdownloader  
   
 ---------------------------------------------------  
-```PowerShell  
-GNU and Unix Commands
-```  
+# GNU and Unix Commands
 ---------------------------------------------------  
 ->Work on the command line  
 ->->Key Knowledge Areas:  
@@ -824,9 +811,7 @@ New-Item -Name nombre -Value "Hi"
 ->->->ZZ, :w!, :q!, :e!  
   
 ---------------------------------------------------  
-```PowerShell  
-Devices, Linux Filesystems, Filesystem Hierarchy Standard
-```  
+# Devices, Linux Filesystems, Filesystem Hierarchy Standard
 ---------------------------------------------------  
 ->Create partitions and filesystems  
 ```PowerShell  
