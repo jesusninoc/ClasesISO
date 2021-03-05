@@ -51,7 +51,8 @@ Get-Verb
 Get-Command -Noun
 ```  
 ->->->Variables  
-* http://www.jesusninoc.com/2014/12/31/curso-de-powershell/  
+* http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
+
 ->->->Globbing  
 ```PowerShell  
 *
@@ -306,10 +307,9 @@ Get-ChildItem | Select-Object Name
 http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
 ```  
 ->->->Arguments  
-->->->for loops  
-```PowerShell  
-https://github.com/jesusninoc/PowerShell/tree/master/Bucles
-```  
+->->->for loops   
+* https://github.com/jesusninoc/PowerShell/tree/master/Bucles
+
 ->->->echo  
 ```PowerShell  
 Write-Host "Hi"
@@ -505,9 +505,8 @@ Get-EventLog -LogName System
 ->->->/boot/, /proc/, /dev/, /sys/  
   
 ->Your Computer on the Network  
-```PowerShell  
-http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
-```  
+* http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
+
 ->->Key Knowledge Areas:  
 ->->->Internet, network, routers  
 ->->->Querying DNS client configuration  
