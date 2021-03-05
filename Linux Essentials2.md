@@ -4,9 +4,7 @@ Linux Essentials
 ```PowerShell  
 https://www.lpi.org/study-resources/linux-essentials-exam-objectives/
 ```  
-```PowerShell  
-
-```  
+  
 ---------------------------------------------------  
 ```PowerShell  
 Introduction
@@ -15,9 +13,7 @@ Introduction
 ```PowerShell  
 Windows PowerShell uses a "verb-noun" naming system
 ```  
-```PowerShell  
-
-```  
+  
 ---------------------------------------------------  
 ```PowerShell  
 The Linux Community and a Career in Open Source
@@ -53,9 +49,7 @@ The Linux Community and a Career in Open Source
 ---Password issues  
 ---Privacy issues and tools  
 ---Use of common open source applications in presentations and projects  
-```PowerShell  
-
-```  
+  
 ---------------------------------------------------  
 ```PowerShell  
 Finding Your Way on a Linux System
@@ -136,9 +130,7 @@ Get-Help
 Get-Help
 ```  
 ---locate  
-```PowerShell  
-
-```  
+  
 -Using Directories and Listing Files  
 --Key Knowledge Areas:  
 ---Files, directories  
@@ -187,9 +179,7 @@ Set-Location
 ```PowerShell  
 Set-Location ~
 ```  
-```PowerShell  
-
-```  
+  
 -Creating, Moving and Deleting Files  
 --Key Knowledge Areas:  
 ---Files and directories  
@@ -228,9 +218,7 @@ New-Item
 ```PowerShell  
 Remove-Item
 ```  
-```PowerShell  
-
-```  
+  
 ---------------------------------------------------  
 ```PowerShell  
 The Power of the Command Line
@@ -272,9 +260,7 @@ Compress-Archive
 ```PowerShell  
 Expand-Archive
 ```  
-```PowerShell  
-
-```  
+  
 -Searching and Extracting Data from Files  
 --Key Knowledge Areas:  
 ---Command line pipes  
@@ -326,9 +312,7 @@ Get-ChildItem | Select-Object Name
 ```PowerShell  
 (Get-ChildItem | Select-Object Name).count
 ```  
-```PowerShell  
-
-```  
+  
 -Turning Commands into a Script  
 --Key Knowledge Areas:  
 ---Basic shell scripting  
@@ -353,9 +337,7 @@ Write-Host "Hi"
 ```PowerShell  
 exit
 ```  
-```PowerShell  
-
-```  
+  
 ---------------------------------------------------  
 ```PowerShell  
 The Linux Operating System
@@ -368,9 +350,7 @@ The Linux Operating System
 --Terms and Utilities:  
 ---GUI versus command line, desktop configuration  
 ---Maintenance cycles, Beta and Stable  
-```PowerShell  
-
-```  
+  
 -Understanding Computer Hardware  
 --Key Knowledge Areas:  
 ---Hardware  
@@ -507,9 +487,7 @@ Get-WmiObject -Class win32_DiskDrive
 ```PowerShell  
 Get-Process -Module
 ```  
-```PowerShell  
-
-```  
+  
 -Where Data is Stored  
 --Key Knowledge Areas:  
 ---Programs and configuration, packages and package databases  
@@ -546,9 +524,7 @@ Get-EventLog -LogName System
 Get-EventLog -LogName System
 ```  
 ---/boot/, /proc/, /dev/, /sys/  
-```PowerShell  
-
-```  
+  
 -Your Computer on the Network  
 ```PowerShell  
 http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
@@ -565,9 +541,7 @@ http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
 ---IPv4, IPv6  
 ---ping  
 ---host  
-```PowerShell  
-
-```  
+  
 ---------------------------------------------------  
 ```PowerShell  
 Security and File Permissions
@@ -608,9 +582,7 @@ Get-WmiObject -Class Win32_Account
 ```PowerShell  
 net user
 ```  
-```PowerShell  
-
-```  
+  
 -Creating Users and Groups  
 --Key Knowledge Areas:  
 ---User and group commands  
@@ -659,9 +631,7 @@ net localgroup
 ```PowerShell  
 net user
 ```  
-```PowerShell  
-
-```  
+  
 -Managing File Permissions and Ownership  
 --Key Knowledge Areas:  
 ---File/directory permissions and owners  
@@ -680,9 +650,7 @@ Set-Acl
 ```PowerShell  
 http://www.jesusninoc.com/2015/08/19/anadir-permiso-ntfs-a-una-carpeta/
 ```  
-```PowerShell  
-
-```  
+  
 -Special Directories and Files  
 --Key Knowledge Areas:  
 ---Using temporary files and directories  
