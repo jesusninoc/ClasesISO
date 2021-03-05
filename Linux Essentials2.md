@@ -1,23 +1,10 @@
-```PowerShell  
-Linux Essentials
-```  
-```PowerShell  
-https://www.lpi.org/study-resources/linux-essentials-exam-objectives/
-```  
-  
 ---------------------------------------------------  
-```PowerShell  
-Introduction
-```  
+# Introduction
 ---------------------------------------------------  
-```PowerShell  
 Windows PowerShell uses a "verb-noun" naming system
-```  
   
 ---------------------------------------------------  
-```PowerShell  
-The Linux Community and a Career in Open Source
-```  
+# The Linux Community and a Career in Open Source
 ---------------------------------------------------  
 ->Linux Evolution and Popular Operating Systems  
 ->->Key Knowledge Areas:  
@@ -51,9 +38,7 @@ The Linux Community and a Career in Open Source
 ->->->Use of common open source applications in presentations and projects  
   
 ---------------------------------------------------  
-```PowerShell  
-Finding Your Way on a Linux System
-```  
+# Finding Your Way on a Linux System
 ---------------------------------------------------  
 ->Command Line Basics  
 ->->Key Knowledge Areas:  
@@ -66,9 +51,7 @@ Get-Verb
 Get-Command -Noun
 ```  
 ->->->Variables  
-```PowerShell  
-http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
-```  
+* http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
 ->->->Globbing  
 ```PowerShell  
 *
@@ -220,9 +203,7 @@ Remove-Item
 ```  
   
 ---------------------------------------------------  
-```PowerShell  
-The Power of the Command Line
-```  
+# The Power of the Command Line
 ---------------------------------------------------  
 ->Archiving Files on the Command Line  
 ->->Key Knowledge Areas:  
@@ -339,9 +320,7 @@ exit
 ```  
   
 ---------------------------------------------------  
-```PowerShell  
-The Linux Operating System
-```  
+# The Linux Operating System
 ---------------------------------------------------  
 ->Choosing an Operating System  
 ->->Key Knowledge Areas:  
@@ -543,9 +522,7 @@ http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
 ->->->host  
   
 ---------------------------------------------------  
-```PowerShell  
-Security and File Permissions
-```  
+# Security and File Permissions
 ---------------------------------------------------  
 ->Basic Security and Identifying User Types  
 ->->Key Knowledge Areas:  
@@ -647,9 +624,7 @@ Get-Acl
 ```PowerShell  
 Set-Acl
 ```  
-```PowerShell  
-http://www.jesusninoc.com/2015/08/19/anadir-permiso-ntfs-a-una-carpeta/
-```  
+* http://www.jesusninoc.com/2015/08/19/anadir-permiso-ntfs-a-una-carpeta/
   
 ->Special Directories and Files  
 ->->Key Knowledge Areas:  
