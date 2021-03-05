@@ -76,9 +76,8 @@ Get-Alias
 ->Customize or write simple scripts  
 ->->Key Knowledge Areas:  
 ->->->Use standard sh syntax (loops, tests)  
-```PowerShell  
-http://www.jesusninoc.com/2015/09/29/bucles/
-```  
+* http://www.jesusninoc.com/2015/09/29/bucles/
+
 ->->->Use command substitution  
 ```PowerShell  
 "hola" -replace "h","j"
@@ -89,18 +88,16 @@ http://www.jesusninoc.com/2015/09/29/bucles/
 ->->->Manage the location, ownership, execution and suid-rights of scripts  
 ->->Terms and Utilities:  
 ->->->for  
-```PowerShell  
-http://www.jesusninoc.com/2015/09/29/bucles/
-```  
+* http://www.jesusninoc.com/2015/09/29/bucles/
+
 ->->->while  
 ->->->test  
 ```PowerShell  
 New-Item -Name fichero -WhatIf
 ```  
 ->->->if  
-```PowerShell  
-http://www.jesusninoc.com/2015/04/26/sentencia-condicional-if-else/
-```  
+* http://www.jesusninoc.com/2015/04/26/sentencia-condicional-if-else/
+
 ->->->read  
 ```PowerShell  
 Read-Host
@@ -115,12 +112,9 @@ Read-Host
 ```  
   
 ->SQL data management  
-```PowerShell  
-http://www.jesusninoc.com/2015/12/13/select-into-mysql-database/
-```  
-```PowerShell  
-http://www.jesusninoc.com/2015/12/14/insert-into-mysql-database/
-```  
+* http://www.jesusninoc.com/2015/12/13/select-into-mysql-database/
+* http://www.jesusninoc.com/2015/12/14/insert-into-mysql-database/
+
 ->->Key Knowledge Areas:  
 ->->->Use of basic SQL commands  
 ->->->Perform basic data manipulation  
@@ -148,9 +142,8 @@ http://www.jesusninoc.com/2015/12/14/insert-into-mysql-database/
 ->->->xhost  
 ->->->DISPLAY  
 ->->->xwininfo  
-```PowerShell  
-http://www.jesusninoc.com/2016/03/23/mover-notepad-de-una-posicion-de-la-pantalla-a-otra-y-escribir-un-texto-dentro-del-proceso/
-```  
+* http://www.jesusninoc.com/2016/03/23/mover-notepad-de-una-posicion-de-la-pantalla-a-otra-y-escribir-un-texto-dentro-del-proceso/
+
 ```PowerShell  
 [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(502,222)
 ```  
