@@ -51,7 +51,7 @@ Get-Verb
 Get-Command -Noun
 ```  
 ->->->Variables  
-* http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
+* http://www.jesusninoc.com/2014/12/31/curso-de-powershell/  
 ->->->Globbing  
 ```PowerShell  
 *
