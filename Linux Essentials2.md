@@ -20,8 +20,8 @@ The Linux Community and a Career in Open Source
 ```  
 ---------------------------------------------------
 -Linux Evolution and Popular Operating Systems  
- -Key Knowledge Areas:  
-  -Desktop Applications  
+  -Key Knowledge Areas:  
+    -Desktop Applications  
 ---Server Applications  
 ---Development Languages  
 ---Package Management Tools and repositories  
