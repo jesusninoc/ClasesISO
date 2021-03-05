@@ -20,35 +20,35 @@ The Linux Community and a Career in Open Source
 ```  
 ---------------------------------------------------  
 - Linux Evolution and Popular Operating Systems  
-  -  Key Knowledge Areas:  
-    -  Desktop Applications  
-    -  Server Applications  
-    -  Development Languages  
-    -  Package Management Tools and repositories  
-  -  Terms and Utilities:  
-    -  OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP  
-    -  Apache HTTPD, NGINX, MySQL, NFS, Samba  
-    -  C, Java, Perl, shell, Python, Samba  
-    -  dpkg, apt- get, rpm, yum  
+ -  Key Knowledge Areas:  
+  -  Desktop Applications  
+  -  Server Applications  
+  -  Development Languages  
+  -  Package Management Tools and repositories  
+ -  Terms and Utilities:  
+  -  OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP  
+  -  Apache HTTPD, NGINX, MySQL, NFS, Samba  
+  -  C, Java, Perl, shell, Python, Samba  
+  -  dpkg, apt- get, rpm, yum  
 - Understanding Open Source Software and Licensing  
-  -  Key Knowledge Areas:  
-    -  Licensing  
-    -  Free Software Foundation (FSF), Open Source Initiative (OSI)  
-  -  Terms and Utilities:  
-    -  GPL, BSD, Creative Commons  
-    -  Free Software, Open Source Software, FOSS, FLOSS  
-    -  Open Source business models  
+ -  Key Knowledge Areas:  
+  -  Licensing  
+  -  Free Software Foundation (FSF), Open Source Initiative (OSI)  
+ -  Terms and Utilities:  
+  -  GPL, BSD, Creative Commons  
+  -  Free Software, Open Source Software, FOSS, FLOSS  
+  -  Open Source business models  
 - ICT Skills and Working in Linux  
-  -  Key Knowledge Areas:  
-    -  Desktop Skills  
-    -  Getting to the Command Line  
-    -  Industry uses of Linux, Cloud Computing and Virtualization  
-  -  Terms and Utilities:  
-    -  Using a browser, privacy concerns, configuration options, searching the web and saving content  
-    -  Terminal and Console  
-    -  Password issues  
-    -  Privacy issues and tools  
-    -  Use of common open source applications in presentations and projects  
+ -  Key Knowledge Areas:  
+  -  Desktop Skills  
+  -  Getting to the Command Line  
+  -  Industry uses of Linux, Cloud Computing and Virtualization  
+ -  Terms and Utilities:  
+  -  Using a browser, privacy concerns, configuration options, searching the web and saving content  
+  -  Terminal and Console  
+  -  Password issues  
+  -  Privacy issues and tools  
+  -  Use of common open source applications in presentations and projects  
   
 ---------------------------------------------------  
 ```PowerShell  
@@ -56,149 +56,149 @@ Finding Your Way on a Linux System
 ```  
 ---------------------------------------------------  
 - Command Line Basics  
-  -  Key Knowledge Areas:  
-    -  Basic shell  
-    -  Command line syntax  
+ -  Key Knowledge Areas:  
+  -  Basic shell  
+  -  Command line syntax  
 ```PowerShell  
 Get-Verb
 ```  
 ```PowerShell  
 Get-Command -Noun
 ```  
-    -  Variables  
+  -  Variables  
 ```PowerShell  
 http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
 ```  
-    -  Globbing  
+  -  Globbing  
 ```PowerShell  
 *
 ```  
 ```PowerShell  
 ?
 ```  
-    -  Quoting  
+  -  Quoting  
 ```PowerShell  
 "
 ```  
 ```PowerShell  
 '
 ```  
-  -  Terms and Utilities:  
-    -  Bash  
-    -  echo  
+ -  Terms and Utilities:  
+  -  Bash  
+  -  echo  
 ```PowerShell  
 Write-Host
 ```  
-    -  history  
+  -  history  
 ```PowerShell  
 Get-History
 ```  
-    -  PATH env variable  
+  -  PATH env variable  
 ```PowerShell  
 $Env:Path
 ```  
 ```PowerShell  
 [Environment]::GetEnvironmentVariable("Path")
 ```  
-    -  export  
-    -  type  
+  -  export  
+  -  type  
 ```PowerShell  
 Get-Content
 ```  
 - Using the Command Line to Get Help  
-  -  Key Knowledge Areas:  
-    -  Man  
+ -  Key Knowledge Areas:  
+  -  Man  
 ```PowerShell  
 Get-Help
 ```  
-    -  Info  
-  -  Terms and Utilities:  
-    -  man  
+  -  Info  
+ -  Terms and Utilities:  
+  -  man  
 ```PowerShell  
 Get-Help
 ```  
-    -  info  
+  -  info  
 ```PowerShell  
 Get-Help
 ```  
-    -  Man pages  
+  -  Man pages  
 ```PowerShell  
 Get-Help
 ```  
-    -  /usr/share/doc/  
+  -  /usr/share/doc/  
 ```PowerShell  
 Get-Help
 ```  
-    -  locate  
+  -  locate  
   
 - Using Directories and Listing Files  
-  -  Key Knowledge Areas:  
-    -  Files, directories  
+ -  Key Knowledge Areas:  
+  -  Files, directories  
 ```PowerShell  
 Get-ChildItem -File
 ```  
 ```PowerShell  
 Get-ChildItem -Directory
 ```  
-    -  Hidden files and directories  
+  -  Hidden files and directories  
 ```PowerShell  
 Get-ChildItem -Hidden
 ```  
-    -  Home  
+  -  Home  
 ```PowerShell  
 $home
 ```  
-    -  Absolute and relative paths  
+  -  Absolute and relative paths  
 ```PowerShell  
 c:\
 ```  
 ```PowerShell  
 ..\
 ```  
-  -  Terms and Utilities:  
-    -  Common options for ls  
+ -  Terms and Utilities:  
+  -  Common options for ls  
 ```PowerShell  
 Get-ChildItem
 ```  
-    -  Recursive listings  
+  -  Recursive listings  
 ```PowerShell  
 Get-ChildItem -Recurse
 ```  
-    -  cd  
+  -  cd  
 ```PowerShell  
 Set-Location
 ```  
-    -  . and ..  
+  -  . and ..  
 ```PowerShell  
 .
 ```  
 ```PowerShell  
 ..
 ```  
-    -  home and ~  
+  -  home and ~  
 ```PowerShell  
 Set-Location ~
 ```  
   
 - Creating, Moving and Deleting Files  
-  -  Key Knowledge Areas:  
-    -  Files and directories  
+ -  Key Knowledge Areas:  
+  -  Files and directories  
 ```PowerShell  
 Get-ChildItem -File
 ```  
 ```PowerShell  
 Get-ChildItem -Directory
 ```  
-    -  Case sensitivity  
-    -  Simple globbing and quoting  
+  -  Case sensitivity  
+  -  Simple globbing and quoting  
 ```PowerShell  
 "
 ```  
 ```PowerShell  
 '
 ```  
-  -  Terms and Utilities:  
-    -  mv, cp, rm, touch  
+ -  Terms and Utilities:  
+  -  mv, cp, rm, touch  
 ```PowerShell  
 Move-Item
 ```  
@@ -211,7 +211,7 @@ Remove-Item
 ```PowerShell  
 New-Item
 ```  
-    -  mkdir, rmdir  
+  -  mkdir, rmdir  
 ```PowerShell  
 New-Item
 ```  
@@ -225,35 +225,35 @@ The Power of the Command Line
 ```  
 ---------------------------------------------------  
 - Archiving Files on the Command Line  
-  -  Key Knowledge Areas:  
-    -  Files, directories  
+ -  Key Knowledge Areas:  
+  -  Files, directories  
 ```PowerShell  
 Get-ChildItem -File
 ```  
 ```PowerShell  
 Get-ChildItem -Directory
 ```  
-    -  Archives, compression  
+  -  Archives, compression  
 ```PowerShell  
 Get-ChildItem -File
 ```  
-  -  Terms and Utilities:  
-    -  tar  
+ -  Terms and Utilities:  
+  -  tar  
 ```PowerShell  
 Compress-Archive
 ```  
 ```PowerShell  
 Expand-Archive
 ```  
-    -  Common tar options  
-    -  gzip, bzip2  
+  -  Common tar options  
+  -  gzip, bzip2  
 ```PowerShell  
 Compress-Archive
 ```  
 ```PowerShell  
 Expand-Archive
 ```  
-    -  zip, unzip  
+  -  zip, unzip  
 ```PowerShell  
 Compress-Archive
 ```  
@@ -262,16 +262,16 @@ Expand-Archive
 ```  
   
 - Searching and Extracting Data from Files  
-  -  Key Knowledge Areas:  
-    -  Command line pipes  
+ -  Key Knowledge Areas:  
+  -  Command line pipes  
 ```PowerShell  
 Get-Command | Select-Object CommandType, name
 ```  
-    -  I/O re- direction  
+  -  I/O re- direction  
 ```PowerShell  
 Get-Command > fichero.txt
 ```  
-    -  Basic Regular Expressions ., [  ], *, ?  
+  -  Basic Regular Expressions ., [  ], *, ?  
 ```PowerShell  
 Get-ChildItem .
 ```  
@@ -284,56 +284,56 @@ Get-ChildItem *.iso
 ```PowerShell  
 Get-ChildItem *.is?
 ```  
-  -  Terms and Utilities:  
-    -  grep  
+ -  Terms and Utilities:  
+  -  grep  
 ```PowerShell  
 Get-ChildItem | select-object name | Select-String 2015
 ```  
-    -  less  
+  -  less  
 ```PowerShell  
 more
 ```  
-    -  cat, head, tail  
+  -  cat, head, tail  
 ```PowerShell  
 Get-Content
 ```  
 ```PowerShell  
 Get-Content -ReadCount
 ```  
-    -  sort  
+  -  sort  
 ```PowerShell  
 Get-ChildItem | Sort-Object
 ```  
-    -  cut  
+  -  cut  
 ```PowerShell  
 Get-ChildItem | Select-Object Name
 ```  
-    -  wc  
+  -  wc  
 ```PowerShell  
 (Get-ChildItem | Select-Object Name).count
 ```  
   
 - Turning Commands into a Script  
-  -  Key Knowledge Areas:  
-    -  Basic shell scripting  
-    -  Awareness of common text editors  
-  -  Terms and Utilities:  
-    -  #! (shebang)  
-    -  /bin/bash  
-    -  Variables  
+ -  Key Knowledge Areas:  
+  -  Basic shell scripting  
+  -  Awareness of common text editors  
+ -  Terms and Utilities:  
+  -  #! (shebang)  
+  -  /bin/bash  
+  -  Variables  
 ```PowerShell  
 http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
 ```  
-    -  Arguments  
-    -  for loops  
+  -  Arguments  
+  -  for loops  
 ```PowerShell  
 https://github.com/jesusninoc/PowerShell/tree/master/Bucles
 ```  
-    -  echo  
+  -  echo  
 ```PowerShell  
 Write-Host "Hi"
 ```  
-    -  Exit status  
+  -  Exit status  
 ```PowerShell  
 exit
 ```  
@@ -344,16 +344,16 @@ The Linux Operating System
 ```  
 ---------------------------------------------------  
 - Choosing an Operating System  
-  -  Key Knowledge Areas:  
-    -  Windows, Mac, Linux differences  
-    -  Distribution life cycle management  
-  -  Terms and Utilities:  
-    -  GUI versus command line, desktop configuration  
-    -  Maintenance cycles, Beta and Stable  
+ -  Key Knowledge Areas:  
+  -  Windows, Mac, Linux differences  
+  -  Distribution life cycle management  
+ -  Terms and Utilities:  
+  -  GUI versus command line, desktop configuration  
+  -  Maintenance cycles, Beta and Stable  
   
 - Understanding Computer Hardware  
-  -  Key Knowledge Areas:  
-    -  Hardware  
+ -  Key Knowledge Areas:  
+  -  Hardware  
 ```PowerShell  
 #Serial Number, Vendor, information
 ```  
@@ -468,8 +468,8 @@ Get-WmiObject -Class win32_Service
 ```PowerShell  
 Get-WmiObject -Class win32_Product
 ```  
-  -  Terms and Utilities:  
-    -  Motherboards, processors, power supplies, optical drives, peripherals  
+ -  Terms and Utilities:  
+  -  Motherboards, processors, power supplies, optical drives, peripherals  
 ```PowerShell  
 Get-WmiObject -Class Win32_Processor | Select -Property Name, Number*
 ```  
@@ -479,18 +479,18 @@ Get-WmiObject Win32_BIOS –computername $computer
 ```PowerShell  
 Get-WmiObject -query “select Name,Status from Win32_PnPEntity”
 ```  
-    -  Hard drives and partitions, /dev/sd*  
+  -  Hard drives and partitions, /dev/sd*  
 ```PowerShell  
 Get-WmiObject -Class win32_DiskDrive
 ```  
-    -  Drivers  
+  -  Drivers  
 ```PowerShell  
 Get-Process -Module
 ```  
   
 - Where Data is Stored  
-  -  Key Knowledge Areas:  
-    -  Programs and configuration, packages and package databases  
+ -  Key Knowledge Areas:  
+  -  Programs and configuration, packages and package databases  
 ```PowerShell  
 Get-WmiObject -Class Win32_Product
 ```  
@@ -500,7 +500,7 @@ Get-Package
 ```PowerShell  
 Install-Package filezilla
 ```  
-    -  Processes, memory addresses, system messaging and logging  
+  -  Processes, memory addresses, system messaging and logging  
 ```PowerShell  
 Get-Process
 ```  
@@ -510,37 +510,37 @@ Get-Process
 ```PowerShell  
 @(Get-Process).where{$_.WS -gt 100MB}
 ```  
-  -  Terms and Utilities:  
-    -  ps, top, free  
+ -  Terms and Utilities:  
+  -  ps, top, free  
 ```PowerShell  
 Get-Process
 ```  
-    -  syslog, dmesg  
+  -  syslog, dmesg  
 ```PowerShell  
 Get-EventLog -LogName System
 ```  
-    -  /etc/, /var/log/  
+  -  /etc/, /var/log/  
 ```PowerShell  
 Get-EventLog -LogName System
 ```  
-    -  /boot/, /proc/, /dev/, /sys/  
+  -  /boot/, /proc/, /dev/, /sys/  
   
 - Your Computer on the Network  
 ```PowerShell  
 http://www.jesusninoc.com/2015/11/13/cmdlets-for-tcpip-model-layers/
 ```  
-  -  Key Knowledge Areas:  
-    -  Internet, network, routers  
-    -  Querying DNS client configuration  
-    -  Querying Network configuration  
-  -  Terms and Utilities:  
-    -  route, ip route show  
-    -  ifconfig, ip addr show  
-    -  netstat, ip route show  
-    -  /etc/resolv.conf, /etc/hosts  
-    -  IPv4, IPv6  
-    -  ping  
-    -  host  
+ -  Key Knowledge Areas:  
+  -  Internet, network, routers  
+  -  Querying DNS client configuration  
+  -  Querying Network configuration  
+ -  Terms and Utilities:  
+  -  route, ip route show  
+  -  ifconfig, ip addr show  
+  -  netstat, ip route show  
+  -  /etc/resolv.conf, /etc/hosts  
+  -  IPv4, IPv6  
+  -  ping  
+  -  host  
   
 ---------------------------------------------------  
 ```PowerShell  
@@ -548,34 +548,34 @@ Security and File Permissions
 ```  
 ---------------------------------------------------  
 - Basic Security and Identifying User Types  
-  -  Key Knowledge Areas:  
-    -  Root and Standard Users  
+ -  Key Knowledge Areas:  
+  -  Root and Standard Users  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
 ```PowerShell  
 net user
 ```  
-    -  System users  
+  -  System users  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
 ```PowerShell  
 net user
 ```  
-  -  Terms and Utilities:  
-    -  /etc/passwd, /etc/group  
+ -  Terms and Utilities:  
+  -  /etc/passwd, /etc/group  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
 ```PowerShell  
 net user
 ```  
-    -  id, who, w  
+  -  id, who, w  
 ```PowerShell  
 net user
 ```  
-    -  sudo, su  
+  -  sudo, su  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
@@ -584,8 +584,8 @@ net user
 ```  
   
 - Creating Users and Groups  
-  -  Key Knowledge Areas:  
-    -  User and group commands  
+ -  Key Knowledge Areas:  
+  -  User and group commands  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
@@ -595,7 +595,7 @@ net user
 ```PowerShell  
 net localgroup
 ```  
-    -  User IDs  
+  -  User IDs  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
@@ -605,8 +605,8 @@ net user
 ```PowerShell  
 net localgroup
 ```  
-  -  Terms and Utilities:  
-    -  /etc/passwd, /etc/shadow, /etc/group, /etc/skel/  
+ -  Terms and Utilities:  
+  -  /etc/passwd, /etc/shadow, /etc/group, /etc/skel/  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
@@ -616,8 +616,8 @@ net user
 ```PowerShell  
 net localgroup
 ```  
-    -  id, last  
-    -  useradd, groupadd  
+  -  id, last  
+  -  useradd, groupadd  
 ```PowerShell  
 Get-WmiObject -Class Win32_Account
 ```  
@@ -627,23 +627,23 @@ net user
 ```PowerShell  
 net localgroup
 ```  
-    -  passwd  
+  -  passwd  
 ```PowerShell  
 net user
 ```  
   
 - Managing File Permissions and Ownership  
-  -  Key Knowledge Areas:  
-    -  File/directory permissions and owners  
+ -  Key Knowledge Areas:  
+  -  File/directory permissions and owners  
 ```PowerShell  
 Get-Acl
 ```  
-  -  Terms and Utilities:  
-    -  ls - l, ls - a  
+ -  Terms and Utilities:  
+  -  ls - l, ls - a  
 ```PowerShell  
 Get-Acl
 ```  
-    -  chmod, chown  
+  -  chmod, chown  
 ```PowerShell  
 Set-Acl
 ```  
@@ -652,10 +652,10 @@ http://www.jesusninoc.com/2015/08/19/anadir-permiso-ntfs-a-una-carpeta/
 ```  
   
 - Special Directories and Files  
-  -  Key Knowledge Areas:  
-    -  Using temporary files and directories  
-    -  Symbolic links  
-  -  Terms and Utilities:  
-    -  /tmp/, /var/tmp/ and Sticky Bit  
-    -  ls - d  
-    -  ln - s  
+ -  Key Knowledge Areas:  
+  -  Using temporary files and directories  
+  -  Symbolic links  
+ -  Terms and Utilities:  
+  -  /tmp/, /var/tmp/ and Sticky Bit  
+  -  ls - d  
+  -  ln - s  
