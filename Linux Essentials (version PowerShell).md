@@ -302,13 +302,12 @@ Get-ChildItem | Select-Object Name
 ->->Terms and Utilities:  
 ->->->#! (shebang)  
 ->->->/bin/bash  
-->->->Variables  
-```PowerShell  
-http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
-```  
+->->->Variables
+* http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
+
 ->->->Arguments  
 ->->->for loops   
-* https://github.com/jesusninoc/PowerShell/tree/master/Bucles
+* https://www.jesusninoc.com/09/29/bucles/
 
 ->->->echo  
 ```PowerShell  
