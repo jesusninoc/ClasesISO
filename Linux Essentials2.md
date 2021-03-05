@@ -70,8 +70,11 @@ Get-Verb
 ```
 ```PowerShell
 Get-Command -Noun
-```
+```  
+    
     - Variables  
+
+
 ```PowerShell
 http://www.jesusninoc.com/2014/12/31/curso-de-powershell/
 ```
