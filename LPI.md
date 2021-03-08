@@ -1,306 +1,192 @@
-- Measure and Troubleshoot Resource Usage  
+---------------------------------------------------  
+# Introduction
+---------------------------------------------------  
+---------------------------------------------------  
+# The Linux Community and a Career in Open Source
+---------------------------------------------------  
+- Linux Evolution and Popular Operating Systems  
   - Key Knowledge Areas:  
-     - Measure CPU usage  
-     - Measure memory usage  
-     - Measure disk I/O  
-     - Measure network I/O  
-     - Measure firewalling and routing throughput  
-     - Map client bandwidth usage  
-     - Match / correlate system symptoms with likely problems  
-     - Estimate throughput and identify bottlenecks in a system including networking  
-  - The following is a partial list of the used files, terms and utilities:  
-     - iostat  
-     - netstat  
-     - w  
-     - top  
-     - sar  
-     - processes blocked on I/O  
-     - blocks out  
-     - vmstat  
-     - pstree, ps  
-     - Isof  
-     - uptime  
-     - swap  
-     - blocks in  
-- Predict Future Resource Needs  
-  - Key Knowledge Areas:  
-     - Use collectd to monitor IT infrastructure usage  
-     - Predict capacity break point of a configuration  
-     - Observe growth rate of capacity usage  
-     - Graph the trend of capacity usage  
-     - Awareness of monitoring solutions such as Nagios, MRTG and Cacti  
-  - The following is a partial list of the used files, terms and utilities:  
-     - diagnose  
-     - predict growth  
-     - resource exhaustion  
-- Kernel Components  
-  - Key Knowledge Areas  
-     - Kernel 2.6.x documentation  
-     - Kernel 3.x documentation  
+     - Desktop Applications  
+     - Server Applications  
+     - Development Languages  
+     - Package Management Tools and repositories  
   - Terms and Utilities:  
-     - /usr/src/linux/  
-     - zImage  
-     - /usr/src/linux/Documentation/  
-     - bzImage  
-- Compiling a kernel  
+     - OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP  
+     - Apache HTTPD, NGINX, MySQL, NFS, Samba  
+     - C, Java, Perl, shell, Python, Samba  
+     - dpkg, apt-get, rpm, yum  
+- Understanding Open Source Software and Licensing  
   - Key Knowledge Areas:  
-     - /usr/src/linux/  
-     - Kernel Makefiles  
-     - Kernel 2.6.x/3.x make targets  
-     - Customize the current kernel configuration.  
-     - Build a new kernel and appropriate kernel modules.  
-     - Install a new kernel and any modules.  
-     - Ensure that the boot manager can locate the new kernel and associated files.  
-     - Module configuration files  
-     - Awareness of dracut  
+     - Licensing  
+     - Free Software Foundation (FSF), Open Source Initiative (OSI)  
   - Terms and Utilities:  
-     - mkinitrd  
-     - mkinitramfs  
-     - make  
-     - bzip2  
-     - make targets (all, config, xconfig, menuconfig, gconfig, oldconfig, mrproper, zImage, bzImage, modules, modules_install, rpm-pkg, binrpm-pkg, deb-pkg)  
-     - gzip  
-     - module tool  
-     - /usr/src/linux/.confi  
-     - /lib/modules/kernel-version/  
-     - depmod  
-- Kernel runtime management and troubleshooting  
+     - GPL, BSD, Creative Commons  
+     - Free Software, Open Source Software, FOSS, FLOSS  
+     - Open Source business models  
+- ICT Skills and Working in Linux  
   - Key Knowledge Areas:  
-     - Use command-line utilities to get information about the currently running kernel and kernel modules  
-     - Manually load and unload kernel modules  
-     - Determine when modules can be unloaded  
-     - Determine what parameters a module accepts  
-     - Configure the system to load modules by names other than their file name.  
-     - /proc filesystem  
-     - Content of /, /boot/ , and /lib/modules/  
-     - Tools and utilities to analyze information about the available hardware  
-     - udev rules  
+     - Desktop Skills  
+     - Getting to the Command Line  
+     - Industry uses of Linux, Cloud Computing and Virtualization  
   - Terms and Utilities:  
-     - /lib/modules/kernel-version/modules.dep  
-     - module configuration files in /etc/  
-     - /proc/sys/kernel/  
-     - /sbin/depmod  
-     - /sbin/rmmod  
-     - /sbin/modinfo  
-     - /bin/dmesg  
-     - /sbin/lspci  
-     - /usr/bin/lsdev  
-     - /sbin/lsmod  
-     - /sbin/modprobe  
-     - /sbin/insmod  
-     - /bin/uname  
-     - /usr/bin/lsusb  
-     - /etc/sysctl.conf, /etc/sysctl.d/  
-     - /sbin/sysctl  
-     - udevmonitor  
-     - udevadm monitor  
-     - /etc/udev/  
-- Customizing SysV- init system startup  
+     - Using a browser, privacy concerns, configuration options, searching the web and saving content  
+     - Terminal and Console  
+     - Password issues  
+     - Privacy issues and tools  
+     - Use of common open source applications in presentations and projects  
+---------------------------------------------------  
+# Finding Your Way on a Linux System
+---------------------------------------------------  
+- Command Line Basics  
   - Key Knowledge Areas:  
-     - Linux Standard Base Specification (LSB)  
-     - SysV init environment  
+     - Basic shell  
+     - Command line syntax  
+     - Variables  
+     - Globbing  
+     - Quoting  
   - Terms and Utilities:  
-     - /etc/inittab  
-     - /etc/init.d/  
-     - /etc/rc.d/  
-     - chkconfig  
-     - update-rc.d  
-     - init and telinit  
-- System Recovery  
+     - Bash  
+     - echo  
+     - history  
+     - PATH env variable  
+     - export  
+     - type  
+- Using the Command Line to Get Help  
   - Key Knowledge Areas:  
-     - GRUB version 2 and Legacy  
-     - Grub shell  
-     - Boot loader start and hand off to kernel  
-     - Kernel loading  
-     - Hardware initialization and setup  
-     - Daemon/service initialization and setup  
-     - Know the different boot loader install locations on a hard disk or removable device  
-     - Overwriting standard boot loader options and using boot loader shells  
-     - Awareness of UEFI  
+     - Man  
+     - Info  
   - Terms and Utilities:  
-     - mount  
-     - fsck  
-     - inittab, telinit and init with SysV init  
-     - the contents of /boot/ and /boot/grub/  
-     - GRUB  
-     - grub-install  
-     - initrd, initramfs  
-     - Master boot record  
-- Alternate Bootloaders  
+     - man  
+     - info  
+     - Man pages  
+     - /usr/share/doc/  
+     - locate  
+- Using Directories and Listing Files  
   - Key Knowledge Areas:  
-     - LILO  
-     - SYSLINUX, ISOLINUX, PXELINUX  
-     - Understanding of PXE  
+     - Files, directories  
+     - Hidden files and directories  
+     - Home  
+     - Absolute and relative paths  
   - Terms and Utilities:  
-     - lilo, /etc/lilo.conf  
-     - syslinux  
-     - extlinux  
-     - isolinux.bin  
-     - isolinux.cfg  
-     - pxelinux.0  
-     - pxelinux.cfg/  
-- Operating the Linux filesystem  
+     - Common options for ls  
+     - Recursive listings  
+     - cd  
+     - . and ..  
+     - home and ~  
+- Creating, Moving and Deleting Files  
   - Key Knowledge Areas:  
-     - The concept of the fstab configuration  
-     - Tools and utilities for handling SWAP partitions and files  
-     - Use of UUIDs  
+     - Files and directories  
+     - Case sensitivity  
+     - Simple globbing and quoting  
   - Terms and Utilities:  
-     - /etc/fstab  
-     - /etc/mtab  
-     - /proc/mounts  
-     - mount and umount  
-     - sync  
-     - swapon  
-     - swapoff  
-- Maintaining a Linux filesystem  
+     - mv, cp, rm, touch  
+     - mkdir, rmdir  
+---------------------------------------------------  
+# The Power of the Command Line
+---------------------------------------------------  
+- Archiving Files on the Command Line  
   - Key Knowledge Areas:  
-     - Tools and utilities to manipulate and ext2, ext3 and ext4  
-     - Tools and utilities to manipulate xfs  
-     - Awareness of Btrfs  
+     - Files, directories  
+     - Archives, compression  
   - Terms and Utilities:  
-     - fsck (fsck.*)  
-     - mkfs (mkfs.*)  
-     - dumpe2fs, xfsdump, xfsrestore  
-     - debugfs  
-     - tune2fs  
-     - mkswap  
-     - xfs_info, xfs_check and xfs_repair  
-     - smartd, smartctl  
-- Creating and configuring filesystem options  
-  - Key Knowledge Areas:  
-     - autofs configuration files  
-     - UDF and ISO9660 tools and utilities  
-     - Awareness of CD-ROM filesystems (UDF, ISO9660, HFS)  
-     - Awareness of CD-ROM filesystem extensions (Joliet, Rock Ridge, El Torito)  
-     - Basic feature knowledge of encrypted filesystems  
-  - Terms and Utilities:  
-     - /etc/auto.master  
-     - /etc/auto.[dir]  
-     - mkisofs  
-- Configuring RAID  
-  - Key Knowledge Areas:  
-     - Software raid configuration files and utilities  
-  - Terms and Utilities:  
-     - mdadm.conf  
-     - mdadm  
-     - /proc/mdstat  
-     - partition type 0xFD  
-- Adjusting Storage Device Access  
-  - Key Knowledge Areas:  
-     - Tools and utilities to configure DMA for IDE devices including ATAPI and SATA  
-     - Tools and utilities to manipulate or analyze system resources (e.g. interrupts)  
-     - Awareness of sdparm command and its uses  
-     - Tools and utilities for iSCSI  
-  - Terms and Utilities:  
-     - hdparm, sdparm  
-     - tune2fs  
-     - sysctl  
-     - /dev/hd*, /dev/sd*  
-     - iscsiadm, scsi_id, iscsid and iscsid.conf  
-     - WWID, WWN, LUN numbers  
-- Logical Volume Manager  
-  - Key Knowledge Areas:  
-     - Tools in the LVM suite  
-     - Resizing, renaming, creating, and removing logical volumes, volume groups, and physical volumes  
-     - Creating and maintaining snapshots  
-     - Activating volume groups  
-  - Terms and Utilities:  
-     - /sbin/pv*  
-     - /sbin/lv*  
-     - /sbin/vg*  
-     - mount  
-     - /dev/mapper/  
-- Basic networking configuration  
-  - Key Knowledge Areas:  
-     - Utilities to configure and manipulate ethernet network interfaces  
-     - Configuring basic access to wireless networks with iw, iwconfig and iwlist  
-  - Terms and Utilities:  
-     - /sbin/route  
-     - /sbin/ifconfig  
-     - /sbin/ip  
-     - /usr/sbin/arp  
-     - /sbin/iwconfig  
-     - /sbin/iwlist  
-- Advanced Network Configuration and Troubleshooting  
-  - Key Knowledge Areas:  
-     - Utilities to manipulate routing tables  
-     - Utilities to configure and manipulate ethernet network interfaces  
-     - Utilities to analyze the status of the network devices  
-     - Utilities to monitor and analyze the TCP/IP traffic  
-  - Terms and Utilities:  
-     - /sbin/route  
-     - /sbin/ifconfig  
-     - /bin/netstat  
-     - /bin/ping  
-     - /usr/sbin/arp  
-     - /usr/sbin/tcpdump  
-     - /usr/sbin/lsof  
-     - /usr/bin/nc  
-     - /sbin/ip  
-     - nmap  
-- Troubleshooting Network Issues  
-  - Key Knowledge Areas:  
-     - Location and content of access restriction files  
-     - Utilities to configure and manipulate ethernet network interfaces  
-     - Utilities to manage routing tables  
-     - Utilities to list network states.  
-     - Utilities to gain information about the network configuration  
-     - Methods of information about the recognized and used hardware devices  
-     - System initialization files and their contents (SysV init process)  
-     - Awareness of NetworkManager and its impact on network configuration  
-  - Terms and Utilities:  
-     - /sbin/ifconfig  
-     - /sbin/route  
-     - /bin/netstat  
-     - /etc/network/, /etc/sysconfig/network-scripts/  
-     - /bin/ping  
-     - System log files such as /var/log/syslog & /var/log/messages  
-     - /etc/resolv.conf  
-     - /etc/hosts  
-     - /etc/hostname, /etc/HOSTNAME  
-     - /bin/hostname  
-     - /usr/sbin/traceroute  
-     - /bin/dmesg  
-     - /etc/hosts.allow, /etc/hosts.deny  
-- Make and install programs from source  
-  - Key Knowledge Areas:  
-     - Unpack source code using common compression and archive utilities  
-     - Understand basics of invoking make to compile programs  
-     - Apply parameters to a configure script  
-     - Know where sources are stored by default  
-  - Terms and Utilities:  
-     - /usr/src/  
-     - gunzip  
-     - gzip  
-     - bzip2  
      - tar  
-     - configure  
-     - make  
-     - uname  
-     - install  
-     - patch  
-- Backup operations  
+     - Common tar options  
+     - gzip, bzip2  
+     - zip, unzip  
+- Searching and Extracting Data from Files  
   - Key Knowledge Areas:  
-     - Knowledge about directories that have to be include in backups  
-     - Awareness of network backup solutions such as Amanda, Bacula and BackupPC  
-     - Knowledge of the benefits and drawbacks of tapes, CDR, disk or other backup media  
-     - Perform partial and manual backups  
-     - Verify the integrity of backup files  
-     - Partially or fully restore backups  
+     - Command line pipes  
+     - I/O re-direction  
+     - Basic Regular Expressions ., [  ], *, ?  
   - Terms and Utilities:  
-     - /bin/sh  
-     - dd  
-     - tar  
-     - /dev/st* and /dev/nst*  
-     - mt  
-     - rsync  
-- Notify users on system- related issues  
+     - grep  
+     - less  
+     - cat, head, tail  
+     - sort  
+     - cut  
+     - wc  
+- Turning Commands into a Script  
   - Key Knowledge Areas:  
-     - Automate communication with users through logon messages  
-     - Inform active users of system maintenance  
+     - Basic shell scripting  
+     - Awareness of common text editors  
   - Terms and Utilities:  
-     - /etc/issue  
-     - /etc/issue.net  
-     - /etc/motd  
-     - wall  
-     - /sbin/shutdown  
+     - #! (shebang)  
+     - /bin/bash  
+     - Variables  
+     - Arguments  
+     - for loops  
+     - echo  
+     - Exit status  
+---------------------------------------------------  
+# The Linux Operating System
+---------------------------------------------------  
+- Choosing an Operating System  
+  - Key Knowledge Areas:  
+     - Windows, Mac, Linux differences  
+     - Distribution life cycle management  
+  - Terms and Utilities:  
+     - GUI versus command line, desktop configuration  
+     - Maintenance cycles, Beta and Stable  
+- Understanding Computer Hardware  
+  - Key Knowledge Areas:  
+     - Hardware  
+  - Terms and Utilities:  
+     - Motherboards, processors, power supplies, optical drives, peripherals  
+     - Hard drives and partitions, /dev/sd*  
+     - Drivers  
+- Where Data is Stored  
+  - Key Knowledge Areas:  
+     - Programs and configuration, packages and package databases  
+     - Processes, memory addresses, system messaging and logging  
+  - Terms and Utilities:  
+     - ps, top, free  
+     - syslog, dmesg  
+     - /etc/, /var/log/  
+     - /boot/, /proc/, /dev/, /sys/  
+- Your Computer on the Network  
+  - Key Knowledge Areas:  
+     - Internet, network, routers  
+     - Querying DNS client configuration  
+     - Querying Network configuration  
+  - Terms and Utilities:  
+     - route, ip route show  
+     - ifconfig, ip addr show  
+     - netstat, ip route show  
+     - /etc/resolv.conf, /etc/hosts  
+     - IPv4, IPv6  
+     - ping  
+     - host  
+---------------------------------------------------  
+# Security and File Permissions
+---------------------------------------------------  
+- Basic Security and Identifying User Types  
+  - Key Knowledge Areas:  
+     - Root and Standard Users  
+     - System users  
+  - Terms and Utilities:  
+     - /etc/passwd, /etc/group  
+     - id, who, w  
+     - sudo, su  
+- Creating Users and Groups  
+  - Key Knowledge Areas:  
+     - User and group commands  
+     - User IDs  
+  - Terms and Utilities:  
+     - /etc/passwd, /etc/shadow, /etc/group, /etc/skel/  
+     - id, last  
+     - useradd, groupadd  
+     - passwd  
+- Managing File Permissions and Ownership  
+  - Key Knowledge Areas:  
+     - File/directory permissions and owners  
+  - Terms and Utilities:  
+     - ls -l, ls -a  
+     - chmod, chown  
+- Special Directories and Files  
+  - Key Knowledge Areas:  
+     - Using temporary files and directories  
+     - Symbolic links  
+  - Terms and Utilities:  
+     - /tmp/, /var/tmp/ and Sticky Bit  
+     - ls -d  
+     - ln -s  
