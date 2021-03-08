@@ -1,272 +1,46 @@
 ---------------------------------------------------  
-# Domain Name Server
+# OpenLDAP Configuration
 ---------------------------------------------------  
-- Basic DNS server configuration  
-  - Key Knowledge Areas:  
-     - BIND 9.x configuration files, terms and utilities  
-     - Defining the location of the BIND zone files in BIND configuration files  
-     - Reloading modified configuration and zone files  
-     - Awareness of dnsmasq, djbdns and PowerDNS as alternate name servers  
-  - The following is a partial list of the used files, terms and utilities:  
-     - /etc/named.conf  
-     - /var/named/  
-     - /usr/sbin/rndc  
-     - kill  
-     - host  
-     - dig  
-- Create and maintain DNS zones  
-  - Key Knowledge Areas:  
-     - BIND 9 configuration files, terms and utilities  
-     - Utilities to request information from the DNS server  
-     - Layout, content and file location of the BIND zone files  
-     - Various methods to add a new host in the zone files, including reverse zones  
-  - Terms and Utilities:  
-     - /var/named/  
-     - zone file syntax  
-     - resource record formats  
-     - dig  
-     - nslookup  
-     - host  
-- Securing a DNS server  
-  - Key Knowledge Areas:  
-     - BIND 9 configuration files  
-     - Configuring BIND to run in a chroot jail  
-     - Split configuration of BIND using the forwarders statement  
-     - Configuring and using transaction signatures (TSIG)  
-     - Awareness of DNSSEC and basic tools  
-  - Terms and Utilities:  
-     - /etc/named.conf  
-     - /etc/passwd  
-     - DNSSEC  
-     - dnssec-keygen  
-     - dnssec-signzone  
+- OpenLDAP Replication  
+- Securing the Directory  
+- OpenLDAP Server Performance Tuning  
 ---------------------------------------------------  
-# Web Services
+# OpenLDAP as an Authentication Backend
 ---------------------------------------------------  
-- Implementing a web server  
-  - Key Knowledge Areas:  
-     - Apache 2.x configuration files, terms and utilities  
-     - Apache log files configuration and content  
-     - Access restriction methods and files  
-     - mod_perl and PHP configuration  
-     - Client user authentication files and utilities  
-     - Configuration of maximum requests, minimum and maximum servers and clients  
-     - Apache 2.x virtual host implementation (with and without dedicated IP addresses)  
-     - Using redirect statements in Apache’s configuration files to customize file access  
-  - Terms and Utilities:  
-     - access logs and error logs  
-     - .htaccess  
-     - httpd.conf  
-     - mod_auth  
-     - htpasswd  
-     - AuthUserFile, AuthGroupFile  
-     - apache2ctl  
-     - httpd  
-- Apache configuration for HTTPS  
-  - Key Knowledge Areas:  
-     - SSL configuration files, tools and utilities  
-     - Ability to generate a server private key and CSR for a commercial CA  
-     - Ability to generate a self-signed Certificate from private CA  
-     - Ability to install the key and Certificate  
-     - Awareness of the issues with Virtual Hosting and use of SSL  
-     - Security issues in SSL use  
-  - Terms and Utilities:  
-     - Apache2 configuration files  
-     - /etc/ssl/, /etc/pki/  
-     - openssl, CA.pl  
-     - SSLEngine, SSLCertificateKeyFile, SSLCertificateFile, SSLCertificateChainFile  
-     - SSLCACertificateFile, SSLCACertificatePath  
-     - SSLProtocol, SSLCipherSuite, ServerTokens, ServerSignature, TraceEnable  
-- Implementing a proxy server  
-  - Key Knowledge Areas:  
-     - Squid 3.x configuration files, terms and utilities  
-     - Access restriction methods  
-     - Client user authentication methods  
-     - Layout and content of ACL in the Squid configuration files  
-  - Terms and Utilities:  
-     - squid.conf  
-     - acl  
-     - http_access  
-- Implementing Nginx as a web server and a reverse proxy  
-  - Key Knowledge Areas:  
-     - Nginx  
-     - Reverse Proxy  
-     - Basic Web Server  
-  - Terms and Utilities:  
-     - /etc/nginx/  
-     - nginx  
+- LDAP Integration with PAM and NSS  
+- Integrating LDAP with Active Directory and Kerberos  
 ---------------------------------------------------  
-# File Sharing
+# Samba Basics
 ---------------------------------------------------  
-- SAMBA Server Configuration  
-  - Key Knowledge Areas:  
-     - Samba 3 documentation  
-     - Samba configuration files  
-     - Samba tools and utilities  
-     - Mounting Samba shares on Linux  
-     - Samba daemons  
-     - Mapping Windows usernames to Linux usernames  
-     - User-Level and Share-Level security  
-  - Terms and Utilities:  
-     - smbd, nmbd  
-     - smbstatus, testparm, smbpasswd, nmblookup  
-     - net  
-     - smbclient  
-     - /etc/smb/  
-     - /var/log/samba/  
-- NFS Server Configuration  
-  - Key Knowledge Areas:  
-     - NFS version 3 configuration files  
-     - NFS tools and utilities  
-     - Access restrictions to certain hosts and/or subnets  
-     - Mount options on server and client  
-     - TCP Wrappers  
-     - Awareness of NFSv4  
-  - Terms and Utilities:  
-     - /etc/exports  
-     - exportfs  
-     - showmount  
-     - nfsstat  
-     - /proc/mounts  
-     - /etc/fstab  
-     - rpcinfo  
-     - mountd  
-     - portmapper  
+- Samba Concepts and Architecture  
+- Configure Samba  
+- Regular Samba Maintenance  
+- Troubleshooting Samba  
+- Internationalization  
 ---------------------------------------------------  
-# Network Client Management
+# Samba Share Configuration
 ---------------------------------------------------  
-- DHCP configuration  
-  - Key Knowledge Areas:  
-     - DHCP configuration files, terms and utilities  
-     - Subnet and dynamically-allocated range setup  
-  - Terms and Utilities:  
-     - dhcpd.conf  
-     - /var/log/daemon.log and /var/log/messages  
-     - dhcpd.leases  
-     - arp  
-     - dhcpd  
-- PAM authentication  
-  - Key Knowledge Areas:  
-     - PAM configuration files, terms and utilities  
-     - passwd and shadow passwords  
-  - Terms and Utilities:  
-     - /etc/pam.d/  
-     - pam.conf  
-     - nsswitch.conf  
-     - pam_unix, pam_cracklib, pam_limits, pam_listfile  
-- LDAP client usage  
-  - Key Knowledge Areas:  
-     - LDAP utilities for data management and queries  
-     - Change user passwords  
-     - Querying the LDAP directory  
-  - Terms and Utilities:  
-     - ldapsearch  
-     - ldappasswd  
-     - ldapadd  
-     - ldapdelete  
-- Configuring an OpenLDAP server  
-  - Key Knowledge Areas:  
-     - OpenLDAP  
-     - Access Control  
-     - Distinguished Names  
-     - Changetype Operations  
-     - Schemas and Whitepages  
-     - Directories  
-     - Object IDs, Attributes and Classes  
-     - Awareness of System Security Services Daemon (SSSD)  
-  - Terms and Utilities:  
-     - slapd  
-     - slapd.conf  
-     - LDIF  
-     - slapadd  
-     - slapcat  
-     - slapindex  
-     - /var/lib/ldap/  
-     - loglevel  
+- File Services  
+- Linux File System and Share/Service Permissions  
+- Print Services  
 ---------------------------------------------------  
-# E-Mail Services
+# Samba User and Group Management
 ---------------------------------------------------  
-- Using e-mail servers  
-  - Key Knowledge Areas:  
-     - Configuration files for postfix  
-     - Basic knowledge of the SMTP protocol  
-     - Awareness of sendmail and exim  
-  - Terms and Utilities:  
-     - Configuration files and commands for postfix  
-     - /etc/postfix/  
-     - /var/spool/postfix/  
-     - sendmail emulation layer commands  
-     - /etc/aliases  
-     - mail-related logs in /var/log/  
-- Managing Local E-Mail Delivery  
-  - Key Knowledge Areas:  
-     - procmail configuration files, tools and utilities  
-     - Usage of procmail on both server and client side  
-  - Terms and Utilities:  
-     - ~/.procmailrc  
-     - /etc/procmailrc  
-     - procmail  
-     - mbox and Maildir formats  
-- Managing Remote E-Mail Delivery  
-  - Key Knowledge Areas:  
-     - Courier IMAP and Courier POP configuration  
-     - Dovecot configuration  
-  - Terms and Utilities:  
-     - /etc/courier/  
-     - dovecot.conf  
+- Managing User Accounts and Groups  
+- Authentication, Authorization and Winbind  
 ---------------------------------------------------  
-# System Security
+# Samba Domain Integration
 ---------------------------------------------------  
-- Configuring a router  
-  - Key Knowledge Areas:  
-     - iptables configuration files, tools and utilities  
-     - Tools, commands and utilities to manage routing tables.  
-     - Private address ranges  
-     - Port redirection and IP forwarding  
-     - List and write filtering and rules that accept or block datagrams based on source or  
-     - Destination protocol, port and address  
-     - Save and reload filtering configurations  
-     - Awareness of ip6tables and filtering  
-  - Terms and Utilities:  
-     - /proc/sys/net/ipv4/  
-     - /etc/services  
-     - iptables  
-- Securing FTP servers  
-  - Key Knowledge Areas:  
-     - Configuration files, tools and utilities for Pure-FTPd and vsftpd  
-     - Awareness of ProFTPd  
-     - Understanding of passive vs. active FTP connections  
-  - Terms and Utilities:  
-     - vsftpd.conf  
-     - important Pure-FTPd command line options  
-- Secure shell (SSH)  
-  - Key Knowledge Areas:  
-     - OpenSSH configuration files, tools and utilities  
-     - Login restrictions for the superuser and the normal users  
-     - Managing and using server and client keys to login with and without password  
-     - Usage of multiple connections from multiple hosts to guard against loss of connection to remote host following configuration changes  
-  - Terms and Utilities:  
-     - ssh  
-     - sshd  
-     - /etc/ssh/sshd_config  
-     - /etc/ssh/  
-     - Private and public key files  
-     - PermitRootLogin, PubKeyAuthentication, AllowUsers, PasswordAuthentication, Protocol  
-- Security tasks  
-  - Key Knowledge Areas:  
-     - Tools and utilities to scan and test ports on a server  
-     - Locations and organizations that report security alerts as Bugtraq, CERT or other sources  
-     - Tools and utilities to implement an intrusion detection system (IDS)  
-     - Awareness of OpenVAS and Snort  
-  - Terms and Utilities:  
-     - telnet  
-     - nmap  
-     - fail2ban  
-     - nc  
-     - iptables  
-- OpenVPN  
-  - Key Knowledge Areas:  
-     - OpenVPN  
-  - Terms and Utilities:  
-     - /etc/openvpn/  
-     - openvpn  
+- Samba as a PDC and BDC  
+- Samba4 as an AD compatible Domain Controller  
+- Configure Samba as a Domain Member Server  
+---------------------------------------------------  
+# Samba Name Services
+---------------------------------------------------  
+- NetBIOS and WINS  
+- Active Directory Name Resolution  
+---------------------------------------------------  
+# Working with Linux and Windows Clients
+---------------------------------------------------  
+- CIFS Integration  
+- Working with Windows Clients  
