@@ -1,192 +1,335 @@
 ---------------------------------------------------  
-# Introduction
+# System Architecture
 ---------------------------------------------------  
----------------------------------------------------  
-# The Linux Community and a Career in Open Source
----------------------------------------------------  
-- Linux Evolution and Popular Operating Systems  
+- Determine and configure hardware settings  
   - Key Knowledge Areas:  
-     - Desktop Applications  
-     - Server Applications  
-     - Development Languages  
-     - Package Management Tools and repositories  
-  - Terms and Utilities:  
-     - OpenOffice.org, LibreOffice, Thunderbird, Firefox, GIMP  
-     - Apache HTTPD, NGINX, MySQL, NFS, Samba  
-     - C, Java, Perl, shell, Python, Samba  
-     - dpkg, apt-get, rpm, yum  
-- Understanding Open Source Software and Licensing  
+     - Enable and disable integrated peripherals  
+     - Configure systems with or without external peripherals such as keyboards  
+     - Differentiate between the various types of mass storage devices  
+     - Know the differences between coldplug and hotplug devices  
+     - Determine hardware resources for devices  
+     - Tools and utilities to list various hardware information (e.g. lsusb, lspci, etc.)  
+     - Tools and utilities to manipulate USB devices  
+     - Conceptual understanding of sysfs, udev, dbus  
+  - The following is a partial list of the used files, terms and utilities:  
+     - /sys/  
+     - /proc/  
+     - /dev/  
+     - modprobe  
+     - lsmod  
+     - lspci  
+     - lsusb  
+- Boot the system  
   - Key Knowledge Areas:  
-     - Licensing  
-     - Free Software Foundation (FSF), Open Source Initiative (OSI)  
+     - Provide common commands to the boot loader and options to the kernel at boot time  
+     - Demonstrate knowledge of the boot sequence from BIOS to boot completion  
+     - Understanding of SysVinit and systemd  
+     - Awareness of Upstart  
+     - Check boot events in the log files  
   - Terms and Utilities:  
-     - GPL, BSD, Creative Commons  
-     - Free Software, Open Source Software, FOSS, FLOSS  
-     - Open Source business models  
-- ICT Skills and Working in Linux  
+     - dmesg  
+     - BIOS  
+     - bootloader  
+     - kernel  
+     - initramfs  
+     - init  
+     - SysVinit  
+     - systemd  
+- Change runlevels / boot targets and shutdown or reboot system  
   - Key Knowledge Areas:  
-     - Desktop Skills  
-     - Getting to the Command Line  
-     - Industry uses of Linux, Cloud Computing and Virtualization  
+     - Set the default runlevel or boot target  
+     - Change between runlevels / boot targets including single user mode  
+     - Shutdown and reboot from the command line  
+     - Alert users before switching runlevels / boot targets or other major system events  
+     - Properly terminate processes  
   - Terms and Utilities:  
-     - Using a browser, privacy concerns, configuration options, searching the web and saving content  
-     - Terminal and Console  
-     - Password issues  
-     - Privacy issues and tools  
-     - Use of common open source applications in presentations and projects  
+     - /etc/inittab  
+     - shutdown  
+     - init  
+     - /etc/init.d/  
+     - telinit  
+     - systemd  
+     - systemctl  
+     - /etc/systemd/  
+     - /usr/lib/systemd/  
+     - wall  
 ---------------------------------------------------  
-# Finding Your Way on a Linux System
+# Linux Installation and Package Management
 ---------------------------------------------------  
-- Command Line Basics  
+- Design hard disk layout  
   - Key Knowledge Areas:  
-     - Basic shell  
-     - Command line syntax  
-     - Variables  
-     - Globbing  
-     - Quoting  
+     - Allocate filesystems and swap space to separate partitions or disks  
+     - Tailor the design to the intended use of the system  
+     - Ensure the /boot partition conforms to the hardware architecture requirements for booting  
+     - Knowledge of basic features of LVM  
   - Terms and Utilities:  
-     - Bash  
+     - / (root) filesystem  
+     - /var filesystem  
+     - /home filesystem  
+     - /boot filesystem  
+     - swap space  
+     - mount points  
+     - partitions  
+- Install a boot manager  
+  - Key Knowledge Areas:  
+     - Providing alternative boot locations and backup boot options  
+     - Install and configure a boot loader such as GRUB Legacy  
+     - Perform basic configuration changes for GRUB 2  
+     - Interact with the boot loader  
+  - The following is a partial list of the used files, terms and utilities:  
+     - menu.lst, grub.cfg and grub.conf  
+     - grub-install  
+     - grub-mkconfig  
+     - MBR  
+- Manage shared libraries  
+  - Key Knowledge Areas:  
+     - Identify shared libraries  
+     - Identify the typical locations of system libraries  
+     - Load shared libraries  
+  - Terms and Utilities:  
+     - ldd  
+     - ldconfig  
+     - /etc/ld.so.conf  
+     - LD_LIBRARY_PATH  
+- Use Debian package management  
+  - Key Knowledge Areas:  
+     - Install, upgrade and uninstall Debian binary packages  
+     - Find packages containing specific files or libraries which may or may not be installed  
+     - Obtain package information like version, content, dependencies, package integrity and installation status (whether or not the package is installed)  
+  - Terms and Utilities:  
+     - /etc/apt/sources.list  
+     - dpkg  
+     - dpkg-reconfigure  
+     - apt-get  
+     - apt-cache  
+     - aptitude  
+- Use RPM and YUM package management  
+  - Key Knowledge Areas:  
+     - Install, re-install, upgrade and remove packages using RPM and YUM  
+     - Obtain information on RPM packages such as version, status, dependencies, integrity and signatures  
+     - Determine what files a package provides, as well as find which package a specific file comes from  
+  - Terms and Utilities:  
+     - rpm  
+     - rpm2cpio  
+     - /etc/yum.conf  
+     - /etc/yum.repos.d/  
+     - yum  
+     - yumdownloader  
+---------------------------------------------------  
+# GNU and Unix Commands
+---------------------------------------------------  
+- Work on the command line  
+  - Key Knowledge Areas:  
+     - Use single shell commands and one line command sequences to perform basic tasks on the command line  
+     - Use and modify the shell environment including defining, referencing and exporting environment variables  
+     - Use and edit command history  
+     - Invoke commands inside and outside the defined path  
+  - Terms and Utilities:  
+     - bash  
      - echo  
-     - history  
-     - PATH env variable  
+     - env  
      - export  
-     - type  
-- Using the Command Line to Get Help  
-  - Key Knowledge Areas:  
-     - Man  
-     - Info  
-  - Terms and Utilities:  
+     - pwd  
+     - set  
+     - unset  
      - man  
-     - info  
-     - Man pages  
-     - /usr/share/doc/  
-     - locate  
-- Using Directories and Listing Files  
+     - uname  
+     - history  
+     - .bash_history  
+- Process text streams using filters  
   - Key Knowledge Areas:  
-     - Files, directories  
-     - Hidden files and directories  
-     - Home  
-     - Absolute and relative paths  
+     - Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package  
   - Terms and Utilities:  
-     - Common options for ls  
-     - Recursive listings  
-     - cd  
-     - . and ..  
-     - home and ~  
-- Creating, Moving and Deleting Files  
+     - cat  
+     - cut  
+     - expand  
+     - fmt  
+     - head  
+     - join  
+     - less  
+     - nl  
+     - od  
+     - paste  
+     - pr  
+     - sed  
+     - sort  
+     - split  
+     - tail  
+     - tr  
+     - unexpand  
+     - uniq  
+     - wc  
+- Perform basic file management  
   - Key Knowledge Areas:  
-     - Files and directories  
-     - Case sensitivity  
-     - Simple globbing and quoting  
+     - Copy, move and remove files and directories individually  
+     - Copy multiple files and directories recursively  
+     - Remove files and directories recursively  
+     - Use simple and advanced wildcard specifications in commands  
+     - Using find to locate and act on files based on type, size, or time  
+     - Usage of tar, cpio and dd  
   - Terms and Utilities:  
-     - mv, cp, rm, touch  
-     - mkdir, rmdir  
----------------------------------------------------  
-# The Power of the Command Line
----------------------------------------------------  
-- Archiving Files on the Command Line  
-  - Key Knowledge Areas:  
-     - Files, directories  
-     - Archives, compression  
-  - Terms and Utilities:  
+     - cp  
+     - find  
+     - mkdir  
+     - mv  
+     - ls  
+     - rm  
+     - rmdir  
+     - touch  
      - tar  
-     - Common tar options  
-     - gzip, bzip2  
-     - zip, unzip  
-- Searching and Extracting Data from Files  
+     - cpio  
+     - dd  
+     - file  
+     - gzip  
+     - gunzip  
+     - bzip2  
+     - xz  
+     - file globbing  
+- Use streams, pipes and redirects  
   - Key Knowledge Areas:  
-     - Command line pipes  
-     - I/O re-direction  
-     - Basic Regular Expressions ., [  ], *, ?  
+     - Redirecting standard input, standard output and standard error  
+     - Pipe the output of one command to the input of another command  
+     - Use the output of one command as arguments to another command  
+     - Send output to both stdout and a file  
+  - Terms and Utilities:  
+     - tee  
+     - xargs  
+- Create, monitor and kill processes  
+  - Key Knowledge Areas:  
+     - Run jobs in the foreground and background  
+     - Signal a program to continue running after logout  
+     - Monitor active processes  
+     - Select and sort processes for display  
+     - Send signals to processes  
+  - Terms and Utilities:  
+     - &  
+     - bg  
+     - fg  
+     - jobs  
+     - kill  
+     - nohup  
+     - ps  
+     - top  
+     - free  
+     - uptime  
+     - pgrep  
+     - pkill  
+     - killall  
+     - screen  
+- Modify process execution priorities  
+  - Key Knowledge Areas:  
+     - Know the default priority of a job that is created  
+     - Run a program with higher or lower priority than the default  
+     - Change the priority of a running process  
+  - Terms and Utilities:  
+     - nice  
+     - ps  
+     - renice  
+     - top  
+- Search text files using regular expressions  
+  - Key Knowledge Areas:  
+     - Create simple regular expressions containing several notational elements  
+     - Use regular expression tools to perform searches through a filesystem or file content  
   - Terms and Utilities:  
      - grep  
-     - less  
-     - cat, head, tail  
-     - sort  
-     - cut  
-     - wc  
-- Turning Commands into a Script  
+     - egrep  
+     - fgrep  
+     - sed  
+     - regex(7)  
+- Perform basic file editing operations using vi  
   - Key Knowledge Areas:  
-     - Basic shell scripting  
-     - Awareness of common text editors  
+     - Navigate a document using vi  
+     - Use basic vi modes  
+     - Insert, edit, delete, copy and find text  
   - Terms and Utilities:  
-     - #! (shebang)  
-     - /bin/bash  
-     - Variables  
-     - Arguments  
-     - for loops  
-     - echo  
-     - Exit status  
+     - vi  
+     - /, ?  
+     - h,j,k,l  
+     - i, o, a  
+     - c, d, p, y, dd, yy  
+     - ZZ, :w!, :q!, :e!  
 ---------------------------------------------------  
-# The Linux Operating System
+# Devices, Linux Filesystems, Filesystem Hierarchy Standard
 ---------------------------------------------------  
-- Choosing an Operating System  
+- Create partitions and filesystems  
   - Key Knowledge Areas:  
-     - Windows, Mac, Linux differences  
-     - Distribution life cycle management  
+     - Manage MBR partition tables  
+     - Use various mkfs commands to create various filesystems such as:  
+     - -ext2/ext3/ext4  
+     - -XFS  
+     - -VFAT  
+     - Awareness of ReiserFS and Btrfs  
+     - Basic knowledge of gdisk and parted with GPT  
   - Terms and Utilities:  
-     - GUI versus command line, desktop configuration  
-     - Maintenance cycles, Beta and Stable  
-- Understanding Computer Hardware  
+     - fdisk  
+     - gdisk  
+     - parted  
+     - mkfs  
+     - mkswap  
+- Maintain the integrity of filesystems  
   - Key Knowledge Areas:  
-     - Hardware  
+     - Verify the integrity of filesystems  
+     - Monitor free space and inodes  
+     - Repair simple filesystem problems  
   - Terms and Utilities:  
-     - Motherboards, processors, power supplies, optical drives, peripherals  
-     - Hard drives and partitions, /dev/sd*  
-     - Drivers  
-- Where Data is Stored  
+     - du  
+     - df  
+     - fsck  
+     - e2fsck  
+     - mke2fs  
+     - debugfs  
+     - dumpe2fs  
+     - tune2fs  
+     - XFS tools (such as xfs_metadump and xfs_info)  
+- Control mounting and unmounting of filesystems  
   - Key Knowledge Areas:  
-     - Programs and configuration, packages and package databases  
-     - Processes, memory addresses, system messaging and logging  
+     - Manually mount and unmount filesystems  
+     - Configure filesystem mounting on bootup  
+     - Configure user mountable removable filesystems  
   - Terms and Utilities:  
-     - ps, top, free  
-     - syslog, dmesg  
-     - /etc/, /var/log/  
-     - /boot/, /proc/, /dev/, /sys/  
-- Your Computer on the Network  
+     - /etc/fstab  
+     - /media/  
+     - mount  
+     - umount  
+- Manage disk quotas  
   - Key Knowledge Areas:  
-     - Internet, network, routers  
-     - Querying DNS client configuration  
-     - Querying Network configuration  
+     - Set up a disk quota for a filesystem  
+     - Edit, check and generate user quota reports  
   - Terms and Utilities:  
-     - route, ip route show  
-     - ifconfig, ip addr show  
-     - netstat, ip route show  
-     - /etc/resolv.conf, /etc/hosts  
-     - IPv4, IPv6  
-     - ping  
-     - host  
----------------------------------------------------  
-# Security and File Permissions
----------------------------------------------------  
-- Basic Security and Identifying User Types  
+     - quota  
+     - edquota  
+     - repquota  
+     - quotaon  
+- Manage file permissions and ownership  
   - Key Knowledge Areas:  
-     - Root and Standard Users  
-     - System users  
+     - Manage access permissions on regular and special files as well as directories  
+     - Use access modes such as suid, sgid and the sticky bit to maintain security  
+     - Know how to change the file creation mask  
+     - Use the group field to grant file access to group members  
   - Terms and Utilities:  
-     - /etc/passwd, /etc/group  
-     - id, who, w  
-     - sudo, su  
-- Creating Users and Groups  
+     - chmod  
+     - umask  
+     - chown  
+     - chgrp  
+- Create and change hard and symbolic links  
   - Key Knowledge Areas:  
-     - User and group commands  
-     - User IDs  
+     - Create links  
+     - Identify hard and/or soft links  
+     - Copying versus linking files  
+     - Use links to support system administration tasks  
   - Terms and Utilities:  
-     - /etc/passwd, /etc/shadow, /etc/group, /etc/skel/  
-     - id, last  
-     - useradd, groupadd  
-     - passwd  
-- Managing File Permissions and Ownership  
+     - ln  
+     - ls  
+- Find system files and place files in the correct location  
   - Key Knowledge Areas:  
-     - File/directory permissions and owners  
+     - Understand the correct locations of files under the FHS  
+     - Find files and commands on a Linux system  
+     - Know the location and purpose of important file and directories as defined in the FHS  
   - Terms and Utilities:  
-     - ls -l, ls -a  
-     - chmod, chown  
-- Special Directories and Files  
-  - Key Knowledge Areas:  
-     - Using temporary files and directories  
-     - Symbolic links  
-  - Terms and Utilities:  
-     - /tmp/, /var/tmp/ and Sticky Bit  
-     - ls -d  
-     - ln -s  
+     - find  
+     - locate  
+     - updatedb  
+     - whereis  
+     - which  
+     - type  
+     - /etc/updatedb.conf  
