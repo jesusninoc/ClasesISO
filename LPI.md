@@ -1,335 +1,353 @@
 ---------------------------------------------------  
-# System Architecture
+# Shells, Scripting and Data Management
 ---------------------------------------------------  
-- Determine and configure hardware settings  
+- Customize and use the shell environment  
   - Key Knowledge Areas:  
-     - Enable and disable integrated peripherals  
-     - Configure systems with or without external peripherals such as keyboards  
-     - Differentiate between the various types of mass storage devices  
-     - Know the differences between coldplug and hotplug devices  
-     - Determine hardware resources for devices  
-     - Tools and utilities to list various hardware information (e.g. lsusb, lspci, etc.)  
-     - Tools and utilities to manipulate USB devices  
-     - Conceptual understanding of sysfs, udev, dbus  
+     - Set environment variables (e.g. PATH) at login or when spawning a new shell  
+     - Write Bash functions for frequently used sequences of commands  
+     - Maintain skeleton directories for new user accounts  
+     - Set command search path with the proper directory  
   - The following is a partial list of the used files, terms and utilities:  
-     - /sys/  
-     - /proc/  
-     - /dev/  
-     - modprobe  
-     - lsmod  
-     - lspci  
-     - lsusb  
-- Boot the system  
-  - Key Knowledge Areas:  
-     - Provide common commands to the boot loader and options to the kernel at boot time  
-     - Demonstrate knowledge of the boot sequence from BIOS to boot completion  
-     - Understanding of SysVinit and systemd  
-     - Awareness of Upstart  
-     - Check boot events in the log files  
-  - Terms and Utilities:  
-     - dmesg  
-     - BIOS  
-     - bootloader  
-     - kernel  
-     - initramfs  
-     - init  
-     - SysVinit  
-     - systemd  
-- Change runlevels / boot targets and shutdown or reboot system  
-  - Key Knowledge Areas:  
-     - Set the default runlevel or boot target  
-     - Change between runlevels / boot targets including single user mode  
-     - Shutdown and reboot from the command line  
-     - Alert users before switching runlevels / boot targets or other major system events  
-     - Properly terminate processes  
-  - Terms and Utilities:  
-     - /etc/inittab  
-     - shutdown  
-     - init  
-     - /etc/init.d/  
-     - telinit  
-     - systemd  
-     - systemctl  
-     - /etc/systemd/  
-     - /usr/lib/systemd/  
-     - wall  
----------------------------------------------------  
-# Linux Installation and Package Management
----------------------------------------------------  
-- Design hard disk layout  
-  - Key Knowledge Areas:  
-     - Allocate filesystems and swap space to separate partitions or disks  
-     - Tailor the design to the intended use of the system  
-     - Ensure the /boot partition conforms to the hardware architecture requirements for booting  
-     - Knowledge of basic features of LVM  
-  - Terms and Utilities:  
-     - / (root) filesystem  
-     - /var filesystem  
-     - /home filesystem  
-     - /boot filesystem  
-     - swap space  
-     - mount points  
-     - partitions  
-- Install a boot manager  
-  - Key Knowledge Areas:  
-     - Providing alternative boot locations and backup boot options  
-     - Install and configure a boot loader such as GRUB Legacy  
-     - Perform basic configuration changes for GRUB 2  
-     - Interact with the boot loader  
-  - The following is a partial list of the used files, terms and utilities:  
-     - menu.lst, grub.cfg and grub.conf  
-     - grub-install  
-     - grub-mkconfig  
-     - MBR  
-- Manage shared libraries  
-  - Key Knowledge Areas:  
-     - Identify shared libraries  
-     - Identify the typical locations of system libraries  
-     - Load shared libraries  
-  - Terms and Utilities:  
-     - ldd  
-     - ldconfig  
-     - /etc/ld.so.conf  
-     - LD_LIBRARY_PATH  
-- Use Debian package management  
-  - Key Knowledge Areas:  
-     - Install, upgrade and uninstall Debian binary packages  
-     - Find packages containing specific files or libraries which may or may not be installed  
-     - Obtain package information like version, content, dependencies, package integrity and installation status (whether or not the package is installed)  
-  - Terms and Utilities:  
-     - /etc/apt/sources.list  
-     - dpkg  
-     - dpkg-reconfigure  
-     - apt-get  
-     - apt-cache  
-     - aptitude  
-- Use RPM and YUM package management  
-  - Key Knowledge Areas:  
-     - Install, re-install, upgrade and remove packages using RPM and YUM  
-     - Obtain information on RPM packages such as version, status, dependencies, integrity and signatures  
-     - Determine what files a package provides, as well as find which package a specific file comes from  
-  - Terms and Utilities:  
-     - rpm  
-     - rpm2cpio  
-     - /etc/yum.conf  
-     - /etc/yum.repos.d/  
-     - yum  
-     - yumdownloader  
----------------------------------------------------  
-# GNU and Unix Commands
----------------------------------------------------  
-- Work on the command line  
-  - Key Knowledge Areas:  
-     - Use single shell commands and one line command sequences to perform basic tasks on the command line  
-     - Use and modify the shell environment including defining, referencing and exporting environment variables  
-     - Use and edit command history  
-     - Invoke commands inside and outside the defined path  
-  - Terms and Utilities:  
-     - bash  
-     - echo  
+     - .  
+     - source  
+     - /etc/bash.bashrc  
+     - /etc/profile  
      - env  
      - export  
-     - pwd  
      - set  
      - unset  
-     - man  
-     - uname  
-     - history  
-     - .bash_history  
-- Process text streams using filters  
+     - ~/.bash_profile  
+     - ~/.bash_login  
+     - ~/.profile  
+     - ~/.bashrc  
+     - ~/.bash_logout  
+     - function  
+     - alias  
+     - lists  
+- Customize or write simple scripts  
   - Key Knowledge Areas:  
-     - Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package  
+     - Use standard sh syntax (loops, tests)  
+     - Use command substitution  
+     - Test return values for success or failure or other information provided by a command  
+     - Perform conditional mailing to the superuser  
+     - Correctly select the script interpreter through the shebang (#!) line  
+     - Manage the location, ownership, execution and suid-rights of scripts  
   - Terms and Utilities:  
-     - cat  
-     - cut  
-     - expand  
-     - fmt  
-     - head  
+     - for  
+     - while  
+     - test  
+     - if  
+     - read  
+     - seq  
+     - exec  
+- SQL data management  
+  - Key Knowledge Areas:  
+     - Use of basic SQL commands  
+     - Perform basic data manipulation  
+  - Terms and Utilities:  
+     - insert  
+     - update  
+     - select  
+     - delete  
+     - from  
+     - where  
+     - group by  
+     - order by  
      - join  
-     - less  
-     - nl  
-     - od  
-     - paste  
-     - pr  
-     - sed  
-     - sort  
-     - split  
-     - tail  
-     - tr  
-     - unexpand  
-     - uniq  
-     - wc  
-- Perform basic file management  
-  - Key Knowledge Areas:  
-     - Copy, move and remove files and directories individually  
-     - Copy multiple files and directories recursively  
-     - Remove files and directories recursively  
-     - Use simple and advanced wildcard specifications in commands  
-     - Using find to locate and act on files based on type, size, or time  
-     - Usage of tar, cpio and dd  
-  - Terms and Utilities:  
-     - cp  
-     - find  
-     - mkdir  
-     - mv  
-     - ls  
-     - rm  
-     - rmdir  
-     - touch  
-     - tar  
-     - cpio  
-     - dd  
-     - file  
-     - gzip  
-     - gunzip  
-     - bzip2  
-     - xz  
-     - file globbing  
-- Use streams, pipes and redirects  
-  - Key Knowledge Areas:  
-     - Redirecting standard input, standard output and standard error  
-     - Pipe the output of one command to the input of another command  
-     - Use the output of one command as arguments to another command  
-     - Send output to both stdout and a file  
-  - Terms and Utilities:  
-     - tee  
-     - xargs  
-- Create, monitor and kill processes  
-  - Key Knowledge Areas:  
-     - Run jobs in the foreground and background  
-     - Signal a program to continue running after logout  
-     - Monitor active processes  
-     - Select and sort processes for display  
-     - Send signals to processes  
-  - Terms and Utilities:  
-     - &  
-     - bg  
-     - fg  
-     - jobs  
-     - kill  
-     - nohup  
-     - ps  
-     - top  
-     - free  
-     - uptime  
-     - pgrep  
-     - pkill  
-     - killall  
-     - screen  
-- Modify process execution priorities  
-  - Key Knowledge Areas:  
-     - Know the default priority of a job that is created  
-     - Run a program with higher or lower priority than the default  
-     - Change the priority of a running process  
-  - Terms and Utilities:  
-     - nice  
-     - ps  
-     - renice  
-     - top  
-- Search text files using regular expressions  
-  - Key Knowledge Areas:  
-     - Create simple regular expressions containing several notational elements  
-     - Use regular expression tools to perform searches through a filesystem or file content  
-  - Terms and Utilities:  
-     - grep  
-     - egrep  
-     - fgrep  
-     - sed  
-     - regex(7)  
-- Perform basic file editing operations using vi  
-  - Key Knowledge Areas:  
-     - Navigate a document using vi  
-     - Use basic vi modes  
-     - Insert, edit, delete, copy and find text  
-  - Terms and Utilities:  
-     - vi  
-     - /, ?  
-     - h,j,k,l  
-     - i, o, a  
-     - c, d, p, y, dd, yy  
-     - ZZ, :w!, :q!, :e!  
 ---------------------------------------------------  
-# Devices, Linux Filesystems, Filesystem Hierarchy Standard
+# Interfaces and Desktops
 ---------------------------------------------------  
-- Create partitions and filesystems  
+- Install and configure X11  
   - Key Knowledge Areas:  
-     - Manage MBR partition tables  
-     - Use various mkfs commands to create various filesystems such as:  
-     - -ext2/ext3/ext4  
-     - -XFS  
-     - -VFAT  
-     - Awareness of ReiserFS and Btrfs  
-     - Basic knowledge of gdisk and parted with GPT  
+     - Verify that the video card and monitor are supported by an X server  
+     - Awareness of the X font server  
+     - Basic understanding and knowledge of the X Window configuration file  
   - Terms and Utilities:  
-     - fdisk  
-     - gdisk  
-     - parted  
-     - mkfs  
-     - mkswap  
-- Maintain the integrity of filesystems  
+     - /etc/X11/xorg.conf  
+     - xhost  
+     - DISPLAY  
+     - xwininfo  
+     - xdpyinfo  
+     - X  
+- Setup a display manager  
   - Key Knowledge Areas:  
-     - Verify the integrity of filesystems  
-     - Monitor free space and inodes  
-     - Repair simple filesystem problems  
+     - Basic configuration of LightDM  
+     - Turn the display manager on or off  
+     - Change the display manager greeting  
+     - Awareness of XDM, KDM and GDM  
   - Terms and Utilities:  
-     - du  
-     - df  
-     - fsck  
-     - e2fsck  
-     - mke2fs  
-     - debugfs  
-     - dumpe2fs  
-     - tune2fs  
-     - XFS tools (such as xfs_metadump and xfs_info)  
-- Control mounting and unmounting of filesystems  
+     - lightdm  
+     - /etc/lightdm/  
+- Accessibility  
   - Key Knowledge Areas:  
-     - Manually mount and unmount filesystems  
-     - Configure filesystem mounting on bootup  
-     - Configure user mountable removable filesystems  
+     - Basic knowledge of keyboard accessibility settings (AccessX)  
+     - Basic knowledge of visual settings and themes  
+     - Basic knowledge of assistive technology (ATs)  
   - Terms and Utilities:  
-     - /etc/fstab  
-     - /media/  
-     - mount  
-     - umount  
-- Manage disk quotas  
+     - Sticky/Repeat Keys  
+     - Slow/Bounce/Toggle Keys  
+     - Mouse Keys  
+     - High Contrast/Large Print Desktop Themes  
+     - Screen Reader  
+     - Braille Display  
+     - Screen Magnifier  
+     - On-Screen Keyboard  
+     - Gestures (used at login, for example GDM)  
+     - Orca  
+     - GOK  
+     - emacspeak  
+---------------------------------------------------  
+# Administrative Tasks
+---------------------------------------------------  
+- Manage user and group accounts and related system files  
   - Key Knowledge Areas:  
-     - Set up a disk quota for a filesystem  
-     - Edit, check and generate user quota reports  
+     - Add, modify and remove users and groups  
+     - Manage user/group info in password/group databases  
+     - Create and manage special purpose and limited accounts  
   - Terms and Utilities:  
-     - quota  
-     - edquota  
-     - repquota  
-     - quotaon  
-- Manage file permissions and ownership  
+     - /etc/passwd  
+     - /etc/shadow  
+     - /etc/group  
+     - /etc/skel/  
+     - chage  
+     - getent  
+     - groupadd  
+     - groupdel  
+     - groupmod  
+     - passwd  
+     - useradd  
+     - userdel  
+     - usermod  
+- Automate system administration tasks by scheduling jobs  
   - Key Knowledge Areas:  
-     - Manage access permissions on regular and special files as well as directories  
-     - Use access modes such as suid, sgid and the sticky bit to maintain security  
-     - Know how to change the file creation mask  
-     - Use the group field to grant file access to group members  
+     - Manage cron and at jobs  
+     - Configure user access to cron and at services  
+     - Configure anacron  
   - Terms and Utilities:  
-     - chmod  
-     - umask  
-     - chown  
-     - chgrp  
-- Create and change hard and symbolic links  
+     - /etc/cron.{d,daily,hourly,monthly,weekly}/  
+     - /etc/at.deny  
+     - /etc/at.allow  
+     - /etc/crontab  
+     - /etc/cron.allow  
+     - /etc/cron.deny  
+     - /var/spool/cron/  
+     - crontab  
+     - at  
+     - atq  
+     - atrm  
+     - anacron  
+     - /etc/anacrontab  
+- Localisation and internationalisation  
   - Key Knowledge Areas:  
-     - Create links  
-     - Identify hard and/or soft links  
-     - Copying versus linking files  
-     - Use links to support system administration tasks  
+     - Configure locale settings and environment variables  
+     - Configure timezone settings and environment variables  
   - Terms and Utilities:  
-     - ln  
-     - ls  
-- Find system files and place files in the correct location  
+     - /etc/timezone  
+     - /etc/localtime  
+     - /usr/share/zoneinfo/  
+     - LC_*  
+     - LC_ALL  
+     - LANG  
+     - TZ  
+     - /usr/bin/locale  
+     - tzselect  
+     - timedatectl  
+     - date  
+     - iconv  
+     - UTF-8  
+     - ISO-8859  
+     - ASCII  
+     - Unicode  
+---------------------------------------------------  
+# Essential System Services
+---------------------------------------------------  
+- Maintain system time  
   - Key Knowledge Areas:  
-     - Understand the correct locations of files under the FHS  
-     - Find files and commands on a Linux system  
-     - Know the location and purpose of important file and directories as defined in the FHS  
+     - Set the system date and time  
+     - Set the hardware clock to the correct time in UTC  
+     - Configure the correct timezone  
+     - Basic NTP configuration  
+     - Knowledge of using the pool.ntp.org service  
+     - Awareness of the ntpq command  
+  - Terms and Utilities:  
+     - /usr/share/zoneinfo/  
+     - /etc/timezone  
+     - /etc/localtime  
+     - /etc/ntp.conf  
+     - date  
+     - hwclock  
+     - ntpd  
+     - ntpdate  
+     - pool.ntp.org  
+- System logging  
+  - Key Knowledge Areas:  
+     - Configuration of the syslog daemon  
+     - Understanding of standard facilities, priorities and actions  
+     - Configuration of logrotate  
+     - Awareness of rsyslog and syslog-ng  
+  - Terms and Utilities:  
+     - syslog.conf  
+     - syslogd  
+     - klogd  
+     - /var/log/  
+     - logger  
+     - logrotate  
+     - /etc/logrotate.conf  
+     - /etc/logrotate.d/  
+     - journalctl  
+     - /etc/systemd/journald.conf  
+     - /var/log/journal/  
+- Mail Transfer Agent (MTA) basics  
+  - Key Knowledge Areas:  
+     - Create e-mail aliases  
+     - Configure e-mail forwarding  
+     - Knowledge of commonly available MTA programs (postfix, sendmail, qmail, exim) (no configuration)  
+  - Terms and Utilities:  
+     - ~/.forward  
+     - sendmail emulation layer commands  
+     - newaliases  
+     - mail  
+     - mailq  
+     - postfix  
+     - sendmail  
+     - exim  
+     - qmail  
+     - ~/.forward  
+     - sendmail emulation layer commands  
+     - newaliases  
+- Manage printers and printing  
+  - Key Knowledge Areas:  
+     - Basic CUPS configuration (for local and remote printers)  
+     - Manage user print queues  
+     - Troubleshoot general printing problems  
+     - Add and remove jobs from configured printer queues  
+  - Terms and Utilities:  
+     - CUPS configuration files, tools and utilities  
+     - /etc/cups/  
+     - lpd legacy interface (lpr, lprm, lpq)  
+---------------------------------------------------  
+# Networking Fundamentals
+---------------------------------------------------  
+- Fundamentals of internet protocols  
+  - Key Knowledge Areas:  
+     - Demonstrate an understanding of network masks and CIDR notation  
+     - Knowledge of the differences between private and public “dotted quad” IP addresses  
+     - Knowledge about common TCP and UDP ports and services (20, 21, 22, 23, 25, 53, 80, 110, 123, 139, 143, 161, 162, 389, 443, 465, 514, 636, 993, 995)  
+     - Knowledge about the differences and major features of UDP, TCP and ICMP  
+     - Knowledge of the major differences between IPv4 and IPv6  
+     - Knowledge of the basic features of IPv6  
+  - Terms and Utilities:  
+     - /etc/services  
+     - IPv4, IPv6  
+     - Subnetting  
+     - TCP, UDP, ICMP  
+- Basic network configuration  
+  - Key Knowledge Areas:  
+     - Manually and automatically configure network interfaces  
+     - Basic TCP/IP host configuration  
+     - Setting a default route  
+  - Terms and Utilities:  
+     - /etc/hostname  
+     - /etc/hosts  
+     - /etc/nsswitch.conf  
+     - ifconfig  
+     - ifup  
+     - ifdown  
+     - ip  
+     - route  
+     - ping  
+- Basic network troubleshooting  
+  - Key Knowledge Areas:  
+     - Manually and automatically configure network interfaces and routing tables to include adding, starting, stopping, restarting, deleting or reconfiguring network interfaces  
+     - Change, view, or configure the routing table and correct an improperly set default route manually  
+     - Debug problems associated with the network configuration  
+  - Terms and Utilities:  
+     - ifconfig  
+     - ip  
+     - ifup  
+     - ifdown  
+     - route  
+     - host  
+     - hostname  
+     - dig  
+     - netstat  
+     - ping  
+     - ping6  
+     - traceroute  
+     - traceroute6  
+     - tracepath  
+     - tracepath6  
+     - netcat  
+- Configure client side DNS  
+  - Key Knowledge Areas:  
+     - Query remote DNS servers  
+     - Configure local name resolution and use remote DNS servers  
+     - Modify the order in which name resolution is done  
+  - Terms and Utilities:  
+     - /etc/hosts  
+     - /etc/resolv.conf  
+     - /etc/nsswitch.conf  
+     - host  
+     - dig  
+     - getent  
+---------------------------------------------------  
+# Security
+---------------------------------------------------  
+- Perform security administration tasks  
+  - Key Knowledge Areas:  
+     - Audit a system to find files with the suid/sgid bit set  
+     - Set or change user passwords and password aging information  
+     - Being able to use nmap and netstat to discover open ports on a system  
+     - Set up limits on user logins, processes and memory usage  
+     - Determine which users have logged in to the system or are currently logged in  
+     - Basic sudo configuration and usage  
   - Terms and Utilities:  
      - find  
-     - locate  
-     - updatedb  
-     - whereis  
-     - which  
-     - type  
-     - /etc/updatedb.conf  
+     - passwd  
+     - fuser  
+     - lsof  
+     - nmap  
+     - chage  
+     - netstat  
+     - sudo  
+     - /etc/sudoers  
+     - su  
+     - usermod  
+     - ulimit  
+     - who, w, last  
+- Setup host security  
+  - Key Knowledge Areas:  
+     - Awareness of shadow passwords and how they work  
+     - Turn off network services not in use  
+     - Understand the role of TCP wrappers  
+  - Terms and Utilities:  
+     - /etc/nologin  
+     - /etc/passwd  
+     - /etc/shadow  
+     - /etc/xinetd.d/  
+     - /etc/xinetd.conf  
+     - /etc/inetd.d/  
+     - /etc/inetd.conf  
+     - /etc/inittab  
+     - /etc/init.d/  
+     - /etc/hosts.allow  
+     - /etc/hosts.deny  
+- Securing data with encryption  
+  - Key Knowledge Areas:  
+     - Perform basic OpenSSH 2 client configuration and usage  
+     - Understand the role of OpenSSH 2 server host keys  
+     - Perform basic GnuPG configuration, usage and revocation  
+     - Understand SSH port tunnels (including X11 tunnels)  
+  - Terms and Utilities:  
+     - ssh  
+     - ssh-keygen  
+     - ssh-agent  
+     - ssh-add  
+     - ~/.ssh/id_rsa and id_rsa.pub  
+     - ~/.ssh/id_dsa and id_dsa.pub  
+     - /etc/ssh/ssh_host_rsa_key and ssh_host_rsa_key.pub  
+     - /etc/ssh/ssh_host_dsa_key and ssh_host_dsa_key.pub  
+     - ~/.ssh/authorized_keys  
+     - ssh_known_hosts  
+     - gpg  
+     - ~/.gnupg/  
