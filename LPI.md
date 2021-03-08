@@ -1,327 +1,272 @@
 ---------------------------------------------------  
-# Capacity Planning
+# Domain Name Server
 ---------------------------------------------------  
-- Measure and Troubleshoot Resource Usage  
+- Basic DNS server configuration  
   - Key Knowledge Areas:  
-     - Measure CPU usage  
-     - Measure memory usage  
-     - Measure disk I/O  
-     - Measure network I/O  
-     - Measure firewalling and routing throughput  
-     - Map client bandwidth usage  
-     - Match / correlate system symptoms with likely problems  
-     - Estimate throughput and identify bottlenecks in a system including networking  
+     - BIND 9.x configuration files, terms and utilities  
+     - Defining the location of the BIND zone files in BIND configuration files  
+     - Reloading modified configuration and zone files  
+     - Awareness of dnsmasq, djbdns and PowerDNS as alternate name servers  
   - The following is a partial list of the used files, terms and utilities:  
-     - iostat  
-     - netstat  
-     - w  
-     - top  
-     - sar  
-     - processes blocked on I/O  
-     - blocks out  
-     - vmstat  
-     - pstree, ps  
-     - Isof  
-     - uptime  
-     - swap  
-     - blocks in  
-- Predict Future Resource Needs  
+     - /etc/named.conf  
+     - /var/named/  
+     - /usr/sbin/rndc  
+     - kill  
+     - host  
+     - dig  
+- Create and maintain DNS zones  
   - Key Knowledge Areas:  
-     - Use collectd to monitor IT infrastructure usage  
-     - Predict capacity break point of a configuration  
-     - Observe growth rate of capacity usage  
-     - Graph the trend of capacity usage  
-     - Awareness of monitoring solutions such as Nagios, MRTG and Cacti  
-  - The following is a partial list of the used files, terms and utilities:  
-     - diagnose  
-     - predict growth  
-     - resource exhaustion  
+     - BIND 9 configuration files, terms and utilities  
+     - Utilities to request information from the DNS server  
+     - Layout, content and file location of the BIND zone files  
+     - Various methods to add a new host in the zone files, including reverse zones  
+  - Terms and Utilities:  
+     - /var/named/  
+     - zone file syntax  
+     - resource record formats  
+     - dig  
+     - nslookup  
+     - host  
+- Securing a DNS server  
+  - Key Knowledge Areas:  
+     - BIND 9 configuration files  
+     - Configuring BIND to run in a chroot jail  
+     - Split configuration of BIND using the forwarders statement  
+     - Configuring and using transaction signatures (TSIG)  
+     - Awareness of DNSSEC and basic tools  
+  - Terms and Utilities:  
+     - /etc/named.conf  
+     - /etc/passwd  
+     - DNSSEC  
+     - dnssec-keygen  
+     - dnssec-signzone  
 ---------------------------------------------------  
-# Linux Kernel
+# Web Services
 ---------------------------------------------------  
-- Kernel Components  
-  - Key Knowledge Areas  
-     - Kernel 2.6.x documentation  
-     - Kernel 3.x documentation  
-  - Terms and Utilities:  
-     - /usr/src/linux/  
-     - zImage  
-     - /usr/src/linux/Documentation/  
-     - bzImage  
-- Compiling a kernel  
+- Implementing a web server  
   - Key Knowledge Areas:  
-     - /usr/src/linux/  
-     - Kernel Makefiles  
-     - Kernel 2.6.x/3.x make targets  
-     - Customize the current kernel configuration.  
-     - Build a new kernel and appropriate kernel modules.  
-     - Install a new kernel and any modules.  
-     - Ensure that the boot manager can locate the new kernel and associated files.  
-     - Module configuration files  
-     - Awareness of dracut  
+     - Apache 2.x configuration files, terms and utilities  
+     - Apache log files configuration and content  
+     - Access restriction methods and files  
+     - mod_perl and PHP configuration  
+     - Client user authentication files and utilities  
+     - Configuration of maximum requests, minimum and maximum servers and clients  
+     - Apache 2.x virtual host implementation (with and without dedicated IP addresses)  
+     - Using redirect statements in Apache’s configuration files to customize file access  
   - Terms and Utilities:  
-     - mkinitrd  
-     - mkinitramfs  
-     - make  
-     - bzip2  
-     - make targets (all, config, xconfig, menuconfig, gconfig, oldconfig, mrproper, zImage, bzImage, modules, modules_install, rpm-pkg, binrpm-pkg, deb-pkg)  
-     - gzip  
-     - module tool  
-     - /usr/src/linux/.confi  
-     - /lib/modules/kernel-version/  
-     - depmod  
-- Kernel runtime management and troubleshooting  
+     - access logs and error logs  
+     - .htaccess  
+     - httpd.conf  
+     - mod_auth  
+     - htpasswd  
+     - AuthUserFile, AuthGroupFile  
+     - apache2ctl  
+     - httpd  
+- Apache configuration for HTTPS  
   - Key Knowledge Areas:  
-     - Use command-line utilities to get information about the currently running kernel and kernel modules  
-     - Manually load and unload kernel modules  
-     - Determine when modules can be unloaded  
-     - Determine what parameters a module accepts  
-     - Configure the system to load modules by names other than their file name.  
-     - /proc filesystem  
-     - Content of /, /boot/ , and /lib/modules/  
-     - Tools and utilities to analyze information about the available hardware  
-     - udev rules  
+     - SSL configuration files, tools and utilities  
+     - Ability to generate a server private key and CSR for a commercial CA  
+     - Ability to generate a self-signed Certificate from private CA  
+     - Ability to install the key and Certificate  
+     - Awareness of the issues with Virtual Hosting and use of SSL  
+     - Security issues in SSL use  
   - Terms and Utilities:  
-     - /lib/modules/kernel-version/modules.dep  
-     - module configuration files in /etc/  
-     - /proc/sys/kernel/  
-     - /sbin/depmod  
-     - /sbin/rmmod  
-     - /sbin/modinfo  
-     - /bin/dmesg  
-     - /sbin/lspci  
-     - /usr/bin/lsdev  
-     - /sbin/lsmod  
-     - /sbin/modprobe  
-     - /sbin/insmod  
-     - /bin/uname  
-     - /usr/bin/lsusb  
-     - /etc/sysctl.conf, /etc/sysctl.d/  
-     - /sbin/sysctl  
-     - udevmonitor  
-     - udevadm monitor  
-     - /etc/udev/  
+     - Apache2 configuration files  
+     - /etc/ssl/, /etc/pki/  
+     - openssl, CA.pl  
+     - SSLEngine, SSLCertificateKeyFile, SSLCertificateFile, SSLCertificateChainFile  
+     - SSLCACertificateFile, SSLCACertificatePath  
+     - SSLProtocol, SSLCipherSuite, ServerTokens, ServerSignature, TraceEnable  
+- Implementing a proxy server  
+  - Key Knowledge Areas:  
+     - Squid 3.x configuration files, terms and utilities  
+     - Access restriction methods  
+     - Client user authentication methods  
+     - Layout and content of ACL in the Squid configuration files  
+  - Terms and Utilities:  
+     - squid.conf  
+     - acl  
+     - http_access  
+- Implementing Nginx as a web server and a reverse proxy  
+  - Key Knowledge Areas:  
+     - Nginx  
+     - Reverse Proxy  
+     - Basic Web Server  
+  - Terms and Utilities:  
+     - /etc/nginx/  
+     - nginx  
 ---------------------------------------------------  
-# System Startup
+# File Sharing
 ---------------------------------------------------  
-- Customizing SysV- init system startup  
+- SAMBA Server Configuration  
   - Key Knowledge Areas:  
-     - Linux Standard Base Specification (LSB)  
-     - SysV init environment  
+     - Samba 3 documentation  
+     - Samba configuration files  
+     - Samba tools and utilities  
+     - Mounting Samba shares on Linux  
+     - Samba daemons  
+     - Mapping Windows usernames to Linux usernames  
+     - User-Level and Share-Level security  
   - Terms and Utilities:  
-     - /etc/inittab  
-     - /etc/init.d/  
-     - /etc/rc.d/  
-     - chkconfig  
-     - update-rc.d  
-     - init and telinit  
-- System Recovery  
+     - smbd, nmbd  
+     - smbstatus, testparm, smbpasswd, nmblookup  
+     - net  
+     - smbclient  
+     - /etc/smb/  
+     - /var/log/samba/  
+- NFS Server Configuration  
   - Key Knowledge Areas:  
-     - GRUB version 2 and Legacy  
-     - Grub shell  
-     - Boot loader start and hand off to kernel  
-     - Kernel loading  
-     - Hardware initialization and setup  
-     - Daemon/service initialization and setup  
-     - Know the different boot loader install locations on a hard disk or removable device  
-     - Overwriting standard boot loader options and using boot loader shells  
-     - Awareness of UEFI  
+     - NFS version 3 configuration files  
+     - NFS tools and utilities  
+     - Access restrictions to certain hosts and/or subnets  
+     - Mount options on server and client  
+     - TCP Wrappers  
+     - Awareness of NFSv4  
   - Terms and Utilities:  
-     - mount  
-     - fsck  
-     - inittab, telinit and init with SysV init  
-     - the contents of /boot/ and /boot/grub/  
-     - GRUB  
-     - grub-install  
-     - initrd, initramfs  
-     - Master boot record  
-- Alternate Bootloaders  
-  - Key Knowledge Areas:  
-     - LILO  
-     - SYSLINUX, ISOLINUX, PXELINUX  
-     - Understanding of PXE  
-  - Terms and Utilities:  
-     - lilo, /etc/lilo.conf  
-     - syslinux  
-     - extlinux  
-     - isolinux.bin  
-     - isolinux.cfg  
-     - pxelinux.0  
-     - pxelinux.cfg/  
----------------------------------------------------  
-# Filesystem and Devices
----------------------------------------------------  
-- Operating the Linux filesystem  
-  - Key Knowledge Areas:  
-     - The concept of the fstab configuration  
-     - Tools and utilities for handling SWAP partitions and files  
-     - Use of UUIDs  
-  - Terms and Utilities:  
-     - /etc/fstab  
-     - /etc/mtab  
+     - /etc/exports  
+     - exportfs  
+     - showmount  
+     - nfsstat  
      - /proc/mounts  
-     - mount and umount  
-     - sync  
-     - swapon  
-     - swapoff  
-- Maintaining a Linux filesystem  
-  - Key Knowledge Areas:  
-     - Tools and utilities to manipulate and ext2, ext3 and ext4  
-     - Tools and utilities to manipulate xfs  
-     - Awareness of Btrfs  
-  - Terms and Utilities:  
-     - fsck (fsck.*)  
-     - mkfs (mkfs.*)  
-     - dumpe2fs, xfsdump, xfsrestore  
-     - debugfs  
-     - tune2fs  
-     - mkswap  
-     - xfs_info, xfs_check and xfs_repair  
-     - smartd, smartctl  
-- Creating and configuring filesystem options  
-  - Key Knowledge Areas:  
-     - autofs configuration files  
-     - UDF and ISO9660 tools and utilities  
-     - Awareness of CD-ROM filesystems (UDF, ISO9660, HFS)  
-     - Awareness of CD-ROM filesystem extensions (Joliet, Rock Ridge, El Torito)  
-     - Basic feature knowledge of encrypted filesystems  
-  - Terms and Utilities:  
-     - /etc/auto.master  
-     - /etc/auto.[dir]  
-     - mkisofs  
+     - /etc/fstab  
+     - rpcinfo  
+     - mountd  
+     - portmapper  
 ---------------------------------------------------  
-# Advanced Storage Device Administration
+# Network Client Management
 ---------------------------------------------------  
-- Configuring RAID  
+- DHCP configuration  
   - Key Knowledge Areas:  
-     - Software raid configuration files and utilities  
+     - DHCP configuration files, terms and utilities  
+     - Subnet and dynamically-allocated range setup  
   - Terms and Utilities:  
-     - mdadm.conf  
-     - mdadm  
-     - /proc/mdstat  
-     - partition type 0xFD  
-- Adjusting Storage Device Access  
+     - dhcpd.conf  
+     - /var/log/daemon.log and /var/log/messages  
+     - dhcpd.leases  
+     - arp  
+     - dhcpd  
+- PAM authentication  
   - Key Knowledge Areas:  
-     - Tools and utilities to configure DMA for IDE devices including ATAPI and SATA  
-     - Tools and utilities to manipulate or analyze system resources (e.g. interrupts)  
-     - Awareness of sdparm command and its uses  
-     - Tools and utilities for iSCSI  
+     - PAM configuration files, terms and utilities  
+     - passwd and shadow passwords  
   - Terms and Utilities:  
-     - hdparm, sdparm  
-     - tune2fs  
-     - sysctl  
-     - /dev/hd*, /dev/sd*  
-     - iscsiadm, scsi_id, iscsid and iscsid.conf  
-     - WWID, WWN, LUN numbers  
-- Logical Volume Manager  
+     - /etc/pam.d/  
+     - pam.conf  
+     - nsswitch.conf  
+     - pam_unix, pam_cracklib, pam_limits, pam_listfile  
+- LDAP client usage  
   - Key Knowledge Areas:  
-     - Tools in the LVM suite  
-     - Resizing, renaming, creating, and removing logical volumes, volume groups, and physical volumes  
-     - Creating and maintaining snapshots  
-     - Activating volume groups  
+     - LDAP utilities for data management and queries  
+     - Change user passwords  
+     - Querying the LDAP directory  
   - Terms and Utilities:  
-     - /sbin/pv*  
-     - /sbin/lv*  
-     - /sbin/vg*  
-     - mount  
-     - /dev/mapper/  
+     - ldapsearch  
+     - ldappasswd  
+     - ldapadd  
+     - ldapdelete  
+- Configuring an OpenLDAP server  
+  - Key Knowledge Areas:  
+     - OpenLDAP  
+     - Access Control  
+     - Distinguished Names  
+     - Changetype Operations  
+     - Schemas and Whitepages  
+     - Directories  
+     - Object IDs, Attributes and Classes  
+     - Awareness of System Security Services Daemon (SSSD)  
+  - Terms and Utilities:  
+     - slapd  
+     - slapd.conf  
+     - LDIF  
+     - slapadd  
+     - slapcat  
+     - slapindex  
+     - /var/lib/ldap/  
+     - loglevel  
 ---------------------------------------------------  
-# Networking Configuration
+# E-Mail Services
 ---------------------------------------------------  
-- Basic networking configuration  
+- Using e-mail servers  
   - Key Knowledge Areas:  
-     - Utilities to configure and manipulate ethernet network interfaces  
-     - Configuring basic access to wireless networks with iw, iwconfig and iwlist  
+     - Configuration files for postfix  
+     - Basic knowledge of the SMTP protocol  
+     - Awareness of sendmail and exim  
   - Terms and Utilities:  
-     - /sbin/route  
-     - /sbin/ifconfig  
-     - /sbin/ip  
-     - /usr/sbin/arp  
-     - /sbin/iwconfig  
-     - /sbin/iwlist  
-- Advanced Network Configuration and Troubleshooting  
+     - Configuration files and commands for postfix  
+     - /etc/postfix/  
+     - /var/spool/postfix/  
+     - sendmail emulation layer commands  
+     - /etc/aliases  
+     - mail-related logs in /var/log/  
+- Managing Local E-Mail Delivery  
   - Key Knowledge Areas:  
-     - Utilities to manipulate routing tables  
-     - Utilities to configure and manipulate ethernet network interfaces  
-     - Utilities to analyze the status of the network devices  
-     - Utilities to monitor and analyze the TCP/IP traffic  
+     - procmail configuration files, tools and utilities  
+     - Usage of procmail on both server and client side  
   - Terms and Utilities:  
-     - /sbin/route  
-     - /sbin/ifconfig  
-     - /bin/netstat  
-     - /bin/ping  
-     - /usr/sbin/arp  
-     - /usr/sbin/tcpdump  
-     - /usr/sbin/lsof  
-     - /usr/bin/nc  
-     - /sbin/ip  
+     - ~/.procmailrc  
+     - /etc/procmailrc  
+     - procmail  
+     - mbox and Maildir formats  
+- Managing Remote E-Mail Delivery  
+  - Key Knowledge Areas:  
+     - Courier IMAP and Courier POP configuration  
+     - Dovecot configuration  
+  - Terms and Utilities:  
+     - /etc/courier/  
+     - dovecot.conf  
+---------------------------------------------------  
+# System Security
+---------------------------------------------------  
+- Configuring a router  
+  - Key Knowledge Areas:  
+     - iptables configuration files, tools and utilities  
+     - Tools, commands and utilities to manage routing tables.  
+     - Private address ranges  
+     - Port redirection and IP forwarding  
+     - List and write filtering and rules that accept or block datagrams based on source or  
+     - Destination protocol, port and address  
+     - Save and reload filtering configurations  
+     - Awareness of ip6tables and filtering  
+  - Terms and Utilities:  
+     - /proc/sys/net/ipv4/  
+     - /etc/services  
+     - iptables  
+- Securing FTP servers  
+  - Key Knowledge Areas:  
+     - Configuration files, tools and utilities for Pure-FTPd and vsftpd  
+     - Awareness of ProFTPd  
+     - Understanding of passive vs. active FTP connections  
+  - Terms and Utilities:  
+     - vsftpd.conf  
+     - important Pure-FTPd command line options  
+- Secure shell (SSH)  
+  - Key Knowledge Areas:  
+     - OpenSSH configuration files, tools and utilities  
+     - Login restrictions for the superuser and the normal users  
+     - Managing and using server and client keys to login with and without password  
+     - Usage of multiple connections from multiple hosts to guard against loss of connection to remote host following configuration changes  
+  - Terms and Utilities:  
+     - ssh  
+     - sshd  
+     - /etc/ssh/sshd_config  
+     - /etc/ssh/  
+     - Private and public key files  
+     - PermitRootLogin, PubKeyAuthentication, AllowUsers, PasswordAuthentication, Protocol  
+- Security tasks  
+  - Key Knowledge Areas:  
+     - Tools and utilities to scan and test ports on a server  
+     - Locations and organizations that report security alerts as Bugtraq, CERT or other sources  
+     - Tools and utilities to implement an intrusion detection system (IDS)  
+     - Awareness of OpenVAS and Snort  
+  - Terms and Utilities:  
+     - telnet  
      - nmap  
-- Troubleshooting Network Issues  
+     - fail2ban  
+     - nc  
+     - iptables  
+- OpenVPN  
   - Key Knowledge Areas:  
-     - Location and content of access restriction files  
-     - Utilities to configure and manipulate ethernet network interfaces  
-     - Utilities to manage routing tables  
-     - Utilities to list network states.  
-     - Utilities to gain information about the network configuration  
-     - Methods of information about the recognized and used hardware devices  
-     - System initialization files and their contents (SysV init process)  
-     - Awareness of NetworkManager and its impact on network configuration  
+     - OpenVPN  
   - Terms and Utilities:  
-     - /sbin/ifconfig  
-     - /sbin/route  
-     - /bin/netstat  
-     - /etc/network/, /etc/sysconfig/network-scripts/  
-     - /bin/ping  
-     - System log files such as /var/log/syslog & /var/log/messages  
-     - /etc/resolv.conf  
-     - /etc/hosts  
-     - /etc/hostname, /etc/HOSTNAME  
-     - /bin/hostname  
-     - /usr/sbin/traceroute  
-     - /bin/dmesg  
-     - /etc/hosts.allow, /etc/hosts.deny  
----------------------------------------------------  
-# System Maintenance
----------------------------------------------------  
-- Make and install programs from source  
-  - Key Knowledge Areas:  
-     - Unpack source code using common compression and archive utilities  
-     - Understand basics of invoking make to compile programs  
-     - Apply parameters to a configure script  
-     - Know where sources are stored by default  
-  - Terms and Utilities:  
-     - /usr/src/  
-     - gunzip  
-     - gzip  
-     - bzip2  
-     - tar  
-     - configure  
-     - make  
-     - uname  
-     - install  
-     - patch  
-- Backup operations  
-  - Key Knowledge Areas:  
-     - Knowledge about directories that have to be include in backups  
-     - Awareness of network backup solutions such as Amanda, Bacula and BackupPC  
-     - Knowledge of the benefits and drawbacks of tapes, CDR, disk or other backup media  
-     - Perform partial and manual backups  
-     - Verify the integrity of backup files  
-     - Partially or fully restore backups  
-  - Terms and Utilities:  
-     - /bin/sh  
-     - dd  
-     - tar  
-     - /dev/st* and /dev/nst*  
-     - mt  
-     - rsync  
-- Notify users on system- related issues  
-  - Key Knowledge Areas:  
-     - Automate communication with users through logon messages  
-     - Inform active users of system maintenance  
-  - Terms and Utilities:  
-     - /etc/issue  
-     - /etc/issue.net  
-     - /etc/motd  
-     - wall  
-     - /sbin/shutdown  
+     - /etc/openvpn/  
+     - openvpn  
