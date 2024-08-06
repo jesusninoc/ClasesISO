@@ -11,4 +11,4 @@ graph TD
     H --> I[¿Se recomienda la descarga?]
     I -->|Sí| J[Descargue y haga RCP durante 2 minutos]
     I -->|No| K[Haga RCP durante 2 minutos, siga hasta que lleguen los profesionales sanitarios o la persona respire con normalidad]
-``
+
